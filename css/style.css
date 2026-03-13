@@ -32,7 +32,7 @@
     --sans:  'Nunito Sans', 'Segoe UI', sans-serif;
 
     /* ── Layout ── */
-    --nav-h:    76px;
+    --nav-h:    88px;
     --pad-x:    clamp(1.25rem, 4vw, 3rem);
     --max-w:    1280px;
     --radius:   2px;
@@ -108,7 +108,7 @@ nav.nav-light { /* same as default, alias for clarity */ }
 }
 
 .nav-logo img {
-    height: 56px;
+    height: 72px;
     width: auto;
 }
 
@@ -460,69 +460,24 @@ nav.nav-light { /* same as default, alias for clarity */ }
     font-weight: 300;
 }
 
-/* ── Network background ── */
+/* ── Network background (mini-logo) ── */
 .network-bg {
     position: absolute;
-    top: 0; right: -5%;
-    width: 54%;
-    height: 100%;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 42%;
     pointer-events: none;
     z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.network-bg svg { width: 100%; height: 100%; }
-
-.nn-node {
-    fill: var(--crimson);
-    opacity: 0;
-    animation: nodePulse 5s ease-in-out infinite;
-}
-
-.nn-node:nth-child(1)  { animation-delay: 0s; }
-.nn-node:nth-child(2)  { animation-delay: -0.8s; }
-.nn-node:nth-child(3)  { animation-delay: -1.6s; }
-.nn-node:nth-child(4)  { animation-delay: -2.4s; }
-.nn-node:nth-child(5)  { animation-delay: -3.2s; }
-.nn-node:nth-child(6)  { animation-delay: -4.0s; }
-.nn-node:nth-child(7)  { animation-delay: -0.4s; }
-.nn-node:nth-child(8)  { animation-delay: -1.2s; }
-.nn-node:nth-child(9)  { animation-delay: -2.0s; }
-.nn-node:nth-child(10) { animation-delay: -2.8s; }
-.nn-node:nth-child(11) { animation-delay: -3.6s; }
-.nn-node:nth-child(12) { animation-delay: -4.4s; }
-.nn-node:nth-child(13) { animation-delay: -0.6s; }
-.nn-node:nth-child(14) { animation-delay: -1.4s; }
-.nn-node:nth-child(15) { animation-delay: -2.2s; }
-.nn-node:nth-child(16) { animation-delay: -3.0s; }
-.nn-node:nth-child(17) { animation-delay: -3.8s; }
-.nn-node:nth-child(18) { animation-delay: -1.0s; }
-.nn-node:nth-child(19) { animation-delay: -1.8s; }
-.nn-node:nth-child(20) { animation-delay: -2.6s; }
-
-.nn-edge {
-    stroke: var(--crimson);
-    stroke-width: 0.7;
-    opacity: 0.07;
-    animation: edgePulse 6s ease-in-out infinite;
-}
-
-.nn-edge:nth-child(odd)  { animation-delay: -3s; }
-.nn-edge:nth-child(3n)   { animation-delay: -1.5s; }
-
-.nn-edge--skip {
-    stroke-width: 0.4;
-    opacity: 0.04;
-    stroke-dasharray: 3 7;
-}
-
-@keyframes nodePulse {
-    0%, 100% { opacity: 0.10; }
-    50%       { opacity: 0.25; }
-}
-
-@keyframes edgePulse {
-    0%, 100% { opacity: 0.05; }
-    50%       { opacity: 0.13; }
+.hero-bg-logo {
+    width: 100%;
+    height: auto;
+    opacity: 0.12;
 }
 
 /* ── Ticker strip ── */
@@ -1060,7 +1015,7 @@ footer::before {
 
     .research-areas .container { grid-template-columns: 1fr; gap: 2.5rem; }
 
-    .network-bg { width: 50%; opacity: 0.8; }
+    .network-bg { width: 45%; }
 }
 
 /* Tablet portrait */
