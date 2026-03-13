@@ -1,0 +1,87 @@
+GNU nano 7.2 index.html
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="tbc-container">
+        <div class="tbc-arrow">
+            <span class="tbc-text">Salut Tanguy ;)</span>
+        </div>
+    </div>
+    <div class="tbc-container">
+        <div class="tbc-arrow">
+            <span class="tbc-text">TO BE CONTINUED</span>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            /* Fond de la page en noir */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Centre verticalement */
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Conteneur pour l'animation */
+        .tbc-container {
+            padding: 50px;
+            background: #000;
+            overflow: hidden;
+            /* Cache la flèche avant qu'elle n'entre */
+        }
+
+        .tbc-arrow {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e0e0e0;
+            padding: 12px 50px 12px 25px;
+            border-left: 10px solid #333;
+            clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+
+            /* Animation : glisse depuis la gauche + opacité */
+            animation: slideIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        .tbc-text {
+            /* Police moderne sans empattement */
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 800;
+            /* Très gras */
+            font-size: 26px;
+            color: #1a1a1a;
+            letter-spacing: 3px;
+            transform: skewX(-15deg);
+            /* Inclinaison moderne */
+        }
+
+        /* Définition de l'animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%) skewX(15deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0) skewX(15deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+
+</html>
