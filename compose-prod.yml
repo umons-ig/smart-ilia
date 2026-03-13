@@ -1,7 +1,6 @@
 services:
   web:
-    image: ghcr.io/ton-user/smart-ilia:latest  # à remplacer par ton image de registre
-    build: .
+    image: ghcr.io/umons-ig/smart-ilia:latest
     ports:
       - "8080:80"
     restart: unless-stopped
@@ -13,11 +12,10 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ~/.docker/config.json:/config.json:ro  # credentials du registre privé
+    env_file:
+      - .env
     environment:
-      - DOCKER_CONFIG=/config.json
-      - WATCHTOWER_LABEL_ENABLE=true        # surveille uniquement les conteneurs avec le label
-      - WATCHTOWER_POLL_INTERVAL=300        # vérifie toutes les 5 minutes
-      - WATCHTOWER_CLEANUP=true             # supprime les anciennes images après update
+      - WATCHTOWER_LABEL_ENABLE=true
+      - WATCHTOWER_POLL_INTERVAL=30
+      - WATCHTOWER_CLEANUP=true
       - DOCKER_API_VERSION=1.44
-
