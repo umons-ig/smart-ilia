@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Team — ILIA Lab</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Team — SMART'ILIA · UMONS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,8 +12,7 @@
 <nav id="navbar">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-            <img src="images/logo.png" alt="ILIA Lab">
-            <span class="nav-logo-text">ILIA Lab</span>
+            <img src="images/logo.png" alt="SMART'ILIA">
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
@@ -30,12 +26,14 @@
 </nav>
 
 <!-- ── TEAM ── -->
-<div class="page" style="background: var(--bg-alt);">
+<div class="page page-team">
     <div class="container">
         <div class="section-header">
-            <div class="section-label">Our People</div>
+            <div class="section-label"><span>Our People</span></div>
             <h1 class="section-title">Meet the Team</h1>
-            <div class="section-line"></div>
+            <p class="section-subtitle">
+                A multidisciplinary group of researchers and engineers dedicated to advancing intelligent systems.
+            </p>
         </div>
 
         <div class="team-groups">
@@ -44,17 +42,23 @@
                 <div class="team-group-label">Faculty</div>
                 <div class="team-grid">
                     <div class="team-card" data-anim>
-                        <img src="images/said_mahmoudi.png" alt="Said Mahmoudi" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/said_mahmoudi.png" alt="Said Mahmoudi" class="team-photo">
+                        </div>
                         <div class="team-name">Said Mahmoudi</div>
                         <div class="team-role">Professor &amp; Lab Manager</div>
                     </div>
                     <div class="team-card" data-anim>
-                        <img src="images/sidi_mahmoudi.png" alt="Sidi Mahmoudi" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/sidi_mahmoudi.png" alt="Sidi Mahmoudi" class="team-photo">
+                        </div>
                         <div class="team-name">Sidi Mahmoudi</div>
                         <div class="team-role">Professor &amp; Co-Manager</div>
                     </div>
                     <div class="team-card" data-anim>
-                        <img src="images/mohammed_benjelloun.png" alt="Mohammed Benjelloun" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/mohammed_benjelloun.png" alt="Mohammed Benjelloun" class="team-photo">
+                        </div>
                         <div class="team-name">Mohammed Benjelloun</div>
                         <div class="team-role">Professor &amp; Co-Manager</div>
                     </div>
@@ -66,7 +70,9 @@
                 <div class="team-group-label">Collaborators</div>
                 <div class="team-grid">
                     <div class="team-card" data-anim>
-                        <img src="images/quentin_deconinck.png" alt="Quentin Deconinck" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/quentin_deconinck.png" alt="Quentin Deconinck" class="team-photo">
+                        </div>
                         <div class="team-name">Quentin Deconinck</div>
                         <div class="team-role">Research Collaborator</div>
                     </div>
@@ -78,12 +84,16 @@
                 <div class="team-group-label">PhD Students</div>
                 <div class="team-grid">
                     <div class="team-card" data-anim>
-                        <img src="images/mathis_delehouzee.png" alt="Mathis Delehouzée" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/mathis_delehouzee.png" alt="Mathis Delehouzée" class="team-photo">
+                        </div>
                         <div class="team-name">Mathis Delehouzée</div>
                         <div class="team-role">PhD Student</div>
                     </div>
                     <div class="team-card" data-anim>
-                        <img src="images/edmond-prosper_souapiebe.png" alt="Edmond-Prosper Souapiébé" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/edmond-prosper_souapiebe.png" alt="Edmond-Prosper Souapiébé" class="team-photo">
+                        </div>
                         <div class="team-name">Edmond-Prosper Souapiébé</div>
                         <div class="team-role">PhD Student</div>
                     </div>
@@ -95,7 +105,9 @@
                         <div class="team-role">PhD Student</div>
                     </div>
                     <div class="team-card" data-anim>
-                        <img src="images/tanguy_vansnick.png" alt="Tanguy Vansnick" class="team-photo">
+                        <div class="team-photo-wrap">
+                            <img src="images/tanguy_vansnick.png" alt="Tanguy Vansnick" class="team-photo">
+                        </div>
                         <div class="team-name">Tanguy Vansnick</div>
                         <div class="team-role">PhD Student</div>
                     </div>
@@ -108,31 +120,38 @@
 <!-- ── FOOTER ── -->
 <footer>
     <div class="footer-inner">
-        <div class="footer-logo">ILIA Lab</div>
+        <div class="footer-logo">SMART'ILIA</div>
         <div class="footer-uni">University of Mons — Faculty of Engineering</div>
-        <div class="footer-text">&copy; 2025 ILIA Lab. All rights reserved.</div>
+        <div class="footer-copy">&copy; 2025 SMART'ILIA Lab</div>
     </div>
 </footer>
 
 <script>
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
-
     const burger = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
     burger.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
-    // Scroll-reveal
+    // Staggered scroll-reveal
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, i) => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                const cards = entry.target.parentElement.querySelectorAll('[data-anim]');
+                cards.forEach((card, i) => {
+                    setTimeout(() => card.classList.add('visible'), i * 100);
+                });
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+    }, { threshold: 0.1 });
+
+    // Observe first card in each grid to trigger group animation
+    document.querySelectorAll('.team-grid').forEach(grid => {
+        const first = grid.querySelector('[data-anim]');
+        if (first) observer.observe(first);
+    });
 </script>
 
 </body>
