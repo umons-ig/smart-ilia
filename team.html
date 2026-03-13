@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team — ILIA Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="ILIA Lab">
+            <span class="nav-logo-text">ILIA Lab</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html" class="active">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ── TEAM ── -->
+<div class="page" style="background: var(--bg-alt);">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Our People</div>
+            <h1 class="section-title">Meet the Team</h1>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="team-groups">
+            <!-- Faculty -->
+            <div>
+                <div class="team-group-label">Faculty</div>
+                <div class="team-grid">
+                    <div class="team-card" data-anim>
+                        <img src="images/said_mahmoudi.png" alt="Said Mahmoudi" class="team-photo">
+                        <div class="team-name">Said Mahmoudi</div>
+                        <div class="team-role">Professor &amp; Lab Manager</div>
+                    </div>
+                    <div class="team-card" data-anim>
+                        <img src="images/sidi_mahmoudi.png" alt="Sidi Mahmoudi" class="team-photo">
+                        <div class="team-name">Sidi Mahmoudi</div>
+                        <div class="team-role">Professor &amp; Co-Manager</div>
+                    </div>
+                    <div class="team-card" data-anim>
+                        <img src="images/mohammed_benjelloun.png" alt="Mohammed Benjelloun" class="team-photo">
+                        <div class="team-name">Mohammed Benjelloun</div>
+                        <div class="team-role">Professor &amp; Co-Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collaborators -->
+            <div>
+                <div class="team-group-label">Collaborators</div>
+                <div class="team-grid">
+                    <div class="team-card" data-anim>
+                        <img src="images/quentin_deconinck.png" alt="Quentin Deconinck" class="team-photo">
+                        <div class="team-name">Quentin Deconinck</div>
+                        <div class="team-role">Research Collaborator</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PhD Students -->
+            <div>
+                <div class="team-group-label">PhD Students</div>
+                <div class="team-grid">
+                    <div class="team-card" data-anim>
+                        <img src="images/mathis_delehouzee.png" alt="Mathis Delehouzée" class="team-photo">
+                        <div class="team-name">Mathis Delehouzée</div>
+                        <div class="team-role">PhD Student</div>
+                    </div>
+                    <div class="team-card" data-anim>
+                        <img src="images/edmond-prosper_souapiebe.png" alt="Edmond-Prosper Souapiébé" class="team-photo">
+                        <div class="team-name">Edmond-Prosper Souapiébé</div>
+                        <div class="team-role">PhD Student</div>
+                    </div>
+                    <div class="team-card" data-anim>
+                        <div class="team-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                        </div>
+                        <div class="team-name">Islam Hentous</div>
+                        <div class="team-role">PhD Student</div>
+                    </div>
+                    <div class="team-card" data-anim>
+                        <img src="images/tanguy_vansnick.png" alt="Tanguy Vansnick" class="team-photo">
+                        <div class="team-name">Tanguy Vansnick</div>
+                        <div class="team-role">PhD Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">ILIA Lab</div>
+        <div class="footer-uni">University of Mons — Faculty of Engineering</div>
+        <div class="footer-text">&copy; 2025 ILIA Lab. All rights reserved.</div>
+    </div>
+</footer>
+
+<script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
+
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
