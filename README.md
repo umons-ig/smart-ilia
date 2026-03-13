@@ -5,30 +5,35 @@ Site web servi via nginx, déployé automatiquement avec Docker + Watchtower.
 ## Architecture
 
 - **CI/CD** : GitHub Actions build et push l'image sur GHCR à chaque push sur `main`
-- **Watchtower** : surveille le registre et recrée le conteneur dès qu'une nouvelle image est disponible
+- **Watchtower** : surveille le registre toutes les 30 secondes et recrée le conteneur dès qu'une nouvelle image est disponible
 
 ## Déploiement sur le serveur
 
-### 1. Se connecter au registre privé
-
-Générer un token GitHub avec la permission `read:packages` puis :
+### 1. Créer le fichier `.env`
 
 ```bash
-echo "TON_TOKEN" | docker login ghcr.io -u ton-user --password-stdin
+cp .env.example .env
+nano .env  # remplir les valeurs
 ```
 
-### 2. Lancer les services
+Le token GitHub doit avoir la permission **`read:packages`** — à générer sur [github.com/settings/tokens](https://github.com/settings/tokens).
+
+### 2. Créer le `compose.yml` sur le serveur
+
+Copier le contenu de `compose-prod.yml` dans un fichier `compose.yml` sur le serveur via `nano compose.yml`.
+
+### 3. Lancer les services
 
 ```bash
-docker compose -f compose-prod.yml up -d
+sudo docker compose up -d
 ```
 
 ### Mise à jour
 
-Les mises à jour sont automatiques. Watchtower vérifie toutes les 5 minutes si une nouvelle image est disponible sur `ghcr.io` et redémarre le conteneur si c'est le cas.
+Les mises à jour sont automatiques. Watchtower vérifie toutes les 30 secondes si une nouvelle image est disponible sur `ghcr.io` et redémarre le conteneur si c'est le cas.
 
 Pour forcer une mise à jour manuelle :
 
 ```bash
-docker compose -f compose-prod.yml pull && docker compose -f compose-prod.yml up -d
+sudo docker compose pull && sudo docker compose up -d
 ```
