@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects — ILIA Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="ILIA Lab">
+            <span class="nav-logo-text">ILIA Lab</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ── PROJECTS ── -->
+<div class="page">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Research</div>
+            <h1 class="section-title">Projects</h1>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-anim>
+                <div class="project-number">01</div>
+                <h3 class="project-title">Intelligent Network Monitoring</h3>
+                <p class="project-desc">
+                    Developing machine learning models for real-time anomaly detection and predictive analysis in large-scale network infrastructures.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Networking</span>
+                    <span class="project-tag">Machine Learning</span>
+                    <span class="project-tag">Anomaly Detection</span>
+                </div>
+            </div>
+            <div class="project-card" data-anim>
+                <div class="project-number">02</div>
+                <h3 class="project-title">Computer Vision for Infrastructure</h3>
+                <p class="project-desc">
+                    Applying deep learning techniques to automate visual inspection and structural assessment of civil engineering assets.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Deep Learning</span>
+                    <span class="project-tag">Infrastructure</span>
+                </div>
+            </div>
+            <div class="project-card" data-anim>
+                <div class="project-number">03</div>
+                <h3 class="project-title">Smart Data Analytics</h3>
+                <p class="project-desc">
+                    Building scalable data pipelines and intelligent analytics tools for extracting actionable insights from heterogeneous data sources.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Data Science</span>
+                    <span class="project-tag">Analytics</span>
+                    <span class="project-tag">AI</span>
+                </div>
+            </div>
+            <div class="project-card" data-anim>
+                <div class="project-number">04</div>
+                <h3 class="project-title">Natural Language Processing</h3>
+                <p class="project-desc">
+                    Researching advanced NLP methods for information extraction, text understanding, and multilingual document processing.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">NLP</span>
+                    <span class="project-tag">Text Mining</span>
+                    <span class="project-tag">Transformers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-logo">ILIA Lab</div>
+        <div class="footer-uni">University of Mons — Faculty of Engineering</div>
+        <div class="footer-text">&copy; 2025 ILIA Lab. All rights reserved.</div>
+    </div>
+</footer>
+
+<script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
+
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
