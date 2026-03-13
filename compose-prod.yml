@@ -1,0 +1,21 @@
+services:
+  web:
+    image: ghcr.io/ton-user/smart-ilia:latest  # à remplacer par ton image de registre
+    build: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ~/.docker/config.json:/config.json:ro  # credentials du registre privé
+    environment:
+      - DOCKER_CONFIG=/config.json
+      - WATCHTOWER_LABEL_ENABLE=true        # surveille uniquement les conteneurs avec le label
+      - WATCHTOWER_POLL_INTERVAL=300        # vérifie toutes les 5 minutes
+      - WATCHTOWER_CLEANUP=true             # supprime les anciennes images après update
