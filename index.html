@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMART'ILIA — Intelligent Systems Research · UMONS</title>
+    <link rel="icon" type="image/png" href="images/mini-logo.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,9 +26,62 @@
     </div>
 </nav>
 
-<!-- ── HERO ── -->
+<!-- ── HERO (DARK) ── -->
 <div class="page-hero">
-    <div class="container">
+
+    <!-- Network decoration -->
+    <div class="network-bg" aria-hidden="true">
+        <svg viewBox="0 0 600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Nodes -->
+            <circle class="nn-node" cx="80"  cy="120" r="3.5"/><circle class="nn-node" cx="220" cy="60"  r="5"/>
+            <circle class="nn-node" cx="380" cy="100" r="3"/><circle class="nn-node" cx="500" cy="50"  r="4"/>
+            <circle class="nn-node" cx="160" cy="220" r="4.5"/><circle class="nn-node" cx="310" cy="200" r="3"/>
+            <circle class="nn-node" cx="460" cy="180" r="5.5"/><circle class="nn-node" cx="560" cy="240" r="3"/>
+            <circle class="nn-node" cx="90"  cy="340" r="4"/><circle class="nn-node" cx="240" cy="320" r="3.5"/>
+            <circle class="nn-node" cx="400" cy="300" r="4.5"/><circle class="nn-node" cx="530" cy="360" r="3"/>
+            <circle class="nn-node" cx="150" cy="460" r="3.5"/><circle class="nn-node" cx="320" cy="440" r="5"/>
+            <circle class="nn-node" cx="480" cy="480" r="3.5"/><circle class="nn-node" cx="580" cy="420" r="4"/>
+            <circle class="nn-node" cx="70"  cy="560" r="3"/><circle class="nn-node" cx="230" cy="580" r="4.5"/>
+            <circle class="nn-node" cx="390" cy="600" r="3"/><circle class="nn-node" cx="520" cy="560" r="4"/>
+            <!-- Connections layer 1→2 -->
+            <line class="nn-edge" x1="80"  y1="120" x2="220" y2="60"/>
+            <line class="nn-edge" x1="220" y1="60"  x2="380" y2="100"/>
+            <line class="nn-edge" x1="380" y1="100" x2="500" y2="50"/>
+            <line class="nn-edge" x1="220" y1="60"  x2="160" y2="220"/>
+            <line class="nn-edge" x1="380" y1="100" x2="310" y2="200"/>
+            <line class="nn-edge" x1="500" y1="50"  x2="460" y2="180"/>
+            <!-- Connections layer 2→3 -->
+            <line class="nn-edge" x1="160" y1="220" x2="90"  y2="340"/>
+            <line class="nn-edge" x1="160" y1="220" x2="240" y2="320"/>
+            <line class="nn-edge" x1="310" y1="200" x2="240" y2="320"/>
+            <line class="nn-edge" x1="310" y1="200" x2="400" y2="300"/>
+            <line class="nn-edge" x1="460" y1="180" x2="400" y2="300"/>
+            <line class="nn-edge" x1="460" y1="180" x2="530" y2="360"/>
+            <line class="nn-edge" x1="560" y1="240" x2="530" y2="360"/>
+            <!-- Connections layer 3→4 -->
+            <line class="nn-edge" x1="90"  y1="340" x2="150" y2="460"/>
+            <line class="nn-edge" x1="240" y1="320" x2="150" y2="460"/>
+            <line class="nn-edge" x1="240" y1="320" x2="320" y2="440"/>
+            <line class="nn-edge" x1="400" y1="300" x2="320" y2="440"/>
+            <line class="nn-edge" x1="400" y1="300" x2="480" y2="480"/>
+            <line class="nn-edge" x1="530" y1="360" x2="480" y2="480"/>
+            <line class="nn-edge" x1="530" y1="360" x2="580" y2="420"/>
+            <!-- Connections layer 4→5 -->
+            <line class="nn-edge" x1="150" y1="460" x2="70"  y2="560"/>
+            <line class="nn-edge" x1="150" y1="460" x2="230" y2="580"/>
+            <line class="nn-edge" x1="320" y1="440" x2="230" y2="580"/>
+            <line class="nn-edge" x1="320" y1="440" x2="390" y2="600"/>
+            <line class="nn-edge" x1="480" y1="480" x2="390" y2="600"/>
+            <line class="nn-edge" x1="480" y1="480" x2="520" y2="560"/>
+            <line class="nn-edge" x1="580" y1="420" x2="520" y2="560"/>
+            <!-- Skip connections -->
+            <line class="nn-edge nn-edge--skip" x1="80"  y1="120" x2="160" y2="220"/>
+            <line class="nn-edge nn-edge--skip" x1="460" y1="180" x2="530" y2="360"/>
+            <line class="nn-edge nn-edge--skip" x1="240" y1="320" x2="480" y2="480"/>
+        </svg>
+    </div>
+
+    <div class="hero-main">
         <div class="hero">
             <div class="hero-content">
                 <div class="hero-overline"><span>University of Mons</span></div>
@@ -49,6 +103,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="hero-visual">
                 <div class="hero-cards">
                     <div class="hero-card hero-card--wide">
@@ -58,16 +113,16 @@
                         <div>
                             <div class="stat-label">About the Lab</div>
                             <p class="stat-desc">
-                                We develop intelligent solutions combining theoretical rigor with practical applicability — across networking, computer vision, and data science.
+                                Intelligent solutions combining theoretical rigor with practical applicability — across networking, computer vision, and data science.
                             </p>
                         </div>
                     </div>
                     <div class="hero-card">
-                        <div class="stat-number">8</div>
+                        <div class="stat-number" data-count="8">0</div>
                         <div class="stat-label">Researchers</div>
                     </div>
                     <div class="hero-card">
-                        <div class="stat-number">4</div>
+                        <div class="stat-number" data-count="4">0</div>
                         <div class="stat-label">PhD Students</div>
                     </div>
                 </div>
@@ -75,34 +130,84 @@
         </div>
     </div>
 
-    <!-- Decorative network background -->
-    <div class="network-bg">
-        <svg viewBox="0 0 500 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="120" cy="80" r="4" fill="#8B1538"/><circle cx="280" cy="120" r="6" fill="#8B1538"/>
-            <circle cx="380" cy="60" r="3" fill="#8B1538"/><circle cx="200" cy="200" r="5" fill="#8B1538"/>
-            <circle cx="340" cy="220" r="4" fill="#8B1538"/><circle cx="100" cy="300" r="6" fill="#8B1538"/>
-            <circle cx="260" cy="340" r="3" fill="#8B1538"/><circle cx="420" cy="300" r="5" fill="#8B1538"/>
-            <circle cx="180" cy="440" r="4" fill="#8B1538"/><circle cx="350" cy="480" r="6" fill="#8B1538"/>
-            <circle cx="80" cy="520" r="3" fill="#8B1538"/><circle cx="440" cy="440" r="4" fill="#8B1538"/>
-            <line x1="120" y1="80" x2="280" y2="120" stroke="#8B1538" stroke-width="1"/>
-            <line x1="280" y1="120" x2="380" y2="60" stroke="#8B1538" stroke-width="1"/>
-            <line x1="280" y1="120" x2="200" y2="200" stroke="#8B1538" stroke-width="1"/>
-            <line x1="200" y1="200" x2="340" y2="220" stroke="#8B1538" stroke-width="1"/>
-            <line x1="200" y1="200" x2="100" y2="300" stroke="#8B1538" stroke-width="1"/>
-            <line x1="340" y1="220" x2="420" y2="300" stroke="#8B1538" stroke-width="1"/>
-            <line x1="340" y1="220" x2="260" y2="340" stroke="#8B1538" stroke-width="1"/>
-            <line x1="100" y1="300" x2="260" y2="340" stroke="#8B1538" stroke-width="1"/>
-            <line x1="260" y1="340" x2="180" y2="440" stroke="#8B1538" stroke-width="1"/>
-            <line x1="260" y1="340" x2="350" y2="480" stroke="#8B1538" stroke-width="1"/>
-            <line x1="420" y1="300" x2="440" y2="440" stroke="#8B1538" stroke-width="1"/>
-            <line x1="180" y1="440" x2="80" y2="520" stroke="#8B1538" stroke-width="1"/>
-            <line x1="350" y1="480" x2="440" y2="440" stroke="#8B1538" stroke-width="1"/>
-            <line x1="120" y1="80" x2="200" y2="200" stroke="#8B1538" stroke-width="0.5"/>
-            <line x1="380" y1="60" x2="340" y2="220" stroke="#8B1538" stroke-width="0.5"/>
-            <line x1="100" y1="300" x2="180" y2="440" stroke="#8B1538" stroke-width="0.5"/>
-        </svg>
+    <!-- Ticker -->
+    <div class="ticker-strip">
+        <div class="ticker-track" id="tickerTrack">
+            <span class="ticker-item">Machine Learning</span>
+            <span class="ticker-item">Computer Vision</span>
+            <span class="ticker-item">Network Intelligence</span>
+            <span class="ticker-item">Deep Learning</span>
+            <span class="ticker-item">Data Science</span>
+            <span class="ticker-item">Anomaly Detection</span>
+            <span class="ticker-item">Natural Language Processing</span>
+            <span class="ticker-item">Applied AI</span>
+            <span class="ticker-item">Intelligent Systems</span>
+        </div>
     </div>
 </div>
+
+<!-- ── RESEARCH AREAS ── -->
+<section class="research-areas">
+    <div class="container">
+        <div class="ra-intro">
+            <div class="section-label"><span>Focus Areas</span></div>
+            <h2 class="ra-intro-title">Where we<br>push boundaries</h2>
+            <p class="ra-intro-desc">
+                Three interconnected research domains where fundamental science meets engineering impact.
+            </p>
+        </div>
+
+        <div class="ra-grid">
+            <div class="ra-card" data-ra>
+                <div class="ra-num">01</div>
+                <div class="ra-content">
+                    <div class="ra-title">Network Intelligence</div>
+                    <p class="ra-desc">Real-time anomaly detection and predictive analysis in large-scale network infrastructures using machine learning.</p>
+                    <div class="ra-tags">
+                        <span class="ra-tag">Networking</span>
+                        <span class="ra-tag">ML</span>
+                        <span class="ra-tag">Anomaly Detection</span>
+                    </div>
+                </div>
+                <div class="ra-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+            </div>
+
+            <div class="ra-card" data-ra>
+                <div class="ra-num">02</div>
+                <div class="ra-content">
+                    <div class="ra-title">Computer Vision</div>
+                    <p class="ra-desc">Deep learning techniques for automated visual inspection and structural assessment of civil engineering assets.</p>
+                    <div class="ra-tags">
+                        <span class="ra-tag">Vision</span>
+                        <span class="ra-tag">Deep Learning</span>
+                        <span class="ra-tag">Infrastructure</span>
+                    </div>
+                </div>
+                <div class="ra-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+            </div>
+
+            <div class="ra-card" data-ra>
+                <div class="ra-num">03</div>
+                <div class="ra-content">
+                    <div class="ra-title">Data Science &amp; NLP</div>
+                    <p class="ra-desc">Scalable analytics pipelines and advanced NLP methods for extracting actionable insights from heterogeneous data sources.</p>
+                    <div class="ra-tags">
+                        <span class="ra-tag">Data Science</span>
+                        <span class="ra-tag">NLP</span>
+                        <span class="ra-tag">Transformers</span>
+                    </div>
+                </div>
+                <div class="ra-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ── FOOTER ── -->
 <footer>
@@ -120,6 +225,69 @@
     const navLinks = document.getElementById('navLinks');
     burger.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Animated counters
+    function animateCount(el) {
+        const target = +el.dataset.count;
+        const duration = 1200;
+        const start = performance.now();
+        (function step(now) {
+            const p = Math.min((now - start) / duration, 1);
+            const ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(ease * target);
+            if (p < 1) requestAnimationFrame(step);
+        })(start);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                animateCount(e.target);
+                counterObserver.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+    // ── TICKER (seamless JS-driven) ──
+    (function() {
+        const track = document.getElementById('tickerTrack');
+        // Clone content until it fills 2x the screen width
+        const fill = () => {
+            while (track.scrollWidth < window.innerWidth * 2.5) {
+                track.querySelectorAll('.ticker-item').forEach(el => {
+                    track.appendChild(el.cloneNode(true));
+                });
+            }
+        };
+        fill();
+        let x = 0;
+        const speed = 0.6;
+        const halfW = () => track.scrollWidth / 2;
+        (function step() {
+            x -= speed;
+            if (Math.abs(x) >= halfW()) x = 0;
+            track.style.transform = `translateX(${x}px)`;
+            requestAnimationFrame(step);
+        })();
+    })();
+
+    // Research areas reveal
+    const raObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                const cards = document.querySelectorAll('[data-ra]');
+                cards.forEach((card, idx) => {
+                    setTimeout(() => card.classList.add('visible'), idx * 120);
+                });
+                raObserver.disconnect();
+            }
+        });
+    }, { threshold: 0.1 });
+
+    const firstRa = document.querySelector('[data-ra]');
+    if (firstRa) raObserver.observe(firstRa);
 </script>
 
 </body>
