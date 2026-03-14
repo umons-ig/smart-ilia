@@ -39,15 +39,39 @@
             </p>
         </div>
 
-        <!-- ── Filter bar ── -->
-        <div class="pub-filters">
-            <button class="pub-filter active" data-filter="all">All</button>
-            <button class="pub-filter" data-filter="2026">2026</button>
-            <button class="pub-filter" data-filter="2025">2025</button>
-            <button class="pub-filter" data-filter="2024">2024</button>
-            <button class="pub-filter" data-filter="2023">2023</button>
-            <button class="pub-filter" data-filter="2022">2022</button>
-            <button class="pub-filter" data-filter="older">Older</button>
+        <!-- ── Search bar ── -->
+        <div class="pub-search-wrap">
+            <svg class="pub-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="pubSearch" class="pub-search" placeholder="Search by title, author, or venue...">
+            <span class="pub-search-count" id="pubCount"></span>
+        </div>
+
+        <!-- ── Member filters ── -->
+        <div class="pub-filters-section">
+            <div class="pub-filters-label">Filter by member</div>
+            <div class="pub-filters pub-member-filters" id="memberFilters">
+                <button class="pub-filter pub-filter--member active" data-member="all">All Members</button>
+                <button class="pub-filter pub-filter--member" data-member="530027">S. Mahmoudi</button>
+                <button class="pub-filter pub-filter--member" data-member="530391">S. Mahmoudi (Sidi)</button>
+                <button class="pub-filter pub-filter--member" data-member="530248">M. Benjelloun</button>
+                <button class="pub-filter pub-filter--member" data-member="536798">M. Hani</button>
+                <button class="pub-filter pub-filter--member" data-member="535975">M. Delehouzée</button>
+                <button class="pub-filter pub-filter--member" data-member="536246">T. Vansnick</button>
+            </div>
+        </div>
+
+        <!-- ── Year filters ── -->
+        <div class="pub-filters-section">
+            <div class="pub-filters-label">Filter by year</div>
+            <div class="pub-filters pub-year-filters" id="yearFilters">
+                <button class="pub-filter active" data-filter="all">All Years</button>
+                <button class="pub-filter" data-filter="2026">2026</button>
+                <button class="pub-filter" data-filter="2025">2025</button>
+                <button class="pub-filter" data-filter="2024">2024</button>
+                <button class="pub-filter" data-filter="2023">2023</button>
+                <button class="pub-filter" data-filter="2022">2022</button>
+                <button class="pub-filter" data-filter="older">Older</button>
+            </div>
         </div>
 
         <!-- ══ 2026 ══ -->
@@ -483,6 +507,7 @@
 </footer>
 
 <script>
+    // Nav
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
     const burger = document.getElementById('burger');
@@ -490,21 +515,82 @@
     burger.addEventListener('click', () => navLinks.classList.toggle('open'));
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
-    // Year filter
-    document.querySelectorAll('.pub-filter').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.pub-filter').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const filter = btn.dataset.filter;
-            document.querySelectorAll('.pub-year-group').forEach(group => {
-                if (filter === 'all' || group.dataset.year === filter) {
-                    group.style.display = '';
-                } else {
-                    group.style.display = 'none';
+    // ── Combined filtering engine ──
+    const searchInput = document.getElementById('pubSearch');
+    const countEl = document.getElementById('pubCount');
+    const allItems = document.querySelectorAll('.pub-item');
+    const allGroups = document.querySelectorAll('.pub-year-group');
+
+    let activeYear = 'all';
+    let activeMember = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+        let visible = 0;
+        const q = searchQuery.toLowerCase();
+
+        allGroups.forEach(group => {
+            const yearMatch = activeYear === 'all' || group.dataset.year === activeYear;
+            let groupHasVisible = false;
+
+            group.querySelectorAll('.pub-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                const searchMatch = !q || text.includes(q);
+
+                let memberMatch = true;
+                if (activeMember !== 'all') {
+                    const links = item.querySelectorAll('.pub-member');
+                    memberMatch = Array.from(links).some(a => a.href.includes('uid=' + activeMember));
+                }
+
+                const show = yearMatch && searchMatch && memberMatch;
+                item.style.display = show ? '' : 'none';
+                if (show) {
+                    visible++;
+                    groupHasVisible = true;
+                    item.classList.add('visible');
                 }
             });
+
+            group.style.display = groupHasVisible ? '' : 'none';
+        });
+
+        const total = allItems.length;
+        if (q || activeMember !== 'all' || activeYear !== 'all') {
+            countEl.textContent = visible + ' / ' + total;
+        } else {
+            countEl.textContent = total + ' publications';
+        }
+    }
+
+    // Search
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        applyFilters();
+    });
+
+    // Year filters
+    document.querySelectorAll('#yearFilters .pub-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#yearFilters .pub-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeYear = btn.dataset.filter;
+            applyFilters();
         });
     });
+
+    // Member filters
+    document.querySelectorAll('#memberFilters .pub-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#memberFilters .pub-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeMember = btn.dataset.member;
+            applyFilters();
+        });
+    });
+
+    // Initial count
+    applyFilters();
 
     // Scroll-reveal
     const observer = new IntersectionObserver((entries) => {

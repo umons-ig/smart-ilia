@@ -918,14 +918,80 @@ body::before {
    ══════════════════════════════════════════ */
 .page-publications { background: var(--paper-mid); }
 
+/* ── Search bar ── */
+.pub-search-wrap {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.pub-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: var(--ink-muted);
+    pointer-events: none;
+}
+
+.pub-search {
+    width: 100%;
+    padding: 14px 120px 14px 46px;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--paper-border);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-search::placeholder { color: var(--ink-muted); }
+
+.pub-search:focus {
+    border-color: var(--crimson);
+    box-shadow: 0 0 0 3px var(--crimson-glow);
+}
+
+.pub-search-count {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+}
+
+/* ── Filter sections ── */
+.pub-filters-section {
+    margin-bottom: 1rem;
+}
+
+.pub-filters-section:last-of-type {
+    margin-bottom: clamp(2.5rem, 4vw, 4rem);
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--paper-deep);
+}
+
+.pub-filters-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.6rem;
+}
+
 /* ── Filters ── */
 .pub-filters {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
-    margin-bottom: clamp(2.5rem, 4vw, 4rem);
-    border-bottom: 1px solid var(--paper-deep);
-    padding-bottom: 1.5rem;
 }
 
 .pub-filter {
@@ -952,6 +1018,16 @@ body::before {
     background: var(--crimson);
     color: #fff;
     border-color: var(--crimson);
+}
+
+.pub-filter--member {
+    border-radius: 20px;
+    padding: 6px 14px;
+}
+
+.pub-filter--member.active {
+    background: var(--amber);
+    border-color: var(--amber);
 }
 
 /* ── Year groups ── */
