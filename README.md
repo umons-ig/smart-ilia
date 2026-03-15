@@ -9,20 +9,11 @@ Site web servi via nginx, déployé automatiquement avec Docker + Watchtower.
 
 ## Déploiement sur le serveur
 
-### 1. Créer le fichier `.env`
-
-```bash
-cp .env.example .env
-nano .env  # remplir les valeurs
-```
-
-Le token GitHub doit avoir la permission **`read:packages`** — à générer sur [github.com/settings/tokens](https://github.com/settings/tokens).
-
-### 2. Créer le `compose.yml` sur le serveur
+### 1. Créer le `compose.yml` sur le serveur
 
 Copier le contenu de `compose-prod.yml` dans un fichier `compose.yml` sur le serveur via `nano compose.yml`.
 
-### 3. Lancer les services
+### 2. Lancer les services
 
 ```bash
 sudo docker compose up -d
@@ -30,7 +21,7 @@ sudo docker compose up -d
 
 ### Mise à jour
 
-Les mises à jour sont automatiques. Watchtower vérifie toutes les 30 secondes si une nouvelle image est disponible sur `ghcr.io` et redémarre le conteneur si c'est le cas.
+Les mises à jour sont automatiques. Watchtower vérifie toutes les 5 minutes si une nouvelle image est disponible sur `ghcr.io` et redémarre le conteneur si c'est le cas.
 
 Pour forcer une mise à jour manuelle :
 
