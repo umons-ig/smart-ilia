@@ -914,6 +914,300 @@ body::before {
 }
 
 /* ══════════════════════════════════════════
+   PUBLICATIONS
+   ══════════════════════════════════════════ */
+.page-publications { background: var(--paper-mid); }
+
+/* ── Search bar ── */
+.pub-search-wrap {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.pub-search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: var(--ink-muted);
+    pointer-events: none;
+}
+
+.pub-search {
+    width: 100%;
+    padding: 14px 120px 14px 46px;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--paper-border);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-search::placeholder { color: var(--ink-muted); }
+
+.pub-search:focus {
+    border-color: var(--crimson);
+    box-shadow: 0 0 0 3px var(--crimson-glow);
+}
+
+.pub-search-count {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+}
+
+/* ── Filter sections ── */
+.pub-filters-section {
+    margin-bottom: 1rem;
+}
+
+.pub-filters-section:last-of-type {
+    margin-bottom: clamp(2.5rem, 4vw, 4rem);
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--paper-deep);
+}
+
+.pub-filters-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.6rem;
+}
+
+/* ── Filters ── */
+.pub-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.pub-filter {
+    padding: 7px 16px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--ink-muted);
+    border: 1px solid var(--paper-border);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: var(--sans);
+}
+
+.pub-filter:hover {
+    color: var(--crimson);
+    border-color: var(--crimson);
+    background: var(--crimson-glow);
+}
+
+.pub-filter.active {
+    background: var(--crimson);
+    color: #fff;
+    border-color: var(--crimson);
+}
+
+.pub-filter--member {
+    border-radius: 20px;
+    padding: 6px 14px;
+}
+
+.pub-filter--member.active {
+    background: var(--amber);
+    border-color: var(--amber);
+}
+
+/* ── Year groups ── */
+.pub-year-group { margin-bottom: clamp(2.5rem, 4vw, 4rem); }
+
+.pub-year-label {
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 400;
+    color: var(--ink);
+    opacity: 0.12;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.25rem;
+    line-height: 1;
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--paper-border);
+    border: 1px solid var(--paper-border);
+}
+
+/* ── Publication item ── */
+.pub-item {
+    background: var(--paper);
+    padding: 1.5rem 1.75rem;
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22,1,0.36,1), background 0.3s ease;
+}
+
+.pub-item.visible { opacity: 1; transform: translateY(0); }
+.pub-item:hover { background: #fff; }
+
+.pub-type {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.pub-type--journal {
+    background: var(--amber-glow);
+    color: var(--amber);
+    border: 1px solid rgba(61,107,142,0.2);
+}
+
+.pub-type--conf {
+    background: var(--crimson-glow);
+    color: var(--crimson);
+    border: 1px solid rgba(139,21,56,0.15);
+}
+
+.pub-type--book {
+    background: rgba(90,120,60,0.08);
+    color: #5a783c;
+    border: 1px solid rgba(90,120,60,0.2);
+}
+
+.pub-title {
+    font-family: var(--serif);
+    font-size: 0.98rem;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.45;
+    margin-bottom: 0.45rem;
+    letter-spacing: -0.01em;
+}
+
+.pub-authors {
+    font-size: 0.82rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+}
+
+.pub-member {
+    color: var(--crimson);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.pub-member:hover {
+    color: var(--crimson-deep);
+    text-decoration: underline;
+}
+
+.pub-venue {
+    font-size: 0.74rem;
+    color: var(--ink-muted);
+    font-style: italic;
+    font-family: var(--serif);
+}
+
+/* ── ORBI links section ── */
+.pub-orbi-links {
+    margin-top: clamp(3rem, 5vw, 5rem);
+    padding-top: clamp(2.5rem, 4vw, 4rem);
+    border-top: 1px solid var(--paper-deep);
+}
+
+.pub-orbi-title {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.pub-orbi-title::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: var(--amber);
+    opacity: 0.7;
+}
+
+.pub-orbi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--paper-border);
+    border: 1px solid var(--paper-border);
+}
+
+.pub-orbi-card {
+    background: var(--paper);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.pub-orbi-card:hover { background: #fff; }
+
+.pub-orbi-card svg {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 14px;
+    height: 14px;
+    color: var(--ink-muted);
+    transition: color 0.3s ease;
+}
+
+.pub-orbi-card:hover svg { color: var(--crimson); }
+
+.pub-orbi-name {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    color: var(--ink);
+    font-weight: 400;
+}
+
+.pub-orbi-count {
+    font-size: 0.7rem;
+    color: var(--ink-muted);
+    font-weight: 300;
+}
+
+/* ══════════════════════════════════════════
    FOOTER
    ══════════════════════════════════════════ */
 footer {
@@ -1097,6 +1391,10 @@ footer::before {
     .ticker-item { font-size: 0.6rem; padding: 0 1.25rem; gap: 1.25rem; }
 
     .project-card--featured { padding: 2rem 1.5rem; }
+
+    .pub-item { grid-template-columns: 1fr; gap: 0.75rem; }
+    .pub-type { justify-self: start; }
+    .pub-orbi-grid { grid-template-columns: 1fr; }
 }
 
 /* Small mobile */

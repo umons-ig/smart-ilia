@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications — SMART'ILIA · UMONS</title>
+    <link rel="icon" type="image/png" href="images/mini-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav id="navbar" class="nav-light">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="SMART'ILIA">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+        </ul>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ── PUBLICATIONS ── -->
+<div class="page page-publications">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label"><span>Research Output</span></div>
+            <h1 class="section-title">Publications</h1>
+            <p class="section-subtitle">
+                A selection of recent publications from our lab members.
+                Browse complete lists on individual ORBI profiles.
+            </p>
+        </div>
+
+        <!-- ── Search bar ── -->
+        <div class="pub-search-wrap">
+            <svg class="pub-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="pubSearch" class="pub-search" placeholder="Search by title, author, or venue...">
+            <span class="pub-search-count" id="pubCount"></span>
+        </div>
+
+        <!-- ── Member filters ── -->
+        <div class="pub-filters-section">
+            <div class="pub-filters-label">Filter by member</div>
+            <div class="pub-filters pub-member-filters" id="memberFilters">
+                <button class="pub-filter pub-filter--member active" data-member="all">All Members</button>
+                <button class="pub-filter pub-filter--member" data-member="530027">S. Mahmoudi</button>
+                <button class="pub-filter pub-filter--member" data-member="530391">S. Mahmoudi (Sidi)</button>
+                <button class="pub-filter pub-filter--member" data-member="530248">M. Benjelloun</button>
+                <button class="pub-filter pub-filter--member" data-member="536798">M. Hani</button>
+                <button class="pub-filter pub-filter--member" data-member="535975">M. Delehouzée</button>
+                <button class="pub-filter pub-filter--member" data-member="536246">T. Vansnick</button>
+            </div>
+        </div>
+
+        <!-- ── Year filters ── -->
+        <div class="pub-filters-section">
+            <div class="pub-filters-label">Filter by year</div>
+            <div class="pub-filters pub-year-filters" id="yearFilters">
+                <button class="pub-filter active" data-filter="all">All Years</button>
+                <button class="pub-filter" data-filter="2026">2026</button>
+                <button class="pub-filter" data-filter="2025">2025</button>
+                <button class="pub-filter" data-filter="2024">2024</button>
+                <button class="pub-filter" data-filter="2023">2023</button>
+                <button class="pub-filter" data-filter="2022">2022</button>
+                <button class="pub-filter" data-filter="older">Older</button>
+            </div>
+        </div>
+
+        <!-- ══ 2026 ══ -->
+        <div class="pub-year-group" data-year="2026">
+            <div class="pub-year-label">2026</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Leveraging big data and cloud technology for scalable and interoperable smart farming</h3>
+                        <div class="pub-authors">A. Roukh, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Future Generation Computer Systems</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Moving beyond the empty cell: The threat of decontextualized healthcare data</h3>
+                        <div class="pub-authors">A. El Mir, E. B. de Sousa, I. Mesina-Estarrón, L. A. Celi, <a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a>, N. Nageswaran, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, S. Siddiqui, S. Sadasivam, W. G. Mitchell</div>
+                        <div class="pub-venue">PLOS Digital Health</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ 2025 ══ -->
+        <div class="pub-year-group" data-year="2025">
+            <div class="pub-year-label">2025</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">PRA-Unet: Parallel Residual Attention U-Net for Real-Time Segmentation of Brain Tumors</h3>
+                        <div class="pub-authors">A. Z. Lebani, M. Merati, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Information</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">A Scientometric Analysis of Bias and Fairness in Parkinson's Disease Clinical Assessment Scales</h3>
+                        <div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a>, R. Botta, L. A. Celi, <a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, N. Nageswaran, B. Ong, D. Restrepo, M. Vilardo</div>
+                        <div class="pub-venue">Movement Disorders</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">AHN-BudgetNet: Cost-Aware Multimodal Feature-Acquisition Architecture for Parkinson's Disease Monitoring</h3>
+                        <div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a></div>
+                        <div class="pub-venue">Electronics</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Sustained Cognitive Decline in Multiple Sclerosis: Investigating the Role of White Matter Lesion Load Using an AI-Driven Brain Imaging Approach</h3>
+                        <div class="pub-authors">V. Tota, A. Mehuys, <a href="https://orbi.umons.ac.be/profile?uid=536246" class="pub-member">T. Vansnick</a>, O. Amel, F. Chahbar, L. Mahmoudi, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, G. Briganti, L. Ris, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Psychiatria Danubina</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Secure Federated Learning: Model Compression and Inverse Distillation</h3>
+                        <div class="pub-authors">X. Lessage, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=535975" class="pub-member">M. Delehouzée</a>, <a href="https://orbi.umons.ac.be/profile?uid=536246" class="pub-member">T. Vansnick</a>, <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a>, L. Collier, M. Rotulo</div>
+                        <div class="pub-venue">International Conference in Optimization and Learning (OLA 2025)</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">An Efficient Explainability of Deep Models on Medical Images</h3>
+                        <div class="pub-authors">S. Khiat, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, S. Stassin, L. Boukerroui, B. Senaï, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Algorithms</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Enhancing fetal ultrasound image quality and anatomical plane recognition in low-resource settings using super-resolution models</h3>
+                        <div class="pub-authors">H. Boumeridja, M. Ammar, M. Alzubaidi, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, L. N. Benamer, M. Agus, M. Househ, K. Lekadir, M. El Habib Daho</div>
+                        <div class="pub-venue">Scientific Reports</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Enhancing Remote Sensing Vision-Language Models for Zero-Shot Scene Classification</h3>
+                        <div class="pub-authors">K. El Khoury, M. Zanella, B. Gérin, T. Godelaine, B. Macq, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, C. De Vleeschouwer, I. B. Ayed</div>
+                        <div class="pub-venue">IEEE ICASSP 2025</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Image Processing with Deep-Learning and Transfer Learning for Cutting Tool Degradation Monitoring</h3>
+                        <div class="pub-authors">L. Colantonio, L. Equeter, H. Giovannelli, P. Dehombreux, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, F. Ducobu</div>
+                        <div class="pub-venue">13th CIRP Global Web Conference (CIRPe 2025)</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">SemChain: A Blockchain-based Semantic Discovery on Distributed Resource Directories for the IoT</h3>
+                        <div class="pub-authors">K. Zaghouani, B. Djamaa, A. Yachir, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Internet of Things</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Physically Interpretable Probabilistic Domain Characterization</h3>
+                        <div class="pub-authors">A. S. Halin, S. B. Piérard, R. Vandeghen, B. T. Gérin, M. Zanella, M. Colot, J. Held, A. Cioppa, E. Jean, G. Bontempi, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, B. T. Macq, M. Van Droogenbroeck</div>
+                        <div class="pub-venue">Lecture Notes in Computer Science</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ 2024 ══ -->
+        <div class="pub-year-group" data-year="2024">
+            <div class="pub-year-label">2024</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">MPB-UNet: Multi-Parallel Blocks UNet for MRI Automated Brain Tumor Segmentation</h3>
+                        <div class="pub-authors">F. Chahbar, M. Merati, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Electronics</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">DDANF: Deep Denoising Autoencoder Normalizing Flow for Unsupervised Multivariate Time Series Anomaly Detection</h3>
+                        <div class="pub-authors">X. Zhao, P. Liu, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, S. Garg, G. Kaddoum, M. M. Hassan</div>
+                        <div class="pub-venue">Alexandria Engineering Journal</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Deep Learning Models for Coronary Atherosclerosis Detection in Coronary CT Angiography</h3>
+                        <div class="pub-authors">A. Laidi, M. Ammar, M. E. H. Daho, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Current Medical Imaging Reviews</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Evaluation of Federated Learning Aggregation Algorithms</h3>
+                        <div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=535975" class="pub-member">M. Delehouzée</a>, X. Lessage, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">IEEE EDiS 2024</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Secure Federated Learning Applied to Medical Imaging with Fully Homomorphic Encryption</h3>
+                        <div class="pub-authors">X. Lessage, L. Collier, C.-H. B. Van Ouytsel, A. Legay, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, P. Massonet</div>
+                        <div class="pub-venue">IEEE ICAIC 2024</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Stepwise and Cost-Aware Feature Selection for Multiclass-Classification of Neurodegenerative Diseases</h3>
+                        <div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a></div>
+                        <div class="pub-venue">Mardi des Chercheurs 2024</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Enhancing Brain Segmentation in MRI through Integration of Hidden Markov Random Field Model and Whale Optimization Algorithm</h3>
+                        <div class="pub-authors">A. Daoudi, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Computers</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--conf">Conference</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Exploring Viability of Test-Time Training: Application to 3D Segmentation in Multiple Sclerosis</h3>
+                        <div class="pub-authors">B. Gérin, M. Zanella, M. Wynen, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, B. Macq, C. De Vleeschouwer</div>
+                        <div class="pub-venue">IEEE Conference on Artificial Intelligence (CAI 2024)</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ 2023 ══ -->
+        <div class="pub-year-group" data-year="2023">
+            <div class="pub-year-label">2023</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">GAN Data Augmentation for Improved Automated Atherosclerosis Screening from Coronary CT Angiography</h3>
+                        <div class="pub-authors">A. Laidi, M. Ammar, M. Daho, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">EAI Endorsed Transactions on Scalable Information Systems</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Mixture Domain Adaptation to Improve Semantic Segmentation in Real-World Surveillance</h3>
+                        <div class="pub-authors">S. B. Piérard, A. Cioppa, A. S. Halin, R. Vandeghen, M. Zanella, B. T. Macq, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, M. Van Droogenbroeck</div>
+                        <div class="pub-venue">IEEE Access</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">A Machine Learning Model for Improving Virtual Machine Migration in Cloud Computing</h3>
+                        <div class="pub-authors">A. Belgacem, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, M. A. Ferrag</div>
+                        <div class="pub-venue">Journal of Supercomputing</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Toward an Automatic Detection of Cardiac Structures in Short and Long Axis Views</h3>
+                        <div class="pub-authors">L. Amel, M. Ammar, M. E. H. Daho, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Biomedical Signal Processing and Control</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Literature Review: Clinical Data Interoperability Models</h3>
+                        <div class="pub-authors">R. Ait Abdelouahid, O. Debauche, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, A. Marzak</div>
+                        <div class="pub-venue">Information</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Single Node Deep Learning Frameworks: Comparative Study and CPU/GPU Performance Analysis</h3>
+                        <div class="pub-authors">J.-S. Lerat, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Concurrency and Computation: Practice and Experience</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ 2022 ══ -->
+        <div class="pub-year-group" data-year="2022">
+            <div class="pub-year-label">2022</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">RAMi: A New Real-Time Internet of Medical Things Architecture for Elderly Patient Monitoring</h3>
+                        <div class="pub-authors">O. Debauche, J. B. Nkamla Penka, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, X. Lessage, <a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, P. Manneback</div>
+                        <div class="pub-venue">Information</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Distributed Deep Learning: From Single-Node to Multi-Node Architecture</h3>
+                        <div class="pub-authors">J.-S. Lerat, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">Electronics</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Deep Convolutional Neural Networks (CNN) for Lesions Localization in Mammograms</h3>
+                        <div class="pub-authors">X. Lessage, H. Benzaouia, S. Murgo, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, Z. Guessoum</div>
+                        <div class="pub-venue">International Journal of Computer Assisted Radiology and Surgery</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">An Optimized Kappa Architecture for IoT Data Management in Smart Farming</h3>
+                        <div class="pub-authors">J. B. Nkamla Penka, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, O. Debauche</div>
+                        <div class="pub-venue">International Journal of Ubiquitous Systems and Pervasive Networks</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">A New Comparative Study of Dimensionality Reduction Methods in Large-Scale Image Retrieval</h3>
+                        <div class="pub-authors">M. A. Belarbi, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, G. Belalem, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, A. Cools</div>
+                        <div class="pub-venue">Big Data and Cognitive Computing</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ══ Older ══ -->
+        <div class="pub-year-group" data-year="older">
+            <div class="pub-year-label">2021</div>
+            <div class="pub-list">
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Cloud and Distributed Architectures for Data Management in Agriculture 4.0: Review and Future Trends</h3>
+                        <div class="pub-authors">O. Debauche, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, P. Manneback, F. Lebeau</div>
+                        <div class="pub-venue">Journal of King Saud University - Computer and Information Sciences</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--book">Book</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Intelligent Healthcare Informatics for Fighting the COVID-19 and Other Pandemics and Epidemics</h3>
+                        <div class="pub-authors">L. Garg, C. Chakraborty, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, V. S. Sohmen (Eds.)</div>
+                        <div class="pub-venue">Springer</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Breast Cancer Detection in Digital Mammography with CNN: Retrospective Study in Belgium</h3>
+                        <div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, X. Lessage, F. Giudice, S. Murgo, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a></div>
+                        <div class="pub-venue">International Journal of Computer Assisted Radiology and Surgery</div>
+                    </div>
+                </div>
+
+                <div class="pub-item" data-anim>
+                    <div class="pub-type pub-type--journal">Journal</div>
+                    <div class="pub-body">
+                        <h3 class="pub-title">Data Management and Internet of Things: A Methodological Review in Smart Farming</h3>
+                        <div class="pub-authors">O. Debauche, J.-P. Trani, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">S. Mahmoudi</a>, P. Manneback, J. Bindelle, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">S. Mahmoudi</a>, A. Guttadauria, F. Lebeau</div>
+                        <div class="pub-venue">Internet of Things</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ── ORBI links ── -->
+        <div class="pub-orbi-links">
+            <div class="pub-orbi-title">Complete publication lists on ORBI</div>
+            <div class="pub-orbi-grid">
+                <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Saïd Mahmoudi</span>
+                    <span class="pub-orbi-count">313 publications</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Sidi Mahmoudi</span>
+                    <span class="pub-orbi-count">248 publications</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Mohammed Benjelloun</span>
+                    <span class="pub-orbi-count">168 publications</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Moad Hani</span>
+                    <span class="pub-orbi-count">View profile</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://orbi.umons.ac.be/profile?uid=535975" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Mathis Delehouzée</span>
+                    <span class="pub-orbi-count">View profile</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://orbi.umons.ac.be/profile?uid=536246" class="pub-orbi-card" target="_blank" rel="noopener">
+                    <span class="pub-orbi-name">Tanguy Vansnick</span>
+                    <span class="pub-orbi-count">View profile</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="images/logo.png" alt="SMART'ILIA" class="footer-logo-img">
+            <p class="footer-tagline">Intelligent Systems &amp; Applied Research</p>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+        </nav>
+        <div class="footer-info">
+            <div class="footer-uni">University of Mons</div>
+            <div class="footer-faculty">Faculty of Engineering</div>
+            <div class="footer-copy">&copy; 2025 SMART'ILIA Lab</div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Nav
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // ── Combined filtering engine ──
+    const searchInput = document.getElementById('pubSearch');
+    const countEl = document.getElementById('pubCount');
+    const allItems = document.querySelectorAll('.pub-item');
+    const allGroups = document.querySelectorAll('.pub-year-group');
+
+    let activeYear = 'all';
+    let activeMember = 'all';
+    let searchQuery = '';
+
+    function applyFilters() {
+        let visible = 0;
+        const q = searchQuery.toLowerCase();
+
+        allGroups.forEach(group => {
+            const yearMatch = activeYear === 'all' || group.dataset.year === activeYear;
+            let groupHasVisible = false;
+
+            group.querySelectorAll('.pub-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                const searchMatch = !q || text.includes(q);
+
+                let memberMatch = true;
+                if (activeMember !== 'all') {
+                    const links = item.querySelectorAll('.pub-member');
+                    memberMatch = Array.from(links).some(a => a.href.includes('uid=' + activeMember));
+                }
+
+                const show = yearMatch && searchMatch && memberMatch;
+                item.style.display = show ? '' : 'none';
+                if (show) {
+                    visible++;
+                    groupHasVisible = true;
+                    item.classList.add('visible');
+                }
+            });
+
+            group.style.display = groupHasVisible ? '' : 'none';
+        });
+
+        const total = allItems.length;
+        if (q || activeMember !== 'all' || activeYear !== 'all') {
+            countEl.textContent = visible + ' / ' + total;
+        } else {
+            countEl.textContent = total + ' publications';
+        }
+    }
+
+    // Search
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        applyFilters();
+    });
+
+    // Year filters
+    document.querySelectorAll('#yearFilters .pub-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#yearFilters .pub-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeYear = btn.dataset.filter;
+            applyFilters();
+        });
+    });
+
+    // Member filters
+    document.querySelectorAll('#memberFilters .pub-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#memberFilters .pub-filter').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeMember = btn.dataset.member;
+            applyFilters();
+        });
+    });
+
+    // Initial count
+    applyFilters();
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.05 });
+
+    document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
