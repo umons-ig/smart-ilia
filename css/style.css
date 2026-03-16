@@ -334,33 +334,48 @@ body::before {
 
 .hero-overline::before {
     content: '';
-    width: 24px;
-    height: 1px;
+    width: 32px;
+    height: 2px;
     background: var(--steel);
 }
 
 .hero-title {
     font-family: var(--heading);
-    font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+    font-size: clamp(3.5rem, 7vw, 6.5rem);
     font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: -0.03em;
-    margin-bottom: 1.75rem;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
     color: var(--ink);
 }
 
 .hero-title em {
     font-style: italic;
     color: var(--crimson);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+}
+
+.hero-acronym {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--crimson);
+    margin-bottom: 2.5rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--crimson);
+    display: inline-block;
 }
 
 .hero-desc {
-    font-size: 1.08rem;
-    color: var(--ink-mid);
-    max-width: 460px;
-    line-height: 1.85;
-    font-weight: 300;
+    font-size: 1.15rem;
+    color: var(--ink);
+    max-width: 480px;
+    line-height: 1.75;
+    font-weight: 400;
     margin-bottom: 2.75rem;
+    opacity: 0.7;
 }
 
 .hero-actions {
@@ -375,7 +390,7 @@ body::before {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 14px 28px;
+    padding: 16px 32px;
     background: var(--crimson);
     color: #fff;
     text-decoration: none;
@@ -408,7 +423,7 @@ body::before {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 13px 22px;
+    padding: 15px 28px;
     background: transparent;
     color: var(--ink-mid);
     text-decoration: none;
@@ -512,9 +527,9 @@ body::before {
 .network-bg {
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 4%;
     transform: translateY(-50%);
-    width: 42%;
+    width: 48%;
     pointer-events: none;
     z-index: 0;
     display: flex;
@@ -525,7 +540,8 @@ body::before {
 .hero-bg-logo {
     width: 100%;
     height: auto;
-    opacity: 0.12;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
 }
 
 /* ── Ticker strip ── */
@@ -590,18 +606,15 @@ body::before {
 }
 
 .ra-intro-desc {
-    font-size: 0.92rem;
+    font-size: 1rem;
     color: var(--ink-mid);
     line-height: 1.8;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .ra-grid {
-    border: 1px solid var(--paper-deep);
-    background: var(--paper-border);
     display: flex;
     flex-direction: column;
-    gap: 1px;
 }
 
 .ra-card {
@@ -614,6 +627,11 @@ body::before {
     opacity: 0;
     transform: translateX(-16px);
     transition: background 0.3s ease, opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,1,0.36,1);
+    border-bottom: 1px solid var(--paper-deep);
+}
+
+.ra-card:last-child {
+    border-bottom: none;
 }
 
 .ra-card.visible { opacity: 1; transform: translateX(0); }
@@ -630,7 +648,7 @@ body::before {
 
 .ra-title {
     font-family: var(--heading);
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--ink);
     margin-bottom: 0.5rem;
@@ -740,11 +758,11 @@ body::before {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1px;
-    background: var(--paper-border);
 }
 
 .team-card {
     background: var(--paper);
+    border: 1px solid var(--paper-border);
     padding: 2.25rem 1.75rem;
     display: flex;
     flex-direction: column;
@@ -825,11 +843,11 @@ body::before {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1px;
-    background: var(--paper-border);
 }
 
 .project-card {
     background: var(--paper-mid);
+    border: 1px solid var(--paper-border);
     padding: clamp(2rem, 3vw, 3rem) clamp(1.75rem, 3vw, 2.75rem);
     position: relative;
     overflow: hidden;
@@ -1349,7 +1367,7 @@ footer::before {
     .hero { grid-template-columns: 1fr; gap: 3.5rem; }
     .hero-visual { order: -1; }
     .hero-cards { max-width: 500px; }
-    .hero-title { font-size: clamp(2.6rem, 6vw, 4rem); }
+    .hero-title { font-size: clamp(3rem, 7vw, 5rem); }
 
     .projects-grid { grid-template-columns: 1fr; }
     .project-card--featured { grid-template-columns: 1fr; gap: 0; }
@@ -1414,7 +1432,7 @@ footer::before {
 
 /* Large mobile */
 @media (max-width: 560px) {
-    .hero-title { font-size: clamp(2.2rem, 8vw, 3rem); }
+    .hero-title { font-size: clamp(2.8rem, 10vw, 4rem); }
     .team-grid { grid-template-columns: 1fr; }
     .hero-cards { gap: 1px; }
     .ticker-item { font-size: 0.6rem; padding: 0 1.25rem; gap: 1.25rem; }
