@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research projects at SMART'ILIA — intelligent network monitoring, computer vision, data analytics, and NLP at the University of Mons.">
     <title>Projects — SMART'ILIA · UMONS</title>
     <link rel="icon" type="image/png" href="images/mini-logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ── NAVIGATION ── -->
 <nav id="navbar" class="nav-light">
@@ -21,13 +27,14 @@
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="publications.html">Publications</a></li>
         </ul>
-        <button class="nav-burger" id="burger" aria-label="Menu">
+        <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 
 <!-- ── PROJECTS ── -->
+<main id="main">
 <div class="page">
     <div class="container">
         <div class="section-header">
@@ -38,23 +45,27 @@
             </p>
         </div>
 
+        <!-- ══ Current Projects ══ -->
+        <div class="team-group-label">Current Projects</div>
+
         <div class="projects-grid">
             <div class="project-card project-card--featured" data-anim>
                 <div class="project-header">
                     <div class="project-number">01</div>
                     <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
                     </div>
                 </div>
                 <div class="project-body">
-                    <h3 class="project-title">Intelligent Network Monitoring</h3>
+                    <h3 class="project-title">WalleSmart</h3>
                     <p class="project-desc">
-                        Developing machine learning models for real-time anomaly detection and predictive analysis in large-scale network infrastructures. Our approach combines unsupervised learning with domain-specific heuristics to achieve low false-positive rates in production environments.
+                        A cloud-based smart farming platform deployed in Wallonia, Belgium. Built on a scalable Lambda architecture combining Apache Kafka Streams and Apache Spark, WalleSmart integrates IoT sensors, satellite imagery, and weather data. Validated across 30 farms and 32 weather stations, it includes decision support tools such as SALVE (veterinary alerting), W@llHerbe (satellite-based pasture monitoring), and DigiMilk (dairy sustainability tracking). Funded by the Walloon Region and led by Elevéo.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Networking</span>
-                        <span class="project-tag">Machine Learning</span>
-                        <span class="project-tag">Anomaly Detection</span>
+                        <span class="project-tag">Smart Farming</span>
+                        <span class="project-tag">IoT</span>
+                        <span class="project-tag">Big Data</span>
+                        <span class="project-tag">2018–2026</span>
                     </div>
                 </div>
             </div>
@@ -63,17 +74,18 @@
                 <div class="project-header">
                     <div class="project-number">02</div>
                     <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
                 </div>
-                <h3 class="project-title">Computer Vision for Infrastructure</h3>
+                <h3 class="project-title">AI4BRAIN</h3>
                 <p class="project-desc">
-                    Applying deep learning techniques to automate visual inspection and structural assessment of civil engineering assets.
+                    Research project integrating AI tools for statistical analysis, data classification, prediction, and numerical modelling into the care pathway of patients with chronic psychiatric disorders or degenerative neurological diseases, primarily Alzheimer's. Funded by FEDER Wallonie.
                 </p>
                 <div class="project-tags">
-                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Medical AI</span>
+                    <span class="project-tag">Neuroimaging</span>
                     <span class="project-tag">Deep Learning</span>
-                    <span class="project-tag">Infrastructure</span>
+                    <span class="project-tag">2023–2026</span>
                 </div>
             </div>
 
@@ -81,17 +93,17 @@
                 <div class="project-header">
                     <div class="project-number">03</div>
                     <div class="project-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.27 6.96 8.73 5.05 8.73-5.05M12 22.08V12"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                 </div>
-                <h3 class="project-title">Smart Data Analytics</h3>
+                <h3 class="project-title">ARIAC</h3>
                 <p class="project-desc">
-                    Building scalable data pipelines and intelligent analytics tools for extracting actionable insights from heterogeneous data sources.
+                    Application and Research in Confidence AI, part of the DigitalWallonia4.ai initiative. Focused on developing trustworthy and explainable AI systems for real-world deployment. Funded by the Walloon Region.
                 </p>
                 <div class="project-tags">
-                    <span class="project-tag">Data Science</span>
-                    <span class="project-tag">Analytics</span>
-                    <span class="project-tag">AI</span>
+                    <span class="project-tag">Trustworthy AI</span>
+                    <span class="project-tag">Explainability</span>
+                    <span class="project-tag">2021–2026</span>
                 </div>
             </div>
 
@@ -99,22 +111,136 @@
                 <div class="project-header">
                     <div class="project-number">04</div>
                     <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">TSV — Track Centry Vision</h3>
+                <p class="project-desc">
+                    Computer vision project for automated tracking and monitoring systems. Funded by the Walloon Region.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Tracking</span>
+                    <span class="project-tag">2025–2028</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number">05</div>
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">SiTies — Secure IoT for Smart Cities</h3>
+                <p class="project-desc">
+                    International collaboration with Poznan University of Technology (Poland), University of Nis (Serbia), and Universiapolis (Morocco) on securing IoT infrastructure for smart city applications. Funded by NATO Science for Peace and Security programme.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">IoT Security</span>
+                    <span class="project-tag">Smart Cities</span>
+                    <span class="project-tag">NATO</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number">06</div>
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">ROAD-STEP</h3>
+                <p class="project-desc">
+                    Decision Support System Network for herd supervision in grasslands. Strengthens pasture-based livestock farming in Wallonia through remote monitoring tools based on electronic identification of cattle. Funded by the Walloon Region.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Agriculture</span>
+                    <span class="project-tag">Decision Support</span>
+                    <span class="project-tag">2018–2024</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ Past Projects ══ -->
+        <div class="team-group-label" style="margin-top: clamp(3rem, 5vw, 5rem);">Past Projects</div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number"></div>
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.27 6.96 8.73 5.05 8.73-5.05M12 22.08V12"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">FEDER-IDEES</h3>
+                <p class="project-desc">
+                    Core technologies in cloud computing, big data, and IoT, fostering scalable, secure infrastructures for next-generation digital services. Explored cybersecurity, autonomous systems, and distributed data processing.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Cloud</span>
+                    <span class="project-tag">Big Data</span>
+                    <span class="project-tag">2015–2021</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number"></div>
+                    <div class="project-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     </div>
                 </div>
-                <h3 class="project-title">Natural Language Processing</h3>
+                <h3 class="project-title">IMOTION (Chist-Era)</h3>
                 <p class="project-desc">
-                    Researching advanced NLP methods for information extraction, text understanding, and multilingual document processing.
+                    Intelligent Multimodal Augmented TV Motion Retrieval Systems for content-based video search and interaction.
                 </p>
                 <div class="project-tags">
-                    <span class="project-tag">NLP</span>
-                    <span class="project-tag">Text Mining</span>
-                    <span class="project-tag">Transformers</span>
+                    <span class="project-tag">Multimedia</span>
+                    <span class="project-tag">Retrieval</span>
+                    <span class="project-tag">2013–2016</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number"></div>
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">ARC OLIMP</h3>
+                <p class="project-desc">
+                    Optimization for Live Interactive Multimedia Processing — software and hardware tools for real-time multimedia processing on highly parallel architectures (GPUs, FPGAs).
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">GPU Computing</span>
+                    <span class="project-tag">Real-time</span>
+                    <span class="project-tag">2008–2013</span>
+                </div>
+            </div>
+
+            <div class="project-card" data-anim>
+                <div class="project-header">
+                    <div class="project-number"></div>
+                    <div class="project-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                    </div>
+                </div>
+                <h3 class="project-title">FEDER-TIC</h3>
+                <p class="project-desc">
+                    Porting Software on Parallel Processors — research on parallel computing techniques for scientific and industrial applications in Wallonia.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Parallel Computing</span>
+                    <span class="project-tag">HPC</span>
+                    <span class="project-tag">2010–2014</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
+</main>
 
 <!-- ── FOOTER ── -->
 <footer>
@@ -132,7 +258,7 @@
         <div class="footer-info">
             <div class="footer-uni">University of Mons</div>
             <div class="footer-faculty">Faculty of Engineering</div>
-            <div class="footer-copy">&copy; 2025 SMART'ILIA Lab</div>
+            <div class="footer-copy">&copy; 2026 SMART'ILIA Lab</div>
         </div>
     </div>
 </footer>
@@ -142,7 +268,10 @@
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
     const burger = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
     navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
 
     // Staggered scroll-reveal
