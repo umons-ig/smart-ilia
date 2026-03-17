@@ -932,6 +932,30 @@ body::before {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
+.project-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.35em;
+}
+.project-title a:hover { color: var(--crimson); }
+
+.project-title .external-icon {
+    width: 0.65em;
+    height: 0.65em;
+    color: var(--ink-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+    flex-shrink: 0;
+    position: relative;
+    top: -0.05em;
+}
+.project-title a:hover .external-icon {
+    color: var(--crimson);
+    transform: translate(2px, -2px);
+}
+
 .project-desc {
     font-size: 0.95rem;
     color: var(--ink-mid);
