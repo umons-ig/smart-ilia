@@ -306,7 +306,7 @@ footer::before { display:none; }
   .team-photo,.team-placeholder { width:72px; height:72px; }
   .team-photo-wrap,.team-placeholder { margin-bottom:0; }
   .team-initials { font-size:26px; }
-  .team-heading .team-name { margin-bottom:6px; line-height:1.4; }
+  .team-heading .team-name { margin-bottom:6px; line-height:1.4; overflow-wrap:anywhere; }
   .team-heading .team-role { margin:0; }
   .team-focus { margin:14px 0 8px; font-size:16px; }
   .team-links { gap:0 16px; padding-top:0; }
