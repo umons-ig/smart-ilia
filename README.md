@@ -54,3 +54,11 @@ python3 scripts/render-research-pages.py
 Les résumés distinguent contributions documentées, objectifs et publications liées au sujet. Les rôles de laboratoire suivent le catalogue existant ; le titre universitaire de Quentin De Coninck et les noms Hani, Chahbar et Jean Bertin Nkamla Penka ont été corrigés à partir de sources primaires. Les spécialités d’Edmond-Prosper Souapiébé et de Claude-Olivier Batungwanayo restent à renseigner par le laboratoire ; elles ne sont pas déduites. Les portraits existants sont conservés, et les profils sans photo utilisent des initiales.
 
 Les quatre pages déclarent une URL canonique sur `https://smartilia.com/` et des métadonnées Open Graph avec `images/smartilia-social-v1.png` (1200 × 627 px). La source éditable se trouve dans `illustrations/smartilia-social.svg`. Le PNG utilise le logo original, Montserrat et Source Sans 3. Lors d’une nouvelle image, changer son nom et les métadonnées pour éviter un ancien aperçu en cache. Aucun build frontend n’est requis : l’image exportée est servie directement.
+
+## Homepage research resources
+
+`data/research-resources.json` maintains a curated research visual and two institutional/partner articles, rendered with `python3 scripts/render-research-resources.py`. The article dates and links to associated projects are visible. French resources are marked FR. The homepage selection remains static and does not claim to be a live news feed.
+
+`images/mpb-unet-figure7.png` is the complete Figure 7 from Chahbar, Merati & Mahmoudi, MPB-UNet, Electronics 14(1), 40, DOI 10.3390/electronics14010040 (published 26 December 2024). The unmodified image is reused under CC BY 4.0, with visible credit, paper and licence links. The original figure URL, dimensions and licence are recorded in the data file. It shows published test examples; it is not evidence of additional clinical validation.
+
+The obsolete CRA-W event link for WALLeSmart was replaced with the current platform article describing Mon Parcellaire.

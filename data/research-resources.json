@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-10-12",
+  "note": "A curated selection of published research and institutional or partner resources. Dates identify publication dates or the documented event, not an automatic news feed.",
+  "feature": {
+    "id": "mpb-unet",
+    "category": "Published research · Medical imaging",
+    "title": "Brain tumour segmentation, in images",
+    "summary": "MPB-UNet compares predicted tumour boundaries with reference masks on brain MRI. Explore the method and test examples published by Fatma Chahbar, Medjeded Merati and Saïd Mahmoudi.",
+    "url": "https://orbi.umons.ac.be/handle/20.500.12907/51494",
+    "link_label": "Read the open-access paper",
+    "published_at": "2024-12-26",
+    "date_label": "26 December 2024 · Electronics 14(1)",
+    "image": "images/mpb-unet-figure7.png",
+    "image_width": 3739,
+    "image_height": 2912,
+    "image_alt": "Published comparison of six MRI test examples: input images, reference tumour masks and predictions by UNet variants, including MPB-UNet.",
+    "image_source": "https://pub.mdpi-res.com/electronics/electronics-14-00040/article_deploy/html/images/electronics-14-00040-g007.png",
+    "image_credit": "Fig. 7 · Chahbar, Merati & Mahmoudi",
+    "image_license": "CC BY 4.0",
+    "image_license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "image_changes": "None; the complete published figure is displayed without cropping.",
+    "sources": [
+      "https://orbi.umons.ac.be/handle/20.500.12907/51494",
+      "https://orbi.umons.ac.be/bitstream/20.500.12907/51494/1/Chahbar-%20Electronics-14-00040%29.pdf",
+      "https://www.ai4brain.be/pubblications"
+    ]
+  },
+  "articles": [
+    {
+      "id": "wallesmart-mon-parcellaire",
+      "category": "Platform update · WALLeSmart",
+      "title": "Managing farm parcels through WALLeSmart",
+      "summary": "Mon Parcellaire, developed by CRA-W, brings map-based parcel creation and monitoring to WALLeSmart. The platform article explains the tool and how parcel information can be shared with connected applications.",
+      "url": "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15",
+      "link_label": "Read the platform update",
+      "date": "2026-05-08",
+      "date_label": "8 May 2026",
+      "language": "fr",
+      "project_url": "projects.html#smart-farming",
+      "project_label": "WALLeSmart project",
+      "sources": [
+        "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15"
+      ]
+    },
+    {
+      "id": "umons-alzheimer-ai4brain",
+      "category": "Institutional feature · UMONS",
+      "title": "Alzheimer’s research across disciplines",
+      "summary": "UMONS presents its work on Alzheimer’s, including AI4Brain and Saïd Mahmoudi’s contribution to data analysis and modelling alongside neuroscience and clinical partners.",
+      "url": "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/",
+      "link_label": "Read the UMONS article",
+      "date": "2026-03-11",
+      "date_label": "11 March 2026",
+      "language": "fr",
+      "project_url": "projects.html#medical-ai",
+      "project_label": "AI4Brain project",
+      "sources": [
+        "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
+      ]
+    }
+  ]
+}

@@ -5,12 +5,12 @@
       "name": "WalleSmart",
       "status": "Operational platform",
       "period_label": "Research started in 2018",
-      "source_url": "https://www.cra.wallonie.be/fr/comprendre-la-plateforme-wallesmart-son-fonctionnement-et-son-potentiel",
+      "source_url": "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15",
       "sources": [
-        "https://www.cra.wallonie.be/fr/comprendre-la-plateforme-wallesmart-son-fonctionnement-et-son-potentiel",
+        "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15",
         "https://walakis.be/system/files/2026-01/WALLeSmart%20-%20Rapport%20de%20synth%C3%A8se.pdf"
       ],
-      "verification": "The platform is operational in 2026. The WALLeSmart 4 research phase ran from 1 April 2023 to 15 October 2025. Platform operation and research funding are distinct."
+      "verification": "The platform is operational in 2026. The WALLeSmart 4 research phase ran from 1 April 2023 to 15 October 2025. Platform operation and research funding are distinct. The former CRA-W event link now returns an obsolete-event page; the active May 2026 platform article documents operational applications."
     },
     {
       "name": "AI4BRAIN",

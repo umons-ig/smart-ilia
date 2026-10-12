@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="css/style.css?v=4">
-  <link rel="stylesheet" href="css/refresh.css?v=5">
+  <link rel="stylesheet" href="css/refresh.css?v=6">
   <script src="js/site.js" defer></script>
   <link rel="canonical" href="https://smartilia.com/">
   <meta property="og:type" content="website">
@@ -103,15 +103,31 @@
       <p class="source-note">Selection verified against <a href="https://opendata.umons.ac.be/fr/publications/services/html/F114.html">UMONS / ORBI records</a> on <time datetime="2026-10-12">12 October 2026</time>.</p>
     </div>
   </section>
-  <section class="home-section project-section" aria-labelledby="projects-title">
+  <section class="home-section project-section" id="resources" aria-labelledby="resources-title">
     <div class="container">
-      <div class="section-head"><div><p class="eyebrow">Research in practice</p><h2 id="projects-title">Questions. Methods. Applications<span class="heading-dot">.</span></h2></div><a href="projects.html" class="action-text">Explore all projects <span aria-hidden="true">↗</span></a></div>
-      <div class="focus-grid">
-        <article class="focus-card"><a href="projects.html#medical-ai" class="focus-art"><img src="illustrations/medical-ai.svg" alt="MRI and clinical data combined through multimodal learning." width="520" height="290" loading="lazy"></a><div class="focus-body"><p class="eyebrow">Health · AI4BRAIN</p><h3>Understanding brain disease</h3><p>Medical imaging and machine learning for research into neurological and psychiatric disorders.</p><a href="projects.html#medical-ai" class="action-text">Discover the research <span aria-hidden="true">↗</span></a></div></article>
-        <article class="focus-card"><a href="projects.html#smart-farming" class="focus-art"><img src="illustrations/agriculture.svg" alt="Connected field data flowing into the WalleSmart platform." width="520" height="290" loading="lazy"></a><div class="focus-body"><p class="eyebrow">Agriculture · WalleSmart</p><h3>Data that connects the farm</h3><p>A cloud platform bringing field sensors, satellite imagery and weather data together for smart farming.</p><a href="projects.html#smart-farming" class="action-text">Discover the platform <span aria-hidden="true">↗</span></a></div></article>
-        <article class="focus-card"><a href="https://orbi.umons.ac.be/handle/20.500.12907/55901" class="focus-art"><img src="illustrations/secure-learning.svg" alt="Local models connected through protected exchanges." width="520" height="290" loading="lazy"></a><div class="focus-body"><p class="eyebrow">Security · SecureBFL</p><h3>Collaborative, protected learning</h3><p>Decentralised federated learning with blockchain and multi-party computation for model exchanges.</p><a href="https://orbi.umons.ac.be/handle/20.500.12907/55901" class="action-text">Read the research <span aria-hidden="true">↗</span></a></div></article>
-      </div>
-      <p class="source-note">Diagrams illustrate research approaches; they are not experimental results.</p>
+      <div class="section-head"><div><p class="eyebrow">Research in practice</p><h2 id="resources-title">Research in focus<span class="heading-dot">.</span></h2></div><a href="projects.html" class="action-text">Explore all projects <span aria-hidden="true">↗</span></a></div>
+      <!-- HOME_RESOURCES_START -->
+<div class="resource-grid">
+  <article class="resource-feature" aria-labelledby="mpb-unet-title">
+    <figure class="resource-figure">
+      <a href="images/mpb-unet-figure7.png" aria-label="View the complete MPB-UNet published figure"><img src="images/mpb-unet-figure7.png" alt="Published comparison of six MRI test examples: input images, reference tumour masks and predictions by UNet variants, including MPB-UNet." width="3739" height="2912" loading="lazy" decoding="async"></a>
+      <figcaption><a href="https://orbi.umons.ac.be/handle/20.500.12907/51494">Fig. 7 · Chahbar, Merati &amp; Mahmoudi</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><span>Published test examples · <a href="images/mpb-unet-figure7.png">View full figure <span aria-hidden="true">↗</span></a></span></figcaption>
+    </figure>
+    <div class="resource-body"><p class="eyebrow">Published research · Medical imaging</p><h3 id="mpb-unet-title">Brain tumour segmentation, in images</h3><p>MPB-UNet compares predicted tumour boundaries with reference masks on brain MRI. Explore the method and test examples published by Fatma Chahbar, Medjeded Merati and Saïd Mahmoudi.</p><p class="resource-date"><time datetime="2024-12-26">26 December 2024 · Electronics 14(1)</time></p><a class="action-text" href="https://orbi.umons.ac.be/handle/20.500.12907/51494">Read the open-access paper <span aria-hidden="true">↗</span></a></div>
+  </article>
+  <div class="resource-stories">
+<article class="resource-story" aria-labelledby="wallesmart-mon-parcellaire-title">
+  <div class="resource-meta"><p class="eyebrow">Platform update · WALLeSmart</p><time datetime="2026-05-08">8 May 2026</time></div>
+  <h3 id="wallesmart-mon-parcellaire-title"><a href="https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15" hreflang="fr">Managing farm parcels through WALLeSmart</a></h3><p>Mon Parcellaire, developed by CRA-W, brings map-based parcel creation and monitoring to WALLeSmart. The platform article explains the tool and how parcel information can be shared with connected applications.</p>
+  <div class="resource-links"><a class="action-text" href="https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15" hreflang="fr">Read the platform update <small class="resource-language">FR<span class="sr-only"> · in French</span></small><span aria-hidden="true">↗</span></a><a class="resource-project" href="projects.html#smart-farming">WALLeSmart project <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="resource-story" aria-labelledby="umons-alzheimer-ai4brain-title">
+  <div class="resource-meta"><p class="eyebrow">Institutional feature · UMONS</p><time datetime="2026-03-11">11 March 2026</time></div>
+  <h3 id="umons-alzheimer-ai4brain-title"><a href="https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/" hreflang="fr">Alzheimer’s research across disciplines</a></h3><p>UMONS presents its work on Alzheimer’s, including AI4Brain and Saïd Mahmoudi’s contribution to data analysis and modelling alongside neuroscience and clinical partners.</p>
+  <div class="resource-links"><a class="action-text" href="https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/" hreflang="fr">Read the UMONS article <small class="resource-language">FR<span class="sr-only"> · in French</span></small><span aria-hidden="true">↗</span></a><a class="resource-project" href="projects.html#medical-ai">AI4Brain project <span aria-hidden="true">↗</span></a></div>
+</article>
+</div></div>
+<!-- HOME_RESOURCES_END -->
     </div>
   </section>
   <section class="home-section people-section" aria-labelledby="people-title">

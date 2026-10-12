@@ -21,6 +21,10 @@
           "url": "https://orbi.umons.ac.be/handle/20.500.12907/54810"
         },
         {
+          "label": "Mon Parcellaire · Platform update (FR)",
+          "url": "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15"
+        },
+        {
           "label": "Amine Roukh · Team",
           "url": "team.html#amine-roukh"
         }
@@ -31,7 +35,8 @@
         "Cloud & big data"
       ],
       "sources": [
-        "https://orbi.umons.ac.be/handle/20.500.12907/54810"
+        "https://orbi.umons.ac.be/handle/20.500.12907/54810",
+        "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15"
       ],
       "relationship_note": "The cited paper explicitly presents and evaluates the WALLeSmart platform."
     },
@@ -53,6 +58,10 @@
           "url": "https://orbi.umons.ac.be/handle/20.500.12907/56733"
         },
         {
+          "label": "UMONS research feature (FR)",
+          "url": "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
+        },
+        {
           "label": "Saïd Mahmoudi · Team",
           "url": "team.html#said-mahmoudi"
         }
@@ -67,7 +76,8 @@
         "https://www.ai4brain.be/work-packages",
         "https://www.ai4brain.be/pubblications",
         "https://orbi.umons.ac.be/handle/20.500.12907/51494",
-        "https://orbi.umons.ac.be/handle/20.500.12907/56733"
+        "https://orbi.umons.ac.be/handle/20.500.12907/56733",
+        "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
       ],
       "relationship_note": "MPB-UNet is listed on the official AI4Brain publications page. The newer multimodal study is related lab research; its funding is not attributed here."
     },
