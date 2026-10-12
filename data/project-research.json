@@ -1,13 +1,13 @@
 {
   "checked_at": "2026-10-12",
-  "note": "Project summaries distinguish documented contributions, research objectives and related publications. Statuses and dates remain in project-statuses.json. Illustrations are schematics, not experimental evidence. Outputs are sourced individually, with explicit lab, consortium and related-work attribution. Unverified project-specific results are not inferred.",
+  "note": "Project summaries distinguish documented contributions, research objectives and related publications. Statuses and dates remain in project-statuses.json. Illustrations are generated concept artwork, not experimental evidence. Outputs are sourced individually, with explicit lab, consortium and related-work attribution. Unverified project-specific results are not inferred.",
   "projects": [
     {
       "name": "WalleSmart",
       "id": "smart-farming",
       "featured": true,
-      "image": "illustrations/agriculture.svg",
-      "image_alt": "Connected field, satellite and weather data flowing into the WalleSmart cloud platform.",
+      "image": "images/project-smart-farming-512-v1.webp",
+      "image_alt": "Concept illustration of crops and a connected field sensor linked to a cloud platform.",
       "summary": "An interoperable cloud platform connecting farm sensors, satellite imagery and weather data to agricultural decision tools in Wallonia.",
       "focus_label": "Research contribution",
       "focus": "Scalable data processing and integration of heterogeneous agricultural data, developed and evaluated with real farms and weather stations.",
@@ -87,8 +87,8 @@
     {
       "name": "AI4BRAIN",
       "id": "medical-ai",
-      "image": "illustrations/medical-ai.svg",
-      "image_alt": "MRI and clinical data combined through multimodal learning.",
+      "image": "images/project-medical-ai-512-v1.webp",
+      "image_alt": "Concept illustration of a brain with stylised imaging slices.",
       "summary": "AI methods for psychiatric and neurodegenerative disease research, developed with clinical and neuroscience partners.",
       "focus_label": "Research contribution",
       "focus": "Brain MRI segmentation and AI architectures for detecting and classifying neurodegenerative diseases, with Saïd Mahmoudi contributing to model development.",
@@ -152,7 +152,7 @@
     {
       "name": "ARIAC",
       "id": "ariac",
-      "image": null,
+      "image": "images/project-ariac-512-v1.webp",
       "summary": "Trustworthy AI research within the TRAIL initiative, supporting the deployment of reliable models in real-world settings.",
       "focus_label": "Research contribution",
       "focus": "Efficient AI implementation: edge deployment, distributed learning and high-performance computing, within TRAIL’s implementation work package.",
@@ -194,12 +194,13 @@
           ],
           "verification": "The paper substantiates implementation and evaluation. No ARIAC funding acknowledgement was found in the full text; it is explicitly labelled related lab research, not an ARIAC deliverable."
         }
-      ]
+      ],
+      "image_alt": "Concept illustration of linked processors for distributed AI."
     },
     {
       "name": "TSV — Track Sentry Vision",
       "id": "track-sentry-vision",
-      "image": null,
+      "image": "images/project-track-sentry-vision-512-v1.webp",
       "summary": "Computer vision from on-train video for detecting railway track defects and supporting preventive maintenance.",
       "focus_label": "Research focus",
       "focus": "Automated visual inspection of railway infrastructure. The linked 2025 study documents track-defect detection within the project.",
@@ -236,13 +237,14 @@
           ],
           "verification": "The official conference paper names ICTEAM/INGI, UCLouvain, describes the prototype and gives the 0.96 laboratory F1 score. It is not presented as a SMART’ILIA-only implementation or a field-validated system."
         }
-      ]
+      ],
+      "image_alt": "Concept illustration of a machine-vision camera inspecting railway tracks."
     },
     {
       "name": "SiTies — Secure IoT for Smart Cities",
       "id": "secure-systems",
-      "image": "illustrations/smart-city-grid.svg",
-      "image_alt": "A city grid with connected buildings, sensor nodes and secure IoT infrastructure.",
+      "image": "images/project-secure-systems-512-v1.webp",
+      "image_alt": "Concept illustration of a connected city grid and a security shield.",
       "summary": "An international NATO Science for Peace and Security collaboration on secure IoT infrastructure for connected cities.",
       "focus_label": "Research focus",
       "focus": "Secure connectivity, cyberthreat detection and network infrastructure for distributed urban sensors.",
@@ -285,7 +287,7 @@
     {
       "name": "ROAD-STEP",
       "id": "road-step",
-      "image": null,
+      "image": "images/project-road-step-512-v1.webp",
       "summary": "Remote monitoring and decision support for pasture-based livestock farming in Wallonia.",
       "focus_label": "Research focus",
       "focus": "Electronic identification and animal data streams to support monitoring of cattle behaviour, health and welfare.",
@@ -334,12 +336,13 @@
           ],
           "verification": "The 2023 CRA-W article establishes the ROAD-STEP/SUNSHINE/WALLeSmart collaboration; the 30 July 2026 article confirms actual availability and attributes tool development to CRA-W."
         }
-      ]
+      ],
+      "image_alt": "Concept illustration of a dairy cow wearing an electronic monitoring collar."
     },
     {
       "name": "FEDER-IDEES",
       "id": "feder-idees",
-      "image": null,
+      "image": "images/project-feder-idees-512-v1.webp",
       "summary": "Research into cloud, big data and IoT foundations for scalable, secure digital infrastructures.",
       "focus_label": null,
       "focus": null,
@@ -351,12 +354,13 @@
       ],
       "sources": [
         "https://web.umons.ac.be/ilia/activites-de-recherche/"
-      ]
+      ],
+      "image_alt": "Concept illustration of a cloud, database and connected sensor nodes."
     },
     {
       "name": "IMOTION (Chist-Era)",
       "id": "imotion",
-      "image": null,
+      "image": "images/project-imotion-512-v1.webp",
       "summary": "Multimodal video retrieval using images, movement information and interactive queries such as sketches and speech.",
       "focus_label": null,
       "focus": null,
@@ -393,12 +397,13 @@
           ],
           "verification": "The official CHIST-ERA 2018 report describes UMONS work on slides 7 and 10, query modes on slide 11 and the open-source backend on slide 13. Current vitrivr documentation identifies the University of Basel as maintainer; consortium attribution is preserved."
         }
-      ]
+      ],
+      "image_alt": "Concept illustration of video frames and a search lens."
     },
     {
       "name": "ARC OLIMP",
       "id": "arc-olimp",
-      "image": null,
+      "image": "images/project-arc-olimp-512-v1.webp",
       "summary": "Software and hardware methods for real-time multimedia processing on parallel GPU and FPGA architectures.",
       "focus_label": null,
       "focus": null,
@@ -409,12 +414,13 @@
       ],
       "sources": [
         "https://splconf.org/spl11/data/uploads/procDF.pdf"
-      ]
+      ],
+      "image_alt": "Concept illustration of a graphics processor and multimedia frames."
     },
     {
       "name": "FEDER-TIC",
       "id": "feder-tic",
-      "image": null,
+      "image": "images/project-feder-tic-512-v1.webp",
       "summary": "Historical work on porting scientific and industrial software to parallel computing architectures.",
       "focus_label": null,
       "focus": null,
@@ -424,7 +430,8 @@
         "HPC"
       ],
       "sources": [],
-      "relationship_note": "Historical description retained from the original lab catalogue; no unverified dates or new outcomes are added."
+      "relationship_note": "Historical description retained from the original lab catalogue; no unverified dates or new outcomes are added.",
+      "image_alt": "Concept illustration of a cluster of linked computing servers."
     }
   ]
 }

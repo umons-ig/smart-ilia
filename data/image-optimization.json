@@ -135,8 +135,10 @@
   ],
   "homepage_raster_budget": {
     "before_bytes": 3413131,
-    "after_bytes_with_largest_preview_and_favicon": 212762,
-    "reduction_percent": 93.77,
-    "scope": "Unique homepage raster images plus favicon. Excludes original figure accessed only on demand, share card, SVG, CSS, JS and fonts. Not a load-time benchmark."
+    "after_bytes_with_largest_preview_and_favicon": 319864,
+    "reduction_percent": 90.63,
+    "scope": "Unique homepage raster images plus favicon. Excludes original figure accessed only on demand, share card, SVG, CSS, JS and fonts. Not a load-time benchmark. Includes the three generated hero artworks, which were not present in the original pre-optimisation baseline.",
+    "before_artwork_replacement_bytes": 212762,
+    "additional_hero_artwork_bytes": 107102
   }
 }

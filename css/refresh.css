@@ -47,7 +47,7 @@ a,button { -webkit-tap-highlight-color:transparent; }
 .lens-tabs { display:flex; margin:0 24px; border-bottom:1px solid var(--paper-border); gap:24px; }
 .lens-tabs button { background:transparent; border:0; border-bottom:2px solid transparent; color:var(--ink-muted); font:600 15px var(--sans); padding:10px 2px 12px; min-height:44px; cursor:pointer; margin-bottom:-1px; }
 .lens-tabs button[aria-selected=true] { border-color:var(--crimson); color:var(--crimson); }
-.lens-panel>img { display:block; width:100%; height:auto; object-fit:contain; }
+.lens-panel>img { display:block; width:100%; height:260px; padding:18px; object-fit:contain; background:var(--paper); }
 .lens-caption { display:flex; gap:16px; justify-content:space-between; padding:0 24px 14px; }
 .lens-caption h2 { font-family:var(--heading); font-size:16px; font-weight:600; letter-spacing:-.02em; margin-bottom:8px; line-height:1.4; }
 .lens-caption p { font-size:15px; line-height:1.6; color:var(--ink-mid); }
@@ -201,7 +201,6 @@ footer::before { display:none; }
 .project-card:hover { background:#fff; }
 .project-card--featured { background:var(--crimson-subtle); }
 .project-number { display:none; }
-.project-icon { border-radius:6px; }
 .project-title { font-size:22px; font-weight:600; }
 .project-desc { font-size:18px; font-weight:400; }
 .project-tag { text-transform:none; letter-spacing:0; font-size:13px; border-radius:3px; }
@@ -331,38 +330,25 @@ footer::before { display:none; }
 
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 
-/* Generated project emblems retain the established card grid and title hierarchy. */
-.project-header { justify-content:flex-start; align-items:center; gap:18px; margin-bottom:22px; }
+/* A single concept illustration accompanies each project presentation. */
+.project-header { display:block; margin-bottom:18px; }
 .project-header .project-title { margin:0; min-width:0; }
-.project-card .project-icon, .project-card:hover .project-icon { width:88px; height:88px; background:transparent; border:0; }
-.project-icon--illustrated img { display:block; width:100%; height:100%; object-fit:contain; }
 .project-card--featured { display:block; }
-.project-card--featured .project-header { margin-bottom:24px; }
-.project-card--featured .project-body { display:grid; grid-template-columns:1fr 1.15fr; gap:0 30px; align-items:start; }
-.project-card--featured .project-illustration { grid-row:1 / span 2; width:100%; max-width:none; margin:0; }
-.project-card--featured .project-desc, .project-card--featured .project-tags { grid-column:2; }
-.project-illustration { display:block; margin:0 0 22px; }
-@media (max-width:768px) {
-  .project-card .project-icon, .project-card:hover .project-icon { width:76px; height:76px; }
-  .project-card--featured .project-body { display:block; }
-  .project-card--featured .project-illustration { margin-bottom:22px; }
-}
-@media (max-width:380px) {
-  .project-header { flex-direction:column; align-items:flex-start; gap:12px; }
-}
+.project-illustration { display:block; }
 
-/* Compact project summaries retain the existing grid and scientific artwork. */
+/* The existing project grid retains its sourced summaries and results. */
 .projects-grid { align-items:start; }
 .projects-group + .projects-group { margin-top:48px; }
 .project-card { padding:28px; }
 .project-header { margin-bottom:18px; }
 .project-status { margin-bottom:18px; }
-.project-overview { display:grid; grid-template-columns:136px minmax(0,1fr); gap:18px; align-items:start; }
-.project-overview--text { display:block; }
-.project-overview:not(.project-overview--text) + .project-research { margin-top:16px; }
+.project-overview { display:grid; grid-template-columns:160px minmax(0,1fr); gap:22px; align-items:start; }
+.project-overview + .project-research { margin-top:16px; }
 .project-copy { min-width:0; }
-.project-art { display:block; border:1px solid var(--paper-border); border-radius:5px; overflow:hidden; background:#F7F8F7; }
-.project-card .project-art img { display:block; width:100%; height:auto; margin:0; }
+.project-art { display:grid; place-items:center; width:160px; border-radius:6px; }
+.project-card .project-art img { display:block; width:100%; height:160px; margin:0; object-fit:contain; }
+.project-card--featured .project-art { width:100%; max-width:320px; margin-inline:auto; }
+.project-card--featured .project-art img { height:300px; }
 .project-desc { font-size:17px; line-height:1.65; margin-bottom:16px; }
 .project-research { margin-bottom:18px; color:var(--ink-mid); font-size:16px; line-height:1.6; }
 .project-focus-label { color:var(--crimson); font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-bottom:6px; }
@@ -387,16 +373,21 @@ footer::before { display:none; }
 .research-contact h2 { font:600 23px/1.4 var(--heading); letter-spacing:-.03em; margin-bottom:8px; }
 .research-contact p { color:var(--ink-mid); font-size:17px; max-width:680px; }
 .research-contact .action-primary { flex-shrink:0; }
-@media (max-width:1050px) {
-  .project-overview { display:block; }
-  .project-art { width:180px; margin-bottom:18px; }
-  .project-card--featured .project-overview { display:grid; }
-  .project-card--featured .project-art { width:100%; margin-bottom:0; }
+@media (max-width:1100px) {
+  .project-overview { grid-template-columns:140px minmax(0,1fr); gap:18px; }
+  .project-art { width:140px; }
+  .project-card .project-art img { height:140px; }
+  .project-card--featured .project-art { width:100%; }
+  .project-card--featured .project-art img { height:260px; }
 }
 @media (max-width:768px) {
   .project-overview,.project-card--featured .project-overview { display:block; }
   .project-card { padding:24px; }
-  .project-art { width:210px; max-width:100%; margin:0 0 18px; }
-  .project-card--featured .project-art { width:100%; max-width:400px; margin-bottom:18px; }
+  .project-art,.project-card--featured .project-art { width:100%; max-width:none; padding:16px; margin:0 0 20px; background:var(--paper); }
+  .project-card .project-art img { max-width:220px; height:180px; }
+  .project-card--featured .project-art img { max-width:260px; height:230px; }
   .research-contact { align-items:flex-start; flex-direction:column; padding:24px; gap:20px; }
+}
+@media (max-width:560px) {
+  .lens-panel>img { height:220px; padding:16px; }
 }

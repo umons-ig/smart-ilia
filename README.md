@@ -77,8 +77,12 @@ At widths up to 600 px, the homepage shows the two most recent selected publicat
 
 At widths up to 560 px, team portraits and initials sit next to names and roles in a compact identity row. Quick links navigate to the three existing team groups. Project links are generated only from contacts already recorded in `data/project-research.json`; no additional membership or research specialism is inferred. The thirteen profiles and existing portrait files are retained.
 
-## Visuels des projets
+## Visuels des projets et de l’accueil
 
-Les dix cartes utilisent une série d’illustrations décoratives générées avec l’outil image_gen intégré : agriculture connectée, neuroimagerie, déploiement distribué, inspection ferroviaire, ville sécurisée, élevage connecté, cloud et données, recherche vidéo et calcul parallèle. Le bordeaux UMONS et le bleu acier sont conservés. Les métaphores visuelles ne sont pas des logos officiels ni des photographies de prototypes ; les schémas, publications et réalisations documentées restent distincts.
+Les dix projets utilisent chacun une seule illustration générée, dans la zone principale de présentation. Les anciens schémas SVG et les petites illustrations répétées dans les titres ont été retirés des pages. La grille, les contenus sourcés, les statuts et les huit réalisations documentées sont conservés. Les trois onglets de l’accueil utilisent le cerveau avec des coupes d’imagerie stylisées, l’agriculture connectée et un nouveau réseau de calcul entre pairs avec un cadenas.
 
-Les images servies sont dix WebP transparents de 256 × 256 px, affichés à 88 px sur ordinateur et 76 px sur mobile, avec chargement progressif et dimensions réservées. Leur poids total est de 127 648 octets. Les prompts, paramètres d’encodage, dimensions et empreintes sont conservés dans `data/project-visuals.json`. Le rendu des cartes utilise ce manifeste avec `scripts/render-research-pages.py`, sans lire les anciens pictogrammes dans le HTML.
+Les visuels sont des illustrations conceptuelles en volume dans la palette UMONS, sans prétendre montrer une photographie de prototype ou un résultat expérimental. Les légendes et textes alternatifs les identifient correctement. Les figures réellement publiées sur l’accueil conservent leurs liens et crédits.
+
+Les PNG d’origine ont été encodés en WebP transparents de 256 et 512 px, à qualité 88 et alpha 100. Les pages utilisent srcset et sizes ; les cartes réservent les dimensions et chargent progressivement les images. Les illustrations sont affichées à 140–160 px dans les cartes normales sur ordinateur et à 180 px de hauteur sur mobile, avec une image plus grande pour WALLeSmart. Le manifeste, les prompts et empreintes sont conservés dans data/project-visuals.json, consommé par scripts/render-research-pages.py.
+
+Le budget raster maximal de l’accueil, avec les trois nouvelles illustrations, le plus grand aperçu de la figure et le favicon, est de 319 864 octets. Cette somme exclut les autres ressources et le PNG original ouvert sur demande ; ce n’est pas une mesure de temps de chargement. Les paramètres et la comparaison historique sont conservés dans data/image-optimization.json.

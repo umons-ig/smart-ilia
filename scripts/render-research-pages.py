@@ -67,14 +67,12 @@ replace_block(root/'team.html','TEAM_PROFILES','\n'.join(parts),'<div class="tea
 def project_card(p):
     status=status_by_name[p['name']]
     visual=visual_by_id[p['id']]
-    icon=f'<div class="project-icon project-icon--illustrated" aria-hidden="true"><img src="{esc(visual["image"])}" alt="" width="{visual["width"]}" height="{visual["height"]}" loading="lazy" decoding="async"></div>'
     title=esc(p['name'])
     if p.get('featured'):
         title=f'<a href="https://www.wallesmart.be/">{title} <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>'
     status_link=f'<a href="{esc(status["source_url"])}" aria-label="Source for {esc(p["name"])} project information">Project information <span aria-hidden="true">↗</span></a>' if status['source_url'] else ''
-    art=''
-    if p['image']:
-        art=f'<a class="project-art" href="{esc(p["image"])}" aria-label="View the {esc(p["name"])} research diagram"><img class="project-illustration" src="{esc(p["image"])}" alt="{esc(p["image_alt"])}" width="520" height="290" loading="lazy"></a>'
+    sizes='(max-width:768px) 260px, 320px' if p.get('featured') else '(max-width:768px) 220px, (max-width:1100px) 140px, 160px'
+    art=f'<a class="project-art" href="{esc(visual["image_large"])}" aria-label="View the {esc(p["name"])} concept illustration"><img class="project-illustration" src="{esc(visual["image"])}" srcset="{esc(visual["image"])} 256w, {esc(visual["image_large"])} 512w" sizes="{sizes}" alt="{esc(visual["alt"])}" width="512" height="512" loading="lazy" decoding="async"></a>'
     focus=f'<div class="project-research"><p class="project-focus-label">{esc(p["focus_label"])}</p><p>{esc(p["focus"])}</p></div>' if p['focus'] else ''
     tags=p['tags']+([status['period_label']] if status['period_label'] else [])
     tag_html=''.join(f'<span class="project-tag">{esc(tag)}</span>' for tag in tags)
@@ -88,7 +86,7 @@ def project_card(p):
             records.append(f'<article class="project-result"><p class="result-meta">{esc(result["category"])} · {esc(result["date_label"])}</p><h4>{esc(result["title"])}</h4><p>{esc(result["description"])}</p><div class="result-evidence">{evidence}</div></article>')
         outputs=f'<details class="project-results"><summary>{esc(p["outputs_summary"])} <span class="result-count">{len(records)}<span class="sr-only"> documented {"resource" if len(records)==1 else "resources"}</span></span></summary><div class="project-results-body">'+''.join(records)+'</div></details>'
     classes='project-card'+(' project-card--featured' if p.get('featured') else '')
-    overview='project-overview'+(' project-overview--text' if not art else '')
+    overview='project-overview'
     summary=f'<p class="project-desc">{esc(p["summary"])}</p>'
     tags_html=f'<div class="project-tags">{tag_html}</div>'
     if p.get('featured'):
@@ -96,7 +94,7 @@ def project_card(p):
     else:
         details=f'<div class="{overview}">{art}{summary}</div>{focus}{tags_html}'
     return f'''<article class="{classes}" data-anim id="{p['id']}">
-  <div class="project-header">{icon}<h3 class="project-title">{title}</h3></div>
+  <div class="project-header"><h3 class="project-title">{title}</h3></div>
   <div class="project-status"><strong>{esc(status['status'])}</strong>{status_link}</div>
   {details}
 {outputs}
@@ -108,7 +106,7 @@ for label,items in [('Research projects & platforms',research['projects'][:6]),(
     identifier='current-projects' if label.startswith('Research') else 'past-projects'
     parts.append(f'<section class="projects-group" aria-labelledby="{identifier}-title"><h2 class="team-group-label" id="{identifier}-title">{esc(label)}</h2>')
     if identifier=='current-projects':
-        parts.append(f'<p class="source-note project-status-note">Status reviewed on <time datetime="{statuses["checked_at"]}">{checked_label}</time>. Unconfirmed timelines are identified; diagrams illustrate research approaches.</p>')
+        parts.append(f'<p class="source-note project-status-note">Status reviewed on <time datetime="{statuses["checked_at"]}">{checked_label}</time>. Unconfirmed timelines are identified; illustrations are conceptual.</p>')
     parts.append('<div class="projects-grid">'+'\n'.join(project_card(p) for p in items)+'</div></section>')
 parts.append('<aside class="research-contact"><div><h2>Discuss a research collaboration.</h2><p>Connect with our team about medical AI, smart farming or secure distributed systems.</p></div><a class="action-primary" href="mailto:said.mahmoudi@umons.ac.be">Contact the lab <span aria-hidden="true">↗</span></a></aside>')
 replace_block(root/'projects.html','RESEARCH_PROJECTS','\n'.join(parts),'<!-- ══ Research Projects and Platforms ══ -->')
