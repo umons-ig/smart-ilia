@@ -1,0 +1,243 @@
+{
+  "checked_at": "2026-10-12",
+  "note": "Project summaries distinguish documented contributions, research objectives and related publications. Statuses and dates remain in project-statuses.json. Illustrations are schematics, not experimental evidence.",
+  "projects": [
+    {
+      "name": "WalleSmart",
+      "id": "smart-farming",
+      "featured": true,
+      "image": "illustrations/agriculture.svg",
+      "image_alt": "Connected field, satellite and weather data flowing into the WalleSmart cloud platform.",
+      "summary": "An interoperable cloud platform connecting farm sensors, satellite imagery and weather data to agricultural decision tools in Wallonia.",
+      "focus_label": "Research contribution",
+      "focus": "Scalable data processing and integration of heterogeneous agricultural data, developed and evaluated with real farms and weather stations.",
+      "links": [
+        {
+          "label": "Explore the platform",
+          "url": "https://www.wallesmart.be/"
+        },
+        {
+          "label": "Cloud architecture paper",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/54810"
+        },
+        {
+          "label": "Amine Roukh · Team",
+          "url": "team.html#amine-roukh"
+        }
+      ],
+      "tags": [
+        "Smart farming",
+        "IoT",
+        "Cloud & big data"
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/54810"
+      ],
+      "relationship_note": "The cited paper explicitly presents and evaluates the WALLeSmart platform."
+    },
+    {
+      "name": "AI4BRAIN",
+      "id": "medical-ai",
+      "image": "illustrations/medical-ai.svg",
+      "image_alt": "MRI and clinical data combined through multimodal learning.",
+      "summary": "AI methods for psychiatric and neurodegenerative disease research, developed with clinical and neuroscience partners.",
+      "focus_label": "Research contribution",
+      "focus": "Brain MRI segmentation and AI architectures for detecting and classifying neurodegenerative diseases, with Saïd Mahmoudi contributing to model development.",
+      "links": [
+        {
+          "label": "Brain MRI segmentation paper",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/51494"
+        },
+        {
+          "label": "Multimodal Alzheimer’s study",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/56733"
+        },
+        {
+          "label": "Saïd Mahmoudi · Team",
+          "url": "team.html#said-mahmoudi"
+        }
+      ],
+      "tags": [
+        "Medical AI",
+        "Neuroimaging",
+        "Multimodal learning"
+      ],
+      "sources": [
+        "https://www.ai4brain.be/about-us/team-1",
+        "https://www.ai4brain.be/work-packages",
+        "https://www.ai4brain.be/pubblications",
+        "https://orbi.umons.ac.be/handle/20.500.12907/51494",
+        "https://orbi.umons.ac.be/handle/20.500.12907/56733"
+      ],
+      "relationship_note": "MPB-UNet is listed on the official AI4Brain publications page. The newer multimodal study is related lab research; its funding is not attributed here."
+    },
+    {
+      "name": "ARIAC",
+      "id": "ariac",
+      "image": null,
+      "summary": "Trustworthy AI research within the TRAIL initiative, supporting the deployment of reliable models in real-world settings.",
+      "focus_label": "Research contribution",
+      "focus": "Efficient AI implementation: edge deployment, distributed learning and high-performance computing, within TRAIL’s implementation work package.",
+      "links": [
+        {
+          "label": "TRAIL research contribution",
+          "url": "https://factory.trail.ac/fr/user/sidi-ahmed/mahmoudi"
+        },
+        {
+          "label": "Sidi Mahmoudi · Team",
+          "url": "team.html#sidi-mahmoudi"
+        }
+      ],
+      "tags": [
+        "Trustworthy AI",
+        "Edge AI",
+        "Distributed learning"
+      ],
+      "sources": [
+        "https://factory.trail.ac/fr/user/sidi-ahmed/mahmoudi"
+      ],
+      "relationship_note": "TRAIL records Sidi Ahmed Mahmoudi’s participation in ARIAC WP4; no unverified project result or performance figure is asserted."
+    },
+    {
+      "name": "TSV — Track Sentry Vision",
+      "id": "track-sentry-vision",
+      "image": null,
+      "summary": "Computer vision from on-train video for detecting railway track defects and supporting preventive maintenance.",
+      "focus_label": "Research focus",
+      "focus": "Automated visual inspection of railway infrastructure. The linked 2025 study documents track-defect detection within the project.",
+      "links": [
+        {
+          "label": "Track-defect detection study",
+          "url": "https://bnaic2025.unamur.be/accepted-submissions/accepted_poster/093%20-%20Railway%20Track%20Defect%20Detection.pdf"
+        }
+      ],
+      "tags": [
+        "Computer vision",
+        "Railway inspection"
+      ],
+      "sources": [
+        "https://ecosysteme.s3.wallonie.be/projets/",
+        "https://bnaic2025.unamur.be/accepted-submissions/accepted_poster/093%20-%20Railway%20Track%20Defect%20Detection.pdf"
+      ],
+      "relationship_note": "The official BNAIC/BeNeLearn 2025 poster paper acknowledges Track Sentry Vision funding. Its authors are not presented as SMART’ILIA members; the public project timeline remains unconfirmed."
+    },
+    {
+      "name": "SiTies — Secure IoT for Smart Cities",
+      "id": "secure-systems",
+      "image": "illustrations/smart-city-grid.svg",
+      "image_alt": "A city grid with connected buildings, sensor nodes and secure IoT infrastructure.",
+      "summary": "An international NATO Science for Peace and Security collaboration on secure IoT infrastructure for connected cities.",
+      "focus_label": "Research focus",
+      "focus": "Secure connectivity, cyberthreat detection and network infrastructure for distributed urban sensors.",
+      "links": [
+        {
+          "label": "UMONS cybersecurity research",
+          "url": "https://assets.ctfassets.net/myqv2p4gx62v/01pLxQ8LCOKn64NGVrYck8/289017d1012514191cbb42dc429a7358/brochure-InCyber-2025.pdf"
+        }
+      ],
+      "tags": [
+        "IoT security",
+        "Smart cities",
+        "NATO SPS"
+      ],
+      "sources": [
+        "https://radon.nauka.gov.pl/dane/profil/678506106d19015179e4eef2",
+        "https://assets.ctfassets.net/myqv2p4gx62v/01pLxQ8LCOKn64NGVrYck8/289017d1012514191cbb42dc429a7358/brochure-InCyber-2025.pdf"
+      ],
+      "relationship_note": "The registry establishes project scope and dates; the institutional InCyber brochure documents UMONS participation and research themes, rather than measured project outcomes."
+    },
+    {
+      "name": "ROAD-STEP",
+      "id": "road-step",
+      "image": null,
+      "summary": "Remote monitoring and decision support for pasture-based livestock farming in Wallonia.",
+      "focus_label": "Research focus",
+      "focus": "Electronic identification and animal data streams to support monitoring of cattle behaviour, health and welfare.",
+      "links": [
+        {
+          "label": "Related IoT architecture paper",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/42561"
+        },
+        {
+          "label": "Pasture monitoring work",
+          "url": "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+        }
+      ],
+      "tags": [
+        "Agriculture",
+        "Animal monitoring",
+        "Decision support"
+      ],
+      "sources": [
+        "https://web.umons.ac.be/ilia/activites-de-recherche/",
+        "https://orbi.umons.ac.be/handle/20.500.12907/42561",
+        "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+      ],
+      "relationship_note": "The Kappa architecture paper is related lab research. CTA Strée’s ongoing listing is explicitly attributed; no final end date or project-specific performance is inferred."
+    },
+    {
+      "name": "FEDER-IDEES",
+      "id": "feder-idees",
+      "image": null,
+      "summary": "Research into cloud, big data and IoT foundations for scalable, secure digital infrastructures.",
+      "focus_label": null,
+      "focus": null,
+      "links": [],
+      "tags": [
+        "Cloud",
+        "Big data",
+        "IoT"
+      ],
+      "sources": [
+        "https://web.umons.ac.be/ilia/activites-de-recherche/"
+      ]
+    },
+    {
+      "name": "IMOTION (Chist-Era)",
+      "id": "imotion",
+      "image": null,
+      "summary": "Multimodal video retrieval using images, movement information and interactive queries such as sketches and speech.",
+      "focus_label": null,
+      "focus": null,
+      "links": [],
+      "tags": [
+        "Multimedia",
+        "Video retrieval"
+      ],
+      "sources": [
+        "https://www.chistera.eu/projects/imotion"
+      ]
+    },
+    {
+      "name": "ARC OLIMP",
+      "id": "arc-olimp",
+      "image": null,
+      "summary": "Software and hardware methods for real-time multimedia processing on parallel GPU and FPGA architectures.",
+      "focus_label": null,
+      "focus": null,
+      "links": [],
+      "tags": [
+        "GPU computing",
+        "Real-time processing"
+      ],
+      "sources": [
+        "https://splconf.org/spl11/data/uploads/procDF.pdf"
+      ]
+    },
+    {
+      "name": "FEDER-TIC",
+      "id": "feder-tic",
+      "image": null,
+      "summary": "Historical work on porting scientific and industrial software to parallel computing architectures.",
+      "focus_label": null,
+      "focus": null,
+      "links": [],
+      "tags": [
+        "Parallel computing",
+        "HPC"
+      ],
+      "sources": [],
+      "relationship_note": "Historical description retained from the original lab catalogue; no unverified dates or new outcomes are added."
+    }
+  ]
+}

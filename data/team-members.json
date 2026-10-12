@@ -1,0 +1,293 @@
+{
+  "checked_at": "2026-10-12",
+  "note": "Research summaries are paraphrased from the linked primary sources. Roster and lab responsibilities follow the existing SMART’ILIA catalogue; Quentin’s academic title and three name spellings were corrected from primary sources. No synthetic portraits are used. Missing specialisms are not inferred.",
+  "members": [
+    {
+      "id": "said-mahmoudi",
+      "name": "Saïd Mahmoudi",
+      "group": "Faculty",
+      "role": "Professor · Lab manager",
+      "image": "images/said_mahmoudi.png",
+      "focus": "Computer vision, deep learning and medical image analysis, including brain MRI segmentation and disease classification.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=530027"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://www.ai4brain.be/about-us/team-1",
+        "https://orbi.umons.ac.be/profile?uid=530027",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "sidi-mahmoudi",
+      "name": "Sidi Mahmoudi",
+      "group": "Faculty",
+      "role": "Professor · Co-manager",
+      "image": "images/sidi_mahmoudi.png",
+      "focus": "Explainable and edge AI, distributed learning and efficient use of high-performance computing resources.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=530391"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:sidi.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://factory.trail.ac/fr/user/sidi-ahmed/mahmoudi",
+        "https://orbi.umons.ac.be/profile?uid=530391",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "mohammed-benjelloun",
+      "name": "Mohammed Benjelloun",
+      "group": "Faculty",
+      "role": "Professor · Co-manager",
+      "image": "images/mohammed_benjelloun.png",
+      "focus": "Image analysis and medical AI, including explainable models and learning from neurological and clinical data.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=530248"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:mohammed.benjelloun@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://staff.umons.ac.be/mohammed.benjelloun/pubsEn.html",
+        "https://orbi.umons.ac.be/profile?uid=530248",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "amine-roukh",
+      "name": "Amine Roukh",
+      "group": "Researchers & collaborators",
+      "role": "Post-doctoral researcher",
+      "image": null,
+      "focus": "Big data, cloud architectures and interoperable IoT platforms for smart farming, including WALLeSmart.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=533851"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:Amine.ROUKH@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/profile?uid=533851",
+        "https://orbi.umons.ac.be/handle/20.500.12907/54810",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "quentin-deconinck",
+      "name": "Quentin De Coninck",
+      "group": "Researchers & collaborators",
+      "role": "Assistant professor · Research collaborator",
+      "image": "images/quentin_deconinck.png",
+      "focus": "Computer networking and transport protocols, including QUIC and multipath communication.",
+      "links": [
+        {
+          "label": "UMONS profile",
+          "url": "https://staff.umons.ac.be/Quentin.DECONINCK/indexEn.html"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:Quentin.DECONINCK@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://staff.umons.ac.be/Quentin.DECONINCK/indexEn.html",
+        "https://inlold.info.ucl.ac.be/quentin.html"
+      ]
+    },
+    {
+      "id": "mathis-delehouzee",
+      "name": "Mathis Delehouzée",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": "images/mathis_delehouzee.png",
+      "focus": "Federated learning, aggregation methods and secure collaborative models for medical imaging.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=535975"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:Mathis.DELEHOUZEE@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/50504",
+        "https://orbi.umons.ac.be/handle/20.500.12907/55403",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "edmond-prosper-souapiebe",
+      "name": "Edmond-Prosper Souapiébé",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": "images/edmond-prosper_souapiebe.png",
+      "focus": null,
+      "links": [
+        {
+          "label": "Contact the lab",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [],
+      "verification_note": "Retained from the existing lab catalogue; research specialism awaits information from the lab."
+    },
+    {
+      "id": "islam-hentous",
+      "name": "Islam Hentous",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": null,
+      "focus": "AI-based security and anomaly detection for devices in the Internet of Medical Things.",
+      "links": [
+        {
+          "label": "Selected publication",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/56535"
+        },
+        {
+          "label": "Contact the lab",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/56535",
+        "https://orbi.umons.ac.be/handle/20.500.12907/55887"
+      ]
+    },
+    {
+      "id": "tanguy-vansnick",
+      "name": "Tanguy Vansnick",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": "images/tanguy_vansnick.png",
+      "focus": "Multimodal learning for brain imaging and secure, decentralised federated learning.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=536246"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:Tanguy.VANSNICK@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/56733",
+        "https://orbi.umons.ac.be/handle/20.500.12907/55901",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ]
+    },
+    {
+      "id": "claude-olivier-batungwanayo",
+      "name": "Claude-Olivier Batungwanayo",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": null,
+      "focus": null,
+      "links": [
+        {
+          "label": "Contact the lab",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [],
+      "verification_note": "Retained from the existing lab catalogue; no reliable public source confirms the current research specialism."
+    },
+    {
+      "id": "moad-hani",
+      "name": "Moad Hani",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": null,
+      "focus": "Multimodal modelling of Parkinson’s disease, cost-aware feature selection and fairness in clinical data analysis.",
+      "links": [
+        {
+          "label": "Publications on ORBI",
+          "url": "https://orbi.umons.ac.be/profile?uid=536798"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:Moad.HANI@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/profile?uid=536798",
+        "https://orbi.umons.ac.be/handle/20.500.12907/56536",
+        "https://orbi.umons.ac.be/handle/20.500.12907/52355",
+        "https://web.umons.ac.be/ilia/equipe/"
+      ],
+      "name_correction": "Hanni → Hani, confirmed by the official UMONS directory."
+    },
+    {
+      "id": "jean-bertin-nkamla-penka",
+      "name": "Jean Bertin Nkamla Penka",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": null,
+      "focus": "Streaming data architectures for IoT, smart farming and connected healthcare monitoring.",
+      "links": [
+        {
+          "label": "Selected publication",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/42561"
+        },
+        {
+          "label": "Contact the lab",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/42407",
+        "https://orbi.umons.ac.be/handle/20.500.12907/42561",
+        "https://orbi.umons.ac.be/handle/20.500.12907/43441",
+        "https://orbi.umons.ac.be/handle/20.500.12907/46584"
+      ],
+      "name_correction": "Jen Bertin → Jean Bertin, as recorded in the published articles."
+    },
+    {
+      "id": "fatma-chahbar",
+      "name": "Fatma Chahbar",
+      "group": "PhD students",
+      "role": "PhD student",
+      "image": null,
+      "focus": "Deep learning for MRI analysis and automated segmentation of brain tumours.",
+      "links": [
+        {
+          "label": "Selected publication",
+          "url": "https://orbi.umons.ac.be/handle/20.500.12907/51494"
+        },
+        {
+          "label": "Contact the lab",
+          "url": "mailto:said.mahmoudi@umons.ac.be"
+        }
+      ],
+      "sources": [
+        "https://orbi.umons.ac.be/handle/20.500.12907/51494",
+        "https://orbi.umons.ac.be/handle/20.500.12907/48092"
+      ],
+      "name_correction": "Chabar → Chahbar, as recorded in the published articles."
+    }
+  ]
+}
