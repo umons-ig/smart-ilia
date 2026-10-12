@@ -1,0 +1,283 @@
+{
+  "checked_at": "2026-10-12",
+  "sources": [
+    "https://opendata.umons.ac.be/fr/publications/services/html/F114.html",
+    "https://orbi.umons.ac.be/profile?uid=530027",
+    "https://orbi.umons.ac.be/profile?uid=530391"
+  ],
+  "publications": [
+    {
+      "year": "2026",
+      "title": "Leveraging big data and cloud technology for scalable and interoperable smart farming",
+      "authors": "A. Roukh, S. Mahmoudi",
+      "venue": "Future Generation Computer Systems",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/54810"
+    },
+    {
+      "year": "2026",
+      "title": "Moving beyond the empty cell: The threat of decontextualized healthcare data",
+      "authors": "A. El Mir, E. B. de Sousa, I. Mesina-Estarrón, L. A. Celi, M. Hani, M. Benjelloun, N. Nageswaran, S. Mahmoudi, S. Siddiqui, S. Sadasivam, W. G. Mitchell",
+      "venue": "PLOS Digital Health",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55692",
+      "orbi_title": "Moving beyond the empty cell: The threat of decontextualized healthcare data."
+    },
+    {
+      "year": "2025",
+      "title": "PRA-Unet: Parallel Residual Attention U-Net for Real-Time Segmentation of Brain Tumors",
+      "authors": "A. Z. Lebani, M. Merati, S. Mahmoudi",
+      "venue": "Information",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55390"
+    },
+    {
+      "year": "2025",
+      "title": "A Scientometric Analysis of Bias and Fairness in Parkinson's Disease Clinical Assessment Scales",
+      "authors": "M. Benjelloun, R. Botta, L. A. Celi, M. Hani, S. Mahmoudi, N. Nageswaran, B. Ong, D. Restrepo, M. Vilardo",
+      "venue": "Movement Disorders",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/54715"
+    },
+    {
+      "year": "2025",
+      "title": "AHN-BudgetNet: Cost-Aware Multimodal Feature-Acquisition Architecture for Parkinson's Disease Monitoring",
+      "authors": "M. Hani, S. Mahmoudi, M. Benjelloun",
+      "venue": "Electronics",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/54720",
+      "orbi_title": "AHN-BudgetNet: Cost-Aware Multimodal Feature-Acquisition Architecture for Parkinson’s Disease Monitoring"
+    },
+    {
+      "year": "2025",
+      "title": "Sustained Cognitive Decline in Multiple Sclerosis: Investigating the Role of White Matter Lesion Load Using an AI-Driven Brain Imaging Approach",
+      "authors": "V. Tota, A. Mehuys, T. Vansnick, O. Amel, F. Chahbar, L. Mahmoudi, S. Mahmoudi, G. Briganti, L. Ris, S. Mahmoudi",
+      "venue": "Psychiatria Danubina",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/53267",
+      "orbi_title": "SUSTAINED COGNITIVE DECLINE IN MULTIPLE SCLEROSIS: INVESTIGATING THE ROLE OF WHITE MATTER LESION LOAD USING AN AI-DRIVEN BRAIN IMAGING APPROACH."
+    },
+    {
+      "year": "2025",
+      "title": "Secure Federated Learning: Model Compression and Inverse Distillation",
+      "authors": "X. Lessage, S. Mahmoudi, M. Delehouzée, T. Vansnick, M. Benjelloun, L. Collier, M. Rotulo",
+      "venue": "International Conference in Optimization and Learning (OLA 2025)",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55403",
+      "orbi_title": "Secure Federated Learning: model compression and Inverse Distillation"
+    },
+    {
+      "year": "2025",
+      "title": "An Efficient Explainability of Deep Models on Medical Images",
+      "authors": "S. Khiat, S. Mahmoudi, S. Stassin, L. Boukerroui, B. Senaï, S. Mahmoudi",
+      "venue": "Algorithms",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/52236"
+    },
+    {
+      "year": "2025",
+      "title": "Enhancing fetal ultrasound image quality and anatomical plane recognition in low-resource settings using super-resolution models",
+      "authors": "H. Boumeridja, M. Ammar, M. Alzubaidi, S. Mahmoudi, L. N. Benamer, M. Agus, M. Househ, K. Lekadir, M. El Habib Daho",
+      "venue": "Scientific Reports",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55400",
+      "orbi_title": "Enhancing fetal ultrasound image quality and anatomical plane recognition in low-resource settings using super-resolution models."
+    },
+    {
+      "year": "2025",
+      "title": "Enhancing Remote Sensing Vision-Language Models for Zero-Shot Scene Classification",
+      "authors": "K. El Khoury, M. Zanella, B. Gérin, T. Godelaine, B. Macq, S. Mahmoudi, C. De Vleeschouwer, I. B. Ayed",
+      "venue": "IEEE ICASSP 2025",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55398"
+    },
+    {
+      "year": "2025",
+      "title": "Image Processing with Deep-Learning and Transfer Learning for Cutting Tool Degradation Monitoring",
+      "authors": "L. Colantonio, L. Equeter, H. Giovannelli, P. Dehombreux, S. Mahmoudi, F. Ducobu",
+      "venue": "13th CIRP Global Web Conference (CIRPe 2025)",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/54236",
+      "orbi_title": "Image processing with deep-learning and transfer learning for cutting tool degradation monitoring"
+    },
+    {
+      "year": "2025",
+      "title": "SemChain: A Blockchain-based Semantic Discovery on Distributed Resource Directories for the IoT",
+      "authors": "K. Zaghouani, B. Djamaa, A. Yachir, S. Mahmoudi",
+      "venue": "Internet of Things",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/55399",
+      "orbi_title": "SemChain : A Blockchain-based semantic discovery on distributed resource directories for the Internet of Things"
+    },
+    {
+      "year": "2025",
+      "title": "Physically Interpretable Probabilistic Domain Characterization",
+      "authors": "A. S. Halin, S. B. Piérard, R. Vandeghen, B. T. Gérin, M. Zanella, M. Colot, J. Held, A. Cioppa, E. Jean, G. Bontempi, S. Mahmoudi, B. T. Macq, M. Van Droogenbroeck",
+      "venue": "Lecture Notes in Computer Science",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51506"
+    },
+    {
+      "year": "2024",
+      "title": "MPB-UNet: Multi-Parallel Blocks UNet for MRI Automated Brain Tumor Segmentation",
+      "authors": "F. Chahbar, M. Merati, S. Mahmoudi",
+      "venue": "Electronics",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51494"
+    },
+    {
+      "year": "2024",
+      "title": "DDANF: Deep Denoising Autoencoder Normalizing Flow for Unsupervised Multivariate Time Series Anomaly Detection",
+      "authors": "X. Zhao, P. Liu, S. Mahmoudi, S. Garg, G. Kaddoum, M. M. Hassan",
+      "venue": "Alexandria Engineering Journal",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51452",
+      "orbi_title": "DDANF: Deep denoising autoencoder normalizing flow for unsupervised multivariate time series anomaly detection"
+    },
+    {
+      "year": "2024",
+      "title": "Deep Learning Models for Coronary Atherosclerosis Detection in Coronary CT Angiography",
+      "authors": "A. Laidi, M. Ammar, M. E. H. Daho, S. Mahmoudi",
+      "venue": "Current Medical Imaging Reviews",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/44632",
+      "orbi_title": "Deep Learning Models for Coronary Atherosclerosis Detection in Coronary CT Angiography."
+    },
+    {
+      "year": "2024",
+      "title": "Evaluation of Federated Learning Aggregation Algorithms",
+      "authors": "M. Delehouzée, X. Lessage, S. Mahmoudi",
+      "venue": "IEEE EDiS 2024",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/50504"
+    },
+    {
+      "year": "2024",
+      "title": "Secure Federated Learning Applied to Medical Imaging with Fully Homomorphic Encryption",
+      "authors": "X. Lessage, L. Collier, C.-H. B. Van Ouytsel, A. Legay, S. Mahmoudi, P. Massonet",
+      "venue": "IEEE ICAIC 2024",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51465",
+      "orbi_title": "Secure federated learning applied to medical imaging with fully homomorphic encryption"
+    },
+    {
+      "year": "2024",
+      "title": "Stepwise and Cost-Aware Feature Selection for Multiclass-Classification of Neurodegenerative Diseases",
+      "authors": "M. Hani, S. Mahmoudi, M. Benjelloun",
+      "venue": "Mardi des Chercheurs 2024",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/52355",
+      "orbi_title": "Stepwise and cost-aware feature selection for multiclass-classification of neurodegenerative and neurovascular diseases"
+    },
+    {
+      "year": "2024",
+      "title": "Enhancing Brain Segmentation in MRI through Integration of Hidden Markov Random Field Model and Whale Optimization Algorithm",
+      "authors": "A. Daoudi, S. Mahmoudi",
+      "venue": "Computers",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51459"
+    },
+    {
+      "year": "2024",
+      "title": "Exploring Viability of Test-Time Training: Application to 3D Segmentation in Multiple Sclerosis",
+      "authors": "B. Gérin, M. Zanella, M. Wynen, S. Mahmoudi, B. Macq, C. De Vleeschouwer",
+      "venue": "IEEE Conference on Artificial Intelligence (CAI 2024)",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/51464",
+      "orbi_title": "Exploring viability of Test-Time Training: Application to 3D segmentation in Multiple Sclerosis"
+    },
+    {
+      "year": "2023",
+      "title": "GAN Data Augmentation for Improved Automated Atherosclerosis Screening from Coronary CT Angiography",
+      "authors": "A. Laidi, M. Ammar, M. Daho, S. Mahmoudi",
+      "venue": "EAI Endorsed Transactions on Scalable Information Systems",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/44634"
+    },
+    {
+      "year": "2023",
+      "title": "Mixture Domain Adaptation to Improve Semantic Segmentation in Real-World Surveillance",
+      "authors": "S. B. Piérard, A. Cioppa, A. S. Halin, R. Vandeghen, M. Zanella, B. T. Macq, S. Mahmoudi, M. Van Droogenbroeck",
+      "venue": "IEEE Access",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/44871",
+      "orbi_title": "Mixture Domain Adaptation To Improve Semantic Segmentation in Real-World Surveillance"
+    },
+    {
+      "year": "2023",
+      "title": "A Machine Learning Model for Improving Virtual Machine Migration in Cloud Computing",
+      "authors": "A. Belgacem, S. Mahmoudi, M. A. Ferrag",
+      "venue": "Journal of Supercomputing",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/48073",
+      "orbi_title": "A machine learning model for improving virtual machine migration in cloud computing"
+    },
+    {
+      "year": "2023",
+      "title": "Toward an Automatic Detection of Cardiac Structures in Short and Long Axis Views",
+      "authors": "L. Amel, M. Ammar, M. E. H. Daho, S. Mahmoudi",
+      "venue": "Biomedical Signal Processing and Control",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/48074",
+      "orbi_title": "Toward an automatic detection of cardiac structures in short and long axis views"
+    },
+    {
+      "year": "2023",
+      "title": "Literature Review: Clinical Data Interoperability Models",
+      "authors": "R. Ait Abdelouahid, O. Debauche, S. Mahmoudi, A. Marzak",
+      "venue": "Information",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/48067"
+    },
+    {
+      "year": "2023",
+      "title": "Single Node Deep Learning Frameworks: Comparative Study and CPU/GPU Performance Analysis",
+      "authors": "J.-S. Lerat, S. Mahmoudi, S. Mahmoudi",
+      "venue": "Concurrency and Computation: Practice and Experience",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42443",
+      "orbi_title": "Single Node Deep Learning Frameworks: Comparative study and CPU/GPU performance analysis"
+    },
+    {
+      "year": "2022",
+      "title": "RAMi: A New Real-Time Internet of Medical Things Architecture for Elderly Patient Monitoring",
+      "authors": "O. Debauche, J. B. Nkamla Penka, S. Mahmoudi, X. Lessage, M. Hani, P. Manneback",
+      "venue": "Information",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/43441"
+    },
+    {
+      "year": "2022",
+      "title": "Distributed Deep Learning: From Single-Node to Multi-Node Architecture",
+      "authors": "J.-S. Lerat, S. Mahmoudi, S. Mahmoudi",
+      "venue": "Electronics",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42655"
+    },
+    {
+      "year": "2022",
+      "title": "Deep Convolutional Neural Networks (CNN) for Lesions Localization in Mammograms",
+      "authors": "X. Lessage, H. Benzaouia, S. Murgo, S. Mahmoudi, S. Mahmoudi, Z. Guessoum",
+      "venue": "International Journal of Computer Assisted Radiology and Surgery",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/44887",
+      "orbi_title": "Deep Convolutional Neural Networks (CNN) for lesions localization of in mammograms"
+    },
+    {
+      "year": "2022",
+      "title": "An Optimized Kappa Architecture for IoT Data Management in Smart Farming",
+      "authors": "J. B. Nkamla Penka, S. Mahmoudi, O. Debauche",
+      "venue": "International Journal of Ubiquitous Systems and Pervasive Networks",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42561"
+    },
+    {
+      "year": "2022",
+      "title": "A New Comparative Study of Dimensionality Reduction Methods in Large-Scale Image Retrieval",
+      "authors": "M. A. Belarbi, S. Mahmoudi, G. Belalem, S. Mahmoudi, A. Cools",
+      "venue": "Big Data and Cognitive Computing",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/43199"
+    },
+    {
+      "year": "older",
+      "title": "Cloud and Distributed Architectures for Data Management in Agriculture 4.0: Review and Future Trends",
+      "authors": "O. Debauche, S. Mahmoudi, P. Manneback, F. Lebeau",
+      "venue": "Journal of King Saud University - Computer and Information Sciences",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42428",
+      "orbi_title": "Cloud and Distributed Architectures for Data Management in Agriculture 4.0 : Review and Future Trends"
+    },
+    {
+      "year": "older",
+      "title": "Intelligent Healthcare Informatics for Fighting the COVID-19 and Other Pandemics and Epidemics",
+      "authors": "L. Garg, C. Chakraborty, S. Mahmoudi, V. S. Sohmen (Eds.)",
+      "venue": "Springer",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42413"
+    },
+    {
+      "year": "older",
+      "title": "Breast Cancer Detection in Digital Mammography with CNN: Retrospective Study in Belgium",
+      "authors": "S. Mahmoudi, X. Lessage, F. Giudice, S. Murgo, S. Mahmoudi",
+      "venue": "International Journal of Computer Assisted Radiology and Surgery",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42411",
+      "orbi_title": "Breast cancer detection in digital mammography with convolutional neural network: retrospective study in Belgium"
+    },
+    {
+      "year": "older",
+      "title": "Data Management and Internet of Things: A Methodological Review in Smart Farming",
+      "authors": "O. Debauche, J.-P. Trani, S. Mahmoudi, P. Manneback, J. Bindelle, S. Mahmoudi, A. Guttadauria, F. Lebeau",
+      "venue": "Internet of Things",
+      "url": "https://orbi.umons.ac.be/handle/20.500.12907/42409",
+      "orbi_title": "Data Management and Internet of Things : A Methodological Review in Smart Farming"
+    }
+  ],
+  "link_verification": "All 36 ORBI record pages returned HTTP 200 and supplied citation-title metadata. Catalogue wording is preserved; ORBI variants are recorded below."
+}

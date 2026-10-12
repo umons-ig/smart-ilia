@@ -40,3 +40,7 @@ python3 scripts/render-publications.py
 ```
 
 Le bloc ajouté au catalogue est actuellement dans le groupe 2026. Pour des publications d’une autre année, adapter le groupe HTML correspondant. Les schémas SVG illustrent les méthodes et les domaines de recherche ; ils ne représentent pas des résultats expérimentaux.
+
+Les liens des 36 publications originales sont conservés dans `data/publication-links.json`. Le même script les applique au catalogue tout en conservant les liens auteurs utilisés par les filtres. Les quatre publications affichées sur l’accueil ont un format compact ; leurs auteurs restent disponibles dans le catalogue complet.
+
+Les sources et les limites de la vérification des projets sont conservées dans `data/project-statuses.json` (revue du 12 octobre 2026). Les statuts affichés dans `projects.html` distinguent la plateforme WALLeSmart opérationnelle de ses phases de financement, les projets en cours, le statut de ROAD-STEP rapporté par CTA Strée et les projets historiques. Les calendriers de TSV et de FEDER-TIC n’ont pas pu être confirmés publiquement ; les anciennes périodes ont été retirées. Lors d’une mise à jour des statuts, adapter ensemble la page, le fichier de suivi et la date de revue.

@@ -1,0 +1,112 @@
+{
+  "checked_at": "2026-10-12",
+  "projects": [
+    {
+      "name": "WalleSmart",
+      "status": "Operational platform",
+      "period_label": "Research started in 2018",
+      "source_url": "https://www.cra.wallonie.be/fr/comprendre-la-plateforme-wallesmart-son-fonctionnement-et-son-potentiel",
+      "sources": [
+        "https://www.cra.wallonie.be/fr/comprendre-la-plateforme-wallesmart-son-fonctionnement-et-son-potentiel",
+        "https://walakis.be/system/files/2026-01/WALLeSmart%20-%20Rapport%20de%20synth%C3%A8se.pdf"
+      ],
+      "verification": "The platform is operational in 2026. The WALLeSmart 4 research phase ran from 1 April 2023 to 15 October 2025. Platform operation and research funding are distinct."
+    },
+    {
+      "name": "AI4BRAIN",
+      "status": "Ongoing",
+      "period_label": "FEDER 2021–2027 programme",
+      "source_url": "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/",
+      "sources": [
+        "https://web.umons.ac.be/isia/activites-de-recherche/projets/",
+        "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
+      ],
+      "verification": "UMONS lists MedReSyst/AI4Brain among ongoing projects and describes active work in March 2026. 2021–2027 identifies the funding programme, not a confirmed project end date. The unsupported 2023–2026 project range was removed."
+    },
+    {
+      "name": "ARIAC",
+      "status": "Ongoing",
+      "period_label": "Funding: 2021–2026",
+      "source_url": "https://web.umons.ac.be/isia/activites-de-recherche/projets/",
+      "sources": [
+        "https://web.umons.ac.be/isia/activites-de-recherche/projets/",
+        "https://trail-factory.cetic.be/sites/default/files/2022-10/charte_chercheur_TRAIL_EN_0.pdf"
+      ],
+      "verification": "UMONS lists TRAIL/ARIAC as ongoing. The TRAIL researcher charter documents SPW funding for 2021–2026; the precise end date is not stated."
+    },
+    {
+      "name": "TSV — Track Sentry Vision",
+      "status": "Timeline unconfirmed",
+      "period_label": null,
+      "source_url": "https://ecosysteme.s3.wallonie.be/projets/",
+      "sources": [
+        "https://ecosysteme.s3.wallonie.be/projets/",
+        "https://openreview.net/pdf?id=eke6wLbjcp",
+        "https://www.transport-community.org/wp-content/uploads/2024/12/Agenda-Berlin-25-27-Sep-TCT.pdf"
+      ],
+      "verification": "SPW confirms project name and railway-inspection scope. A September 2024 presentation establishes its existence before 2025. Neither current status nor the old 2025–2028 range is confirmed by these public sources; that date range was removed."
+    },
+    {
+      "name": "SiTies — Secure IoT for Smart Cities",
+      "status": "Ongoing",
+      "period_label": "2024–2027",
+      "source_url": "https://radon.nauka.gov.pl/dane/profil/678506106d19015179e4eef2",
+      "sources": [
+        "https://radon.nauka.gov.pl/dane/profil/678506106d19015179e4eef2"
+      ],
+      "verification": "The Polish official research registry records Enhancing IoT Systems Security (SiTies), SPS MYP G6259, from 1 September 2024 to 31 August 2027."
+    },
+    {
+      "name": "ROAD-STEP",
+      "status": "Listed as ongoing by CTA Strée",
+      "period_label": "Started in 2018",
+      "source_url": "https://cta-stree.be/recherches/",
+      "sources": [
+        "https://cta-stree.be/recherches/",
+        "https://web.umons.ac.be/ilia/activites-de-recherche/",
+        "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+      ],
+      "verification": "CTA Strée currently lists Road Step under ongoing projects. UMONS records the initial 2018–2021 funding phase; CRA-W describes further work in 2023. A final end date has not been confirmed. The unsupported 2018–2024 range was removed; ongoing status is explicitly attributed to the partner."
+    },
+    {
+      "name": "FEDER-IDEES",
+      "status": "Completed",
+      "period_label": "2014–2021",
+      "source_url": "https://web.umons.ac.be/ilia/activites-de-recherche/",
+      "sources": [
+        "https://web.umons.ac.be/ilia/activites-de-recherche/",
+        "https://web.umons.ac.be/ilia/wp-json/wp/v2/pages/15"
+      ],
+      "verification": "UMONS documents the 2014–2021 project period. The previous start year 2015 was corrected."
+    },
+    {
+      "name": "IMOTION (Chist-Era)",
+      "status": "Completed",
+      "period_label": "2013–2016",
+      "source_url": "https://www.chistera.eu/projects/imotion",
+      "sources": [
+        "https://www.chistera.eu/projects/imotion",
+        "https://web.umons.ac.be/isia/activites-de-recherche/projets/"
+      ],
+      "verification": "CHIST-ERA specifies October 2013 with a 36-month planned duration, giving 2013–2016. UMONS lists iMotion as completed."
+    },
+    {
+      "name": "ARC OLIMP",
+      "status": "Completed",
+      "period_label": "2008–2013",
+      "source_url": "https://splconf.org/spl11/data/uploads/procDF.pdf",
+      "sources": [
+        "https://splconf.org/spl11/data/uploads/procDF.pdf"
+      ],
+      "verification": "The 2011 Designer Forum proceedings explicitly identify ARC-OLIMP as a 2008–2013 research action."
+    },
+    {
+      "name": "FEDER-TIC",
+      "status": "Archived · dates unconfirmed",
+      "period_label": null,
+      "source_url": null,
+      "sources": [],
+      "verification": "Retained in the historical section from the existing SMART’ILIA catalogue. No authoritative public source confirming the old 2010–2014 period was found; those dates were removed. Archival placement is not an independently verified completion status."
+    }
+  ]
+}
