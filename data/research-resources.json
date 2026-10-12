@@ -26,7 +26,8 @@
     ],
     "image_original": "images/mpb-unet-figure7.png",
     "image_srcset": "images/mpb-unet-figure7-480.webp 480w, images/mpb-unet-figure7-960.webp 960w",
-    "image_sizes": "(max-width: 600px) calc(100vw - 72px), (max-width: 850px) calc((100vw - 88px) / 2), 560px"
+    "image_sizes": "(max-width: 600px) calc(100vw - 72px), (max-width: 850px) calc((100vw - 88px) / 2), 560px",
+    "mobile_summary": "MPB-UNet compares predicted tumour boundaries with reference masks on brain MRI. Explore the published method and test examples."
   },
   "articles": [
     {
@@ -43,7 +44,8 @@
       "project_label": "WALLeSmart project",
       "sources": [
         "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15"
-      ]
+      ],
+      "mobile_summary": "CRA-W’s Mon Parcellaire brings map-based parcel creation and monitoring to WALLeSmart."
     },
     {
       "id": "umons-alzheimer-ai4brain",
@@ -59,7 +61,8 @@
       "project_label": "AI4Brain project",
       "sources": [
         "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
-      ]
+      ],
+      "mobile_summary": "UMONS presents AI4Brain within its Alzheimer’s research, connecting data analysis, neuroscience and clinical partners."
     }
   ]
 }

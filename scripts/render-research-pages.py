@@ -30,9 +30,18 @@ def replace_block(path,marker,content,start):
         source=source[:first]+replacement+source[last:]
     path.write_text(source)
 
-parts=['<div class="team-groups">']
-for group in dict.fromkeys(p['group'] for p in team['members']):
-    group_id={'Faculty':'faculty','Researchers & collaborators':'researchers','PhD students':'doctoral-researchers'}[group]
+groups=list(dict.fromkeys(p['group'] for p in team['members']))
+group_ids={'Faculty':'faculty','Researchers & collaborators':'researchers','PhD students':'doctoral-researchers'}
+group_labels={'Faculty':'Faculty','Researchers & collaborators':'Researchers','PhD students':'PhD students'}
+shortcuts=''.join(f'<a href="#{group_ids[group]}-title">{group_labels[group]} <span>{sum(m["group"]==group for m in team["members"])}</span></a>' for group in groups)
+parts=[f'<nav class="team-jump-links" aria-label="Team groups">{shortcuts}</nav>','<div class="team-groups">']
+project_contacts={}
+for project in research['projects']:
+    for link in project['links']:
+        if link['url'].startswith('team.html#'):
+            project_contacts.setdefault(link['url'].split('#',1)[1],[]).append(project)
+for group in groups:
+    group_id=group_ids[group]
     grid_class=' team-grid--researchers' if group=='Researchers & collaborators' else ''
     parts.append(f'<section aria-labelledby="{group_id}-title"><h2 class="team-group-label" id="{group_id}-title">{esc(group)}</h2><div class="team-grid{grid_class}">')
     for p in (m for m in team['members'] if m['group']==group):
@@ -43,7 +52,9 @@ for group in dict.fromkeys(p['group'] for p in team['members']):
             portrait=f'<div class="team-placeholder team-initials" aria-hidden="true">{esc(initials)}</div>'
         focus=esc(p['focus']) if p['focus'] else 'Contact the lab for details of current research.'
         links=''.join(f'<a href="{esc(link["url"])}" class="team-profile-link" aria-label="{esc(link["label"])} — {esc(p["name"])}">{esc(link["label"])} <span aria-hidden="true">↗</span></a>' for link in p['links'])
-        parts.append(f'<article class="team-card" data-anim id="{p["id"]}">{portrait}<h3 class="team-name">{esc(p["name"])}</h3><p class="team-role">{esc(p["role"])}</p><p class="team-focus">{focus}</p><div class="team-links">{links}</div></article>')
+        related=''.join(f'<a href="projects.html#{esc(project["id"])}" aria-label="{esc(project["name"])} project — {esc(p["name"])}">{esc(project["name"])} <span aria-hidden="true">↗</span></a>' for project in project_contacts.get(p['id'],[]))
+        related_html=f'<div class="team-projects"><span class="team-projects-label">Project</span>{related}</div>' if related else ''
+        parts.append(f'<article class="team-card" data-anim id="{p["id"]}"><div class="team-identity">{portrait}<div class="team-heading"><h3 class="team-name">{esc(p["name"])}</h3><p class="team-role">{esc(p["role"])}</p></div></div><p class="team-focus">{focus}</p>{related_html}<div class="team-links">{links}</div></article>')
     parts.append('</div></section>')
 parts.append('</div><p class="source-note">Research summaries are based on linked profiles and publications. Visit the <a href="https://web.umons.ac.be/ilia/equipe/">UMONS department directory</a> for institutional contact information.</p>')
 parts.append('<aside class="research-contact"><div><h2>Find the right research contact.</h2><p>Planning a collaboration or a student project? Contact the lab to discuss your research interests.</p></div><a class="action-primary" href="mailto:said.mahmoudi@umons.ac.be">Contact the lab <span aria-hidden="true">↗</span></a></aside>')
