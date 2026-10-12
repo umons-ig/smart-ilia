@@ -8,26 +8,29 @@
     <link rel="icon" type="image/png" href="images/mini-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/refresh.css?v=2">
+    <script src="js/site.js" defer></script>
 </head>
 <body>
 
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ── NAVIGATION ── -->
-<nav id="navbar" class="nav-light">
+<nav id="navbar" class="nav-light" aria-label="Main navigation">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
             <img src="images/logo.png" alt="SMART'ILIA">
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="team.html" class="active">Team</a></li>
+            <li><a href="team.html" class="active" aria-current="page">Team</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="publications.html">Publications</a></li>
+        <li><a href="index.html#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a></li>
         </ul>
-        <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <button class="nav-burger" id="burger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </div>
@@ -51,26 +54,26 @@
             <div>
                 <div class="team-group-label">Faculty</div>
                 <div class="team-grid">
-                    <div class="team-card" data-anim>
+                    <div class="team-card" data-anim id="said-mahmoudi">
                         <div class="team-photo-wrap">
                             <img src="images/said_mahmoudi.png" alt="Said Mahmoudi" class="team-photo" loading="lazy">
                         </div>
-                        <div class="team-name">Said Mahmoudi</div>
-                        <div class="team-role">Professor &amp; Lab Manager</div>
+                        <div class="team-name">Saïd Mahmoudi</div>
+                        <div class="team-role">Professor &amp; Lab Manager</div><a href="https://orbi.umons.ac.be/profile?uid=530027" class="team-profile-link">Publications on ORBI <span aria-hidden="true">↗</span></a>
                     </div>
-                    <div class="team-card" data-anim>
+                    <div class="team-card" data-anim id="sidi-mahmoudi">
                         <div class="team-photo-wrap">
                             <img src="images/sidi_mahmoudi.png" alt="Sidi Mahmoudi" class="team-photo" loading="lazy">
                         </div>
                         <div class="team-name">Sidi Mahmoudi</div>
-                        <div class="team-role">Professor &amp; Co-Manager</div>
+                        <div class="team-role">Professor &amp; Co-Manager</div><a href="https://orbi.umons.ac.be/profile?uid=530391" class="team-profile-link">Publications on ORBI <span aria-hidden="true">↗</span></a>
                     </div>
-                    <div class="team-card" data-anim>
+                    <div class="team-card" data-anim id="mohammed-benjelloun">
                         <div class="team-photo-wrap">
                             <img src="images/mohammed_benjelloun.png" alt="Mohammed Benjelloun" class="team-photo" loading="lazy">
                         </div>
                         <div class="team-name">Mohammed Benjelloun</div>
-                        <div class="team-role">Professor &amp; Co-Manager</div>
+                        <div class="team-role">Professor &amp; Co-Manager</div><a href="https://orbi.umons.ac.be/profile?uid=530248" class="team-profile-link">Publications on ORBI <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
             </div>
@@ -107,12 +110,12 @@
             <div>
                 <div class="team-group-label">PhD Students</div>
                 <div class="team-grid">
-                    <div class="team-card" data-anim>
+                    <div class="team-card" data-anim id="mathis-delehouzee">
                         <div class="team-photo-wrap">
                             <img src="images/mathis_delehouzee.png" alt="Mathis Delehouzée" class="team-photo" loading="lazy">
                         </div>
                         <div class="team-name">Mathis Delehouzée</div>
-                        <div class="team-role">PhD Student</div>
+                        <div class="team-role">PhD Student</div><a href="https://orbi.umons.ac.be/profile?uid=535975" class="team-profile-link">Publications on ORBI <span aria-hidden="true">↗</span></a>
                     </div>
                     <div class="team-card" data-anim>
                         <div class="team-photo-wrap">
@@ -128,12 +131,12 @@
                         <div class="team-name">Islam Hentous</div>
                         <div class="team-role">PhD Student</div>
                     </div>
-                    <div class="team-card" data-anim>
+                    <div class="team-card" data-anim id="tanguy-vansnick">
                         <div class="team-photo-wrap">
                             <img src="images/tanguy_vansnick.png" alt="Tanguy Vansnick" class="team-photo" loading="lazy">
                         </div>
                         <div class="team-name">Tanguy Vansnick</div>
-                        <div class="team-role">PhD Student</div>
+                        <div class="team-role">PhD Student</div><a href="https://orbi.umons.ac.be/profile?uid=536246" class="team-profile-link">Publications on ORBI <span aria-hidden="true">↗</span></a>
                     </div>
                     <div class="team-card" data-anim>
                         <div class="team-placeholder">
@@ -177,7 +180,7 @@
             <img src="images/logo.png" alt="SMART'ILIA" class="footer-logo-img">
             <p class="footer-tagline">Secure Multimedia &amp; AI Research for Responsive Things</p>
         </div>
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer navigation">
             <a href="index.html">Home</a>
             <a href="team.html">Team</a>
             <a href="projects.html">Projects</a>
@@ -192,15 +195,7 @@
 </footer>
 
 <script>
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-    });
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
 
     // Staggered scroll-reveal
     const observer = new IntersectionObserver((entries) => {

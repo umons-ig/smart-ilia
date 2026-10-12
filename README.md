@@ -28,3 +28,15 @@ Pour forcer une mise à jour manuelle :
 ```bash
 sudo docker compose pull && sudo docker compose up -d
 ```
+
+## Contenu du site
+
+Le site est statique : les pages HTML à la racine utilisent `css/`, `js/`, `images/` et `illustrations/`. Aucun build frontend n’est nécessaire.
+
+La sélection récente de publications est conservée dans `data/recent-publications.json`, avec ses liens ORBI et sa date de vérification. Il s’agit d’une sélection éditoriale, pas d’un flux actualisé automatiquement. Après modification et vérification des données, régénérer les blocs de l’accueil et de la page Publications :
+
+```bash
+python3 scripts/render-publications.py
+```
+
+Le bloc ajouté au catalogue est actuellement dans le groupe 2026. Pour des publications d’une autre année, adapter le groupe HTML correspondant. Les schémas SVG illustrent les méthodes et les domaines de recherche ; ils ne représentent pas des résultats expérimentaux.

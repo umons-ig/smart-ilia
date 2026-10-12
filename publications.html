@@ -8,15 +8,17 @@
     <link rel="icon" type="image/png" href="images/mini-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
-    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/refresh.css?v=2">
+    <script src="js/site.js" defer></script>
 </head>
 <body>
 
 <a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ── NAVIGATION ── -->
-<nav id="navbar" class="nav-light">
+<nav id="navbar" class="nav-light" aria-label="Main navigation">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
             <img src="images/logo.png" alt="SMART'ILIA">
@@ -25,9 +27,10 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="team.html">Team</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="publications.html" class="active" aria-current="page">Publications</a></li>
+        <li><a href="index.html#contact" class="nav-contact">Contact <span aria-hidden="true">↗</span></a></li>
         </ul>
-        <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <button class="nav-burger" id="burger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
     </div>
@@ -43,14 +46,16 @@
             <p class="section-subtitle">
                 A selection of recent publications from our lab members.
                 Browse complete lists on individual ORBI profiles.
+                <span class="source-note">Recent additions verified on 12 October 2026.</span>
             </p>
         </div>
 
         <!-- ── Search bar ── -->
         <div class="pub-search-wrap">
             <svg class="pub-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="text" id="pubSearch" class="pub-search" placeholder="Search by title, author, or venue...">
-            <span class="pub-search-count" id="pubCount"></span>
+            <label for="pubSearch" class="sr-only">Search publications by title, author or venue</label>
+            <input type="search" id="pubSearch" class="pub-search" placeholder="Search by title, author, or venue...">
+            <span class="pub-search-count" id="pubCount" aria-live="polite" aria-atomic="true"></span>
         </div>
 
         <!-- ── Member filters ── -->
@@ -58,8 +63,8 @@
             <div class="pub-filters-label">Filter by member</div>
             <div class="pub-filters pub-member-filters" id="memberFilters">
                 <button class="pub-filter pub-filter--member active" data-member="all">All Members</button>
-                <button class="pub-filter pub-filter--member" data-member="530027">S. Mahmoudi</button>
-                <button class="pub-filter pub-filter--member" data-member="530391">S. Mahmoudi (Sidi)</button>
+                <button class="pub-filter pub-filter--member" data-member="530027">Saïd Mahmoudi</button>
+                <button class="pub-filter pub-filter--member" data-member="530391">Sidi Mahmoudi</button>
                 <button class="pub-filter pub-filter--member" data-member="530248">M. Benjelloun</button>
                 <button class="pub-filter pub-filter--member" data-member="536798">M. Hani</button>
                 <button class="pub-filter pub-filter--member" data-member="535975">M. Delehouzée</button>
@@ -81,10 +86,19 @@
             </div>
         </div>
 
+<div id="pubEmpty" class="pub-empty" hidden><h2>No matching publications</h2><p>Try another search term or clear the member and year filters.</p><button type="button" class="pub-reset" id="pubReset">Clear all filters</button></div>
         <!-- ══ 2026 ══ -->
         <div class="pub-year-group" data-year="2026">
             <div class="pub-year-label">2026</div>
             <div class="pub-list">
+<!-- RECENT_ORBI_START -->
+<div class="pub-item" id="pub-55665" data-anim><div class="pub-type pub-type--journal">Journal</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/55665">Real-time AI-powered monitoring for energy-efficient scheduling in multi-node heterogeneous systems</a></h3><div class="pub-authors">T. A. Rahmani, G. Belalem, <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-member">Sidi Mahmoudi</a>, O. R. Merad-Boudia</div><div class="pub-venue">Future Generation Computer Systems · August 2026</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/55665">ORBI record ↗</a><a href="https://doi.org/10.1016/j.future.2026.108428">Publisher / DOI ↗</a></div></div></div>
+<div class="pub-item" id="pub-56536" data-anim><div class="pub-type pub-type--journal">Journal</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56536">Fairness-Aware Evaluation of Missing Data Solutions for Longitudinal Parkinson’s Disease Research</a></h3><div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-member">M. Hani</a>, N. Betrouni, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">Saïd Mahmoudi</a>, <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-member">M. Benjelloun</a></div><div class="pub-venue">SN Computer Science · August 2026</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56536">ORBI record ↗</a><a href="https://doi.org/10.1007/s42979-026-05191-2">Publisher / DOI ↗</a></div></div></div>
+<div class="pub-item" id="pub-56535" data-anim><div class="pub-type pub-type--journal">Journal</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56535">AI-driven security solutions for IoMT devices: A survey</a></h3><div class="pub-authors">I. Hentous, V. Merlino, T. Kenaza, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">Saïd Mahmoudi</a>, D. Allegra</div><div class="pub-venue">Internet of Things · July 2026</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56535">ORBI record ↗</a><a href="https://doi.org/10.1016/j.iot.2026.101991">Publisher / DOI ↗</a></div></div></div>
+<div class="pub-item" id="pub-56534" data-anim><div class="pub-type pub-type--journal">Journal</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56534">Federated Learning for Breast Cancer Classification: A Comparative Study of Aggregation Methods</a></h3><div class="pub-authors">N. S. Lachemi, M. Merati, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">Saïd Mahmoudi</a></div><div class="pub-venue">Information · June 2026</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56534">ORBI record ↗</a><a href="https://doi.org/10.3390/info17060545">Publisher / DOI ↗</a></div></div></div>
+<div class="pub-item" id="pub-56733" data-anim><div class="pub-type pub-type--conf">Conference</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56733">End-to-End Multimodal Transformers for Multi-Cohort Alzheimer&#x27;s Classification</a></h3><div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=536246" class="pub-member">T. Vansnick</a>, M. Gloesener, O. Amel, V. Tota, <a href="https://orbi.umons.ac.be/profile?uid=535975" class="pub-member">M. Delehouzée</a>, L. Ris, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">Saïd Mahmoudi</a></div><div class="pub-venue">IEEE CBMS 2026 · 2026</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/56733">ORBI record ↗</a></div></div></div>
+<div class="pub-item" id="pub-55901" data-anim><div class="pub-type pub-type--conf">Conference</div><div class="pub-body"><h3 class="pub-title"><a href="https://orbi.umons.ac.be/handle/20.500.12907/55901">SecureBFL: a Blockchain-enhanced federated learning architecture with MPC</a></h3><div class="pub-authors"><a href="https://orbi.umons.ac.be/profile?uid=536246" class="pub-member">T. Vansnick</a>, L. Collier, <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-member">Saïd Mahmoudi</a></div><div class="pub-venue">ESANN · 2026 · ORBI publication year</div><div class="pub-record-links"><a href="https://orbi.umons.ac.be/handle/20.500.12907/55901">ORBI record ↗</a></div></div></div>
+<!-- RECENT_ORBI_END -->
 
                 <div class="pub-item" data-anim>
                     <div class="pub-type pub-type--journal">Journal</div>
@@ -459,17 +473,17 @@
             <div class="pub-orbi-grid">
                 <a href="https://orbi.umons.ac.be/profile?uid=530027" class="pub-orbi-card" target="_blank" rel="noopener">
                     <span class="pub-orbi-name">Saïd Mahmoudi</span>
-                    <span class="pub-orbi-count">313 publications</span>
+                    <span class="pub-orbi-count">View profile</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
                 <a href="https://orbi.umons.ac.be/profile?uid=530391" class="pub-orbi-card" target="_blank" rel="noopener">
                     <span class="pub-orbi-name">Sidi Mahmoudi</span>
-                    <span class="pub-orbi-count">248 publications</span>
+                    <span class="pub-orbi-count">View profile</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
                 <a href="https://orbi.umons.ac.be/profile?uid=530248" class="pub-orbi-card" target="_blank" rel="noopener">
                     <span class="pub-orbi-name">Mohammed Benjelloun</span>
-                    <span class="pub-orbi-count">168 publications</span>
+                    <span class="pub-orbi-count">View profile</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 </a>
                 <a href="https://orbi.umons.ac.be/profile?uid=536798" class="pub-orbi-card" target="_blank" rel="noopener">
@@ -500,7 +514,7 @@
             <img src="images/logo.png" alt="SMART'ILIA" class="footer-logo-img">
             <p class="footer-tagline">Secure Multimedia &amp; AI Research for Responsive Things</p>
         </div>
-        <nav class="footer-nav">
+        <nav class="footer-nav" aria-label="Footer navigation">
             <a href="index.html">Home</a>
             <a href="team.html">Team</a>
             <a href="projects.html">Projects</a>
@@ -516,15 +530,7 @@
 
 <script>
     // Nav
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10));
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-    });
-    navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+
 
     // ── Combined filtering engine ──
     const searchInput = document.getElementById('pubSearch');
@@ -566,6 +572,7 @@
             group.style.display = groupHasVisible ? '' : 'none';
         });
 
+        document.getElementById('pubEmpty').hidden = visible !== 0;
         const total = allItems.length;
         if (q || activeMember !== 'all' || activeYear !== 'all') {
             countEl.textContent = visible + ' / ' + total;
@@ -576,15 +583,15 @@
 
     // Search
     searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value;
+        searchQuery = e.target.value.trim();
         applyFilters();
     });
 
     // Year filters
     document.querySelectorAll('#yearFilters .pub-filter').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('#yearFilters .pub-filter').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            document.querySelectorAll('#yearFilters .pub-filter').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+            btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true');
             activeYear = btn.dataset.filter;
             applyFilters();
         });
@@ -593,13 +600,22 @@
     // Member filters
     document.querySelectorAll('#memberFilters .pub-filter').forEach(btn => {
         btn.addEventListener('click', () => {
-            document.querySelectorAll('#memberFilters .pub-filter').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+            document.querySelectorAll('#memberFilters .pub-filter').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+            btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true');
             activeMember = btn.dataset.member;
             applyFilters();
         });
     });
 
+    document.querySelectorAll('.pub-filter').forEach(button => button.setAttribute('aria-pressed', String(button.classList.contains('active'))));
+    document.getElementById('pubReset').addEventListener('click', () => {
+        activeYear = 'all'; activeMember = 'all'; searchQuery = ''; searchInput.value = '';
+        document.querySelectorAll('.pub-filter').forEach(button => {
+            const active = button.dataset.filter === 'all' || button.dataset.member === 'all';
+            button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
+        });
+        applyFilters(); searchInput.focus();
+    });
     // Initial count
     applyFilters();
 

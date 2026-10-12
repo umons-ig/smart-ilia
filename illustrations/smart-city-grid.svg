@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-labelledby="title desc">
+  <title id="title">SiTies — secure IoT for smart cities</title>
+  <desc id="desc">Illustrative city grid: connected sensors at street intersections link urban blocks and infrastructure. A shield represents the security of the IoT network.</desc>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#DDE0DD"/></pattern>
+    <g id="block"><rect width="60" height="56" rx="4" fill="#FFF" stroke="#CCD6DC"/><path d="M13 42V17h19v25m0 0V26h15v16M9 42h42M18 23h3m5 0h2m-10 7h3m5 0h2m-10 7h3m5 0h2m9-5h4m-4 5h4" fill="none" stroke="#335E77" stroke-width="1.5" stroke-linecap="round"/></g>
+    <g id="sensor"><circle r="8" fill="#FFF" stroke="#8B1538" stroke-width="1.6"/><circle r="2.5" fill="#8B1538"/></g>
+  </defs>
+  <rect width="520" height="290" fill="#F6F8FA"/>
+  <rect x="16" y="18" width="488" height="250" fill="url(#dots)"/>
+  <g fill="#E4EBEE">
+    <rect x="53" y="39" width="14" height="202" rx="3"/>
+    <rect x="145" y="39" width="14" height="202" rx="3"/>
+    <rect x="237" y="39" width="14" height="202" rx="3"/>
+    <rect x="329" y="39" width="14" height="202" rx="3"/>
+    <rect x="42" y="49" width="313" height="14" rx="3"/>
+    <rect x="42" y="134" width="313" height="14" rx="3"/>
+    <rect x="42" y="219" width="313" height="14" rx="3"/>
+  </g>
+  <use href="#block" x="76" y="71"/><use href="#block" x="168" y="71"/><use href="#block" x="260" y="71"/>
+  <use href="#block" x="76" y="156"/><use href="#block" x="168" y="156"/><use href="#block" x="260" y="156"/>
+  <g fill="none" stroke="#8B1538" stroke-width="1.5" stroke-dasharray="4 5">
+    <path d="M60 56H336M60 141H336M60 226H336M60 56V226M152 56V226M244 56V226M336 56V226"/>
+    <path d="M344 141h44"/>
+  </g>
+  <use href="#sensor" x="60" y="56"/><use href="#sensor" x="152" y="56"/><use href="#sensor" x="244" y="56"/><use href="#sensor" x="336" y="56"/>
+  <use href="#sensor" x="60" y="141"/><use href="#sensor" x="152" y="141"/><use href="#sensor" x="244" y="141"/><use href="#sensor" x="336" y="141"/>
+  <use href="#sensor" x="60" y="226"/><use href="#sensor" x="152" y="226"/><use href="#sensor" x="244" y="226"/><use href="#sensor" x="336" y="226"/>
+  <rect x="385" y="88" width="106" height="110" rx="7" fill="#FFF" stroke="#CCD6DC"/>
+  <path d="m438 106 23 9v22c0 17-23 28-23 28s-23-11-23-28v-22Z" fill="#F3E8EC" stroke="#8B1538" stroke-width="1.6"/>
+  <rect x="430" y="129" width="16" height="15" rx="2" fill="#FFF" stroke="#8B1538" stroke-width="1.5"/>
+  <path d="M433 129v-5a5 5 0 0 1 10 0v5m-5 6v4" fill="none" stroke="#8B1538" stroke-width="1.5"/>
+  <g font-family="Arial,sans-serif" font-size="12" fill="#4C585E" text-anchor="middle">
+    <text x="438" y="185">IoT security</text>
+    <text x="438" y="221">Connected urban</text><text x="438" y="237">infrastructure</text>
+    <text x="198" y="263">City grid · buildings · sensor nodes</text>
+  </g>
+</svg>
