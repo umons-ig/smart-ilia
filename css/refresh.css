@@ -135,7 +135,7 @@ footer::before { display:none; }
 .team-grid--researchers { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .team-card { border-radius:6px; background:#fff; padding:26px; opacity:1; transform:none; text-align:left; align-items:flex-start; }
 .team-card::after,.project-card::before { display:none; }
-.team-photo { width:120px; height:120px; border-radius:5px; border:0; filter:grayscale(20%); }
+.team-photo { display:block; width:120px; height:120px; border-radius:5px; border:0; filter:grayscale(20%); }
 .team-placeholder { border-radius:5px; width:120px; height:120px; }
 .team-name { font-size:18px; font-weight:600; }
 .team-role { font:400 15px/1.5 var(--sans); text-transform:none; letter-spacing:0; }
@@ -287,6 +287,7 @@ footer::before { display:none; }
 .project-status { margin-bottom:18px; }
 .project-overview { display:grid; grid-template-columns:136px minmax(0,1fr); gap:18px; align-items:start; }
 .project-overview--text { display:block; }
+.project-overview:not(.project-overview--text) + .project-research { margin-top:16px; }
 .project-copy { min-width:0; }
 .project-art { display:block; border:1px solid var(--paper-border); border-radius:5px; overflow:hidden; background:#F7F8F7; }
 .project-card .project-art img { display:block; width:100%; height:auto; margin:0; }

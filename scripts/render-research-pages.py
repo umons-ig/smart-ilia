@@ -63,7 +63,7 @@ def project_card(p):
     status=status_by_name[p['name']]
     title=esc(p['name'])
     if p.get('featured'):
-        title=f'<a href="https://www.wallesmart.be/">{title} <span aria-hidden="true">↗</span></a>'
+        title=f'<a href="https://www.wallesmart.be/">{title} <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>'
     status_link=f'<a href="{esc(status["source_url"])}" aria-label="Source for {esc(p["name"])} project information">Project information <span aria-hidden="true">↗</span></a>' if status['source_url'] else ''
     art=''
     if p['image']:
@@ -75,10 +75,16 @@ def project_card(p):
     link_html=f'<div class="project-links">{links}</div>' if links else ''
     classes='project-card'+(' project-card--featured' if p.get('featured') else '')
     overview='project-overview'+(' project-overview--text' if not art else '')
+    summary=f'<p class="project-desc">{esc(p["summary"])}</p>'
+    tags_html=f'<div class="project-tags">{tag_html}</div>'
+    if p.get('featured'):
+        details=f'<div class="{overview}">{art}<div class="project-copy">{summary}{focus}{tags_html}</div></div>'
+    else:
+        details=f'<div class="{overview}">{art}{summary}</div>{focus}{tags_html}'
     return f'''<article class="{classes}" data-anim id="{p['id']}">
   <div class="project-header"><div class="project-icon">{icons[p['name']]}</div><h3 class="project-title">{title}</h3></div>
   <div class="project-status"><strong>{esc(status['status'])}</strong>{status_link}</div>
-  <div class="{overview}">{art}<div class="project-copy"><p class="project-desc">{esc(p['summary'])}</p>{focus}<div class="project-tags">{tag_html}</div></div></div>
+  {details}
 {link_html}
 </article>'''
 
