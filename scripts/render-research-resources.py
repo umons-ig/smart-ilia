@@ -10,11 +10,15 @@ if (root / 'dist/index.html').is_file():
     root /= 'dist'
 resources = json.loads((root / 'data/research-resources.json').read_text())
 p = resources['feature']
+original = p.get('image_original', p['image'])
+responsive = ''
+if p.get('image_srcset'):
+    responsive = f' srcset="{esc(p["image_srcset"])}" sizes="{esc(p["image_sizes"])}"'
 parts = [f'''<div class="resource-grid">
   <article class="resource-feature" aria-labelledby="{esc(p['id'])}-title">
     <figure class="resource-figure">
-      <a href="{esc(p['image'])}" aria-label="View the complete MPB-UNet published figure"><img src="{esc(p['image'])}" alt="{esc(p['image_alt'])}" width="{p['image_width']}" height="{p['image_height']}" loading="lazy" decoding="async"></a>
-      <figcaption><a href="{esc(p['url'])}">{esc(p['image_credit'])}</a> · <a href="{esc(p['image_license_url'])}">{esc(p['image_license'])}</a><span>Published test examples · <a href="{esc(p['image'])}">View full figure <span aria-hidden="true">↗</span></a></span></figcaption>
+      <a href="{esc(original)}" aria-label="View the complete MPB-UNet published figure"><img src="{esc(p['image'])}"{responsive} alt="{esc(p['image_alt'])}" width="{p['image_width']}" height="{p['image_height']}" loading="lazy" decoding="async"></a>
+      <figcaption><a href="{esc(p['url'])}">{esc(p['image_credit'])}</a> · <a href="{esc(p['image_license_url'])}">{esc(p['image_license'])}</a><span>Published test examples · <a href="{esc(original)}">View full figure <span aria-hidden="true">↗</span></a></span></figcaption>
     </figure>
     <div class="resource-body"><p class="eyebrow">{esc(p['category'])}</p><h3 id="{esc(p['id'])}-title">{esc(p['title'])}</h3><p>{esc(p['summary'])}</p><p class="resource-date"><time datetime="{esc(p['published_at'])}">{esc(p['date_label'])}</time></p><a class="action-text" href="{esc(p['url'])}">{esc(p['link_label'])} <span aria-hidden="true">↗</span></a></div>
   </article>

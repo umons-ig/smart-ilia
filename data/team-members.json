@@ -7,7 +7,7 @@
       "name": "Saïd Mahmoudi",
       "group": "Faculty",
       "role": "Professor · Lab manager",
-      "image": "images/said_mahmoudi.png",
+      "image": "images/said_mahmoudi-v2.webp",
       "focus": "Computer vision, deep learning and medical image analysis, including brain MRI segmentation and disease classification.",
       "links": [
         {
@@ -30,7 +30,7 @@
       "name": "Sidi Mahmoudi",
       "group": "Faculty",
       "role": "Professor · Co-manager",
-      "image": "images/sidi_mahmoudi.png",
+      "image": "images/sidi_mahmoudi-v2.webp",
       "focus": "Explainable and edge AI, distributed learning and efficient use of high-performance computing resources.",
       "links": [
         {
@@ -53,7 +53,7 @@
       "name": "Mohammed Benjelloun",
       "group": "Faculty",
       "role": "Professor · Co-manager",
-      "image": "images/mohammed_benjelloun.png",
+      "image": "images/mohammed_benjelloun-v2.webp",
       "focus": "Image analysis and medical AI, including explainable models and learning from neurological and clinical data.",
       "links": [
         {
@@ -99,7 +99,7 @@
       "name": "Quentin De Coninck",
       "group": "Researchers & collaborators",
       "role": "Assistant professor · Research collaborator",
-      "image": "images/quentin_deconinck.png",
+      "image": "images/quentin_deconinck-v2.webp",
       "focus": "Computer networking and transport protocols, including QUIC and multipath communication.",
       "links": [
         {
@@ -121,7 +121,7 @@
       "name": "Mathis Delehouzée",
       "group": "PhD students",
       "role": "PhD student",
-      "image": "images/mathis_delehouzee.png",
+      "image": "images/mathis_delehouzee-v2.webp",
       "focus": "Federated learning, aggregation methods and secure collaborative models for medical imaging.",
       "links": [
         {
@@ -144,7 +144,7 @@
       "name": "Edmond-Prosper Souapiébé",
       "group": "PhD students",
       "role": "PhD student",
-      "image": "images/edmond-prosper_souapiebe.png",
+      "image": "images/edmond-prosper_souapiebe-v2.webp",
       "focus": null,
       "links": [
         {
@@ -182,7 +182,7 @@
       "name": "Tanguy Vansnick",
       "group": "PhD students",
       "role": "PhD student",
-      "image": "images/tanguy_vansnick.png",
+      "image": "images/tanguy_vansnick-v2.webp",
       "focus": "Multimodal learning for brain imaging and secure, decentralised federated learning.",
       "links": [
         {

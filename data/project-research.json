@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-12",
-  "note": "Project summaries distinguish documented contributions, research objectives and related publications. Statuses and dates remain in project-statuses.json. Illustrations are schematics, not experimental evidence.",
+  "note": "Project summaries distinguish documented contributions, research objectives and related publications. Statuses and dates remain in project-statuses.json. Illustrations are schematics, not experimental evidence. Outputs are sourced individually, with explicit lab, consortium and related-work attribution. Unverified project-specific results are not inferred.",
   "projects": [
     {
       "name": "WalleSmart",
@@ -36,9 +36,53 @@
       ],
       "sources": [
         "https://orbi.umons.ac.be/handle/20.500.12907/54810",
-        "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15"
+        "https://www.wallesmart.be/blog/nos-actualites-2/nouveaute-comment-digitaliser-la-gestion-de-ses-parcelles-agricoles-15",
+        "https://www.sciencedirect.com/science/article/pii/S0167739X25006181",
+        "https://www.wallesmart.be/nos-services",
+        "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart"
       ],
-      "relationship_note": "The cited paper explicitly presents and evaluates the WALLeSmart platform."
+      "relationship_note": "The cited paper explicitly presents and evaluates the WALLeSmart platform.",
+      "outputs_summary": "Platform & field evaluation",
+      "outputs": [
+        {
+          "category": "Published field evaluation",
+          "date_label": "2026",
+          "title": "Cloud architecture tested with agricultural data",
+          "description": "Roukh and Mahmoudi evaluated WALLeSmart with data from 30 dairy farms and 32 weather stations in Wallonia. The published architecture combines real-time and batch processing, a modular plugin system and agricultural data exchange.",
+          "links": [
+            {
+              "label": "Read the evaluation",
+              "url": "https://orbi.umons.ac.be/handle/20.500.12907/54810"
+            }
+          ],
+          "sources": [
+            "https://orbi.umons.ac.be/handle/20.500.12907/54810",
+            "https://www.sciencedirect.com/science/article/pii/S0167739X25006181"
+          ],
+          "verification": "The paper explicitly presents WALLeSmart; the field sample is stated in its introduction. These are study data sources, not a count of current platform customers."
+        },
+        {
+          "category": "Operational platform",
+          "date_label": "2026",
+          "title": "Applications farmers can use",
+          "description": "The platform provides a shared sign-in, a personalised dashboard, data-sharing consent controls and access to agricultural applications. CRA-W confirms that W@llHerbe is available through WALLeSmart for daily grass-biomass estimates.",
+          "links": [
+            {
+              "label": "Platform services (FR)",
+              "url": "https://www.wallesmart.be/nos-services"
+            },
+            {
+              "label": "W@llHerbe release (FR)",
+              "url": "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart"
+            }
+          ],
+          "sources": [
+            "https://www.wallesmart.be/nos-services",
+            "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart"
+          ],
+          "verification": "Both service availability and the W@llHerbe application are documented by their operators. W@llHerbe is attributed to CRA-W, not presented as software authored solely by SMART’ILIA."
+        }
+      ]
     },
     {
       "name": "AI4BRAIN",
@@ -79,7 +123,31 @@
         "https://orbi.umons.ac.be/handle/20.500.12907/56733",
         "https://web.umons.ac.be/sante/fr/2026/03/11/alzheimer-a-lumons-une-expertise-de-longue-date-mise-en-lumiere-par-un-financement-record/"
       ],
-      "relationship_note": "MPB-UNet is listed on the official AI4Brain publications page. The newer multimodal study is related lab research; its funding is not attributed here."
+      "relationship_note": "MPB-UNet is listed on the official AI4Brain publications page. The newer multimodal study is related lab research; its funding is not attributed here.",
+      "outputs_summary": "Published methods & test results",
+      "outputs": [
+        {
+          "category": "Published segmentation method",
+          "date_label": "26 December 2024",
+          "title": "MPB-UNet brain MRI segmentation",
+          "description": "Chahbar, Merati and Mahmoudi published a multi-parallel UNet method evaluated on the LGG MRI dataset. Table 5 reports an average Dice score of 94.43% and IoU of 92.17% on the test set; these are dataset results, not clinical validation.",
+          "links": [
+            {
+              "label": "Method & evaluation",
+              "url": "https://orbi.umons.ac.be/handle/20.500.12907/51494"
+            },
+            {
+              "label": "Published test examples",
+              "url": "images/mpb-unet-figure7.png"
+            }
+          ],
+          "sources": [
+            "https://orbi.umons.ac.be/handle/20.500.12907/51494",
+            "https://www.ai4brain.be/pubblications"
+          ],
+          "verification": "The official AI4Brain publications page lists MPB-UNet. Metrics are from Table 5, page 14, not the different aggregate scores in the abstract. DOI volume is 2025; original publication date is 26 December 2024."
+        }
+      ]
     },
     {
       "name": "ARIAC",
@@ -104,9 +172,29 @@
         "Distributed learning"
       ],
       "sources": [
-        "https://factory.trail.ac/fr/user/sidi-ahmed/mahmoudi"
+        "https://factory.trail.ac/fr/user/sidi-ahmed/mahmoudi",
+        "https://orbi.umons.ac.be/handle/20.500.12907/55665"
       ],
-      "relationship_note": "TRAIL records Sidi Ahmed Mahmoudi’s participation in ARIAC WP4; no unverified project result or performance figure is asserted."
+      "relationship_note": "TRAIL records Sidi Ahmed Mahmoudi’s participation in ARIAC WP4; no unverified project result or performance figure is asserted.",
+      "outputs_summary": "Related lab study",
+      "outputs": [
+        {
+          "category": "Related SMART’ILIA research",
+          "date_label": "2026",
+          "title": "AI-based scheduling across CPU and GPU nodes",
+          "description": "A study co-authored by Sidi Mahmoudi implements continuous monitoring and AI-based load estimates to schedule tasks across heterogeneous nodes. It evaluates execution time, throughput, resource use and energy consumption against other scheduling methods.",
+          "links": [
+            {
+              "label": "Read the scheduling study",
+              "url": "https://orbi.umons.ac.be/handle/20.500.12907/55665"
+            }
+          ],
+          "sources": [
+            "https://orbi.umons.ac.be/handle/20.500.12907/55665"
+          ],
+          "verification": "The paper substantiates implementation and evaluation. No ARIAC funding acknowledgement was found in the full text; it is explicitly labelled related lab research, not an ARIAC deliverable."
+        }
+      ]
     },
     {
       "name": "TSV — Track Sentry Vision",
@@ -129,7 +217,26 @@
         "https://ecosysteme.s3.wallonie.be/projets/",
         "https://bnaic2025.unamur.be/accepted-submissions/accepted_poster/093%20-%20Railway%20Track%20Defect%20Detection.pdf"
       ],
-      "relationship_note": "The official BNAIC/BeNeLearn 2025 poster paper acknowledges Track Sentry Vision funding. Its authors are not presented as SMART’ILIA members; the public project timeline remains unconfirmed."
+      "relationship_note": "The official BNAIC/BeNeLearn 2025 poster paper acknowledges Track Sentry Vision funding. Its authors are not presented as SMART’ILIA members; the public project timeline remains unconfirmed.",
+      "outputs_summary": "Consortium proof of concept",
+      "outputs": [
+        {
+          "category": "UCLouvain consortium prototype",
+          "date_label": "2025",
+          "title": "Sensor-equipped railway inspection prototype",
+          "description": "Crespin, Kostis and Schaus built a laboratory LEGO train with a Raspberry Pi 5, camera and accelerometer. Their TSV study reports a YOLOv11n F1 score of 0.96 for artificial obstacles; validation on operational railway tracks remains future work.",
+          "links": [
+            {
+              "label": "Read the prototype study (PDF)",
+              "url": "https://bnaic2025.unamur.be/accepted-submissions/accepted_poster/093%20-%20Railway%20Track%20Defect%20Detection.pdf"
+            }
+          ],
+          "sources": [
+            "https://bnaic2025.unamur.be/accepted-submissions/accepted_poster/093%20-%20Railway%20Track%20Defect%20Detection.pdf"
+          ],
+          "verification": "The official conference paper names ICTEAM/INGI, UCLouvain, describes the prototype and gives the 0.96 laboratory F1 score. It is not presented as a SMART’ILIA-only implementation or a field-validated system."
+        }
+      ]
     },
     {
       "name": "SiTies — Secure IoT for Smart Cities",
@@ -154,7 +261,26 @@
         "https://radon.nauka.gov.pl/dane/profil/678506106d19015179e4eef2",
         "https://assets.ctfassets.net/myqv2p4gx62v/01pLxQ8LCOKn64NGVrYck8/289017d1012514191cbb42dc429a7358/brochure-InCyber-2025.pdf"
       ],
-      "relationship_note": "The registry establishes project scope and dates; the institutional InCyber brochure documents UMONS participation and research themes, rather than measured project outcomes."
+      "relationship_note": "The registry establishes project scope and dates; the institutional InCyber brochure documents UMONS participation and research themes, rather than measured project outcomes.",
+      "outputs_summary": "Related CyberLab platform",
+      "outputs": [
+        {
+          "category": "Related UMONS infrastructure",
+          "date_label": "2025",
+          "title": "CyberLab / CyberRange at UMONS",
+          "description": "The institutional InCyber brochure documents the team’s CyberLab, connecting IT infrastructure with physical IoT sensors and actuators. This platform supports research on the interaction between cybersecurity and AI.",
+          "links": [
+            {
+              "label": "CyberLab description (PDF)",
+              "url": "https://assets.ctfassets.net/myqv2p4gx62v/01pLxQ8LCOKn64NGVrYck8/289017d1012514191cbb42dc429a7358/brochure-InCyber-2025.pdf"
+            }
+          ],
+          "sources": [
+            "https://assets.ctfassets.net/myqv2p4gx62v/01pLxQ8LCOKn64NGVrYck8/289017d1012514191cbb42dc429a7358/brochure-InCyber-2025.pdf"
+          ],
+          "verification": "The UMONS section, brochure printed page 15, explicitly says the team has set up CyberLab. It is related infrastructure described alongside SiTies; no SiTies-specific delivery or performance claim is inferred."
+        }
+      ]
     },
     {
       "name": "ROAD-STEP",
@@ -181,9 +307,34 @@
       "sources": [
         "https://web.umons.ac.be/ilia/activites-de-recherche/",
         "https://orbi.umons.ac.be/handle/20.500.12907/42561",
-        "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+        "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe",
+        "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart"
       ],
-      "relationship_note": "The Kappa architecture paper is related lab research. CTA Strée’s ongoing listing is explicitly attributed; no final end date or project-specific performance is inferred."
+      "relationship_note": "The Kappa architecture paper is related lab research. CTA Strée’s ongoing listing is explicitly attributed; no final end date or project-specific performance is inferred.",
+      "outputs_summary": "Joint project application",
+      "outputs": [
+        {
+          "category": "Application developed by CRA-W",
+          "date_label": "30 July 2026",
+          "title": "W@llHerbe grassland decision support",
+          "description": "W@llHerbe combines satellite imagery and a growth model to estimate daily grass biomass per parcel. CRA-W identifies ROAD-STEP among the development collaborations and confirms the first version is available on WALLeSmart.",
+          "links": [
+            {
+              "label": "Tool availability (FR)",
+              "url": "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart"
+            },
+            {
+              "label": "Project collaboration (FR)",
+              "url": "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+            }
+          ],
+          "sources": [
+            "https://www.cra.wallonie.be/fr/wallherbe-disponible-sur-la-plateforme-wallesmart",
+            "https://www.cra.wallonie.be/fr/wallherbe-pour-suivre-la-pousse-et-la-qualite-de-lherbe"
+          ],
+          "verification": "The 2023 CRA-W article establishes the ROAD-STEP/SUNSHINE/WALLeSmart collaboration; the 30 July 2026 article confirms actual availability and attributes tool development to CRA-W."
+        }
+      ]
     },
     {
       "name": "FEDER-IDEES",
@@ -215,7 +366,33 @@
         "Video retrieval"
       ],
       "sources": [
-        "https://www.chistera.eu/projects/imotion"
+        "https://www.chistera.eu/projects/imotion",
+        "https://www.chistera.eu/sites/www.chistera.eu/files/CHIST-ERA%20Call%202012%20-%20IUI%20Topic%20-%20IMOTION%202018.pdf",
+        "https://vitrivr.org/getting_started.html"
+      ],
+      "outputs_summary": "Consortium results & software",
+      "outputs": [
+        {
+          "category": "Consortium research output",
+          "date_label": "2018 report",
+          "title": "Multimodal retrieval and open-source software",
+          "description": "The consortium report documents an integrated system supporting sketch, image, motion and speech queries. UMONS contributed deep-learning features and sketch recognition. It also records the open-source vitrivr backend; the software project is maintained by the University of Basel.",
+          "links": [
+            {
+              "label": "Results report (PDF)",
+              "url": "https://www.chistera.eu/sites/www.chistera.eu/files/CHIST-ERA%20Call%202012%20-%20IUI%20Topic%20-%20IMOTION%202018.pdf"
+            },
+            {
+              "label": "Software & documentation",
+              "url": "https://vitrivr.org/getting_started.html"
+            }
+          ],
+          "sources": [
+            "https://www.chistera.eu/sites/www.chistera.eu/files/CHIST-ERA%20Call%202012%20-%20IUI%20Topic%20-%20IMOTION%202018.pdf",
+            "https://vitrivr.org/getting_started.html"
+          ],
+          "verification": "The official CHIST-ERA 2018 report describes UMONS work on slides 7 and 10, query modes on slide 11 and the open-source backend on slide 13. Current vitrivr documentation identifies the University of Basel as maintainer; consortium attribution is preserved."
+        }
       ]
     },
     {

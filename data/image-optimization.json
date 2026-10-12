@@ -1,0 +1,142 @@
+{
+  "assets": [
+    {
+      "source": "mini-logo.png",
+      "optimized": "mini-logo-v2.webp",
+      "original_bytes": 1566091,
+      "bytes": 3920,
+      "width": 96,
+      "encoding": "lossless",
+      "height": 72,
+      "sha256": "56c3d620b82e83e9103c75f1b209a34d8faa0733bb219604528523b4b750a419",
+      "source_sha256": "0c82338282821d4835b67bc80aedf6d9dd0ad9ba8b1a956d51d77efcdcfbc75d"
+    },
+    {
+      "source": "logo.png",
+      "optimized": "logo-v2.webp",
+      "original_bytes": 305780,
+      "bytes": 40452,
+      "width": 480,
+      "encoding": "lossless",
+      "height": 268,
+      "sha256": "01d1c5e1ff07f3c01d08c98f388dfa5afa44e9840ac45eae59fb842b70240762",
+      "source_sha256": "12a68b0a565ca998864276042e14eaf7c56d84b801884015e95b465587922ac9"
+    },
+    {
+      "source": "mpb-unet-figure7.png",
+      "optimized": "mpb-unet-figure7-480.webp",
+      "original_bytes": 1220214,
+      "bytes": 41504,
+      "width": 480,
+      "encoding": "lossless",
+      "height": 374,
+      "sha256": "73ee22e320e976020c393e9767ab7411f1c61f432b7f4109257aad90633265f4",
+      "source_sha256": "559a9587408451be3134f25839d31b28e970e278e7b8b38f05b197f1b81764ad"
+    },
+    {
+      "source": "mpb-unet-figure7.png",
+      "optimized": "mpb-unet-figure7-960.webp",
+      "original_bytes": 1220214,
+      "bytes": 124934,
+      "width": 960,
+      "encoding": "lossless",
+      "height": 748,
+      "sha256": "8f770b2b8dd8591b942d70f59667cefc85a0de47d9eefdf992ecefd178d41a7a",
+      "source_sha256": "559a9587408451be3134f25839d31b28e970e278e7b8b38f05b197f1b81764ad"
+    },
+    {
+      "source": "said_mahmoudi.png",
+      "optimized": "said_mahmoudi-v2.webp",
+      "original_bytes": 157577,
+      "bytes": 17516,
+      "width": 238,
+      "encoding": "photo",
+      "height": 349,
+      "sha256": "3605dd055a1ccb371d2163fad2f8fa56e83e13af6633a9f2bd34aec0f6375a92",
+      "source_sha256": "199ad9e5460d5a79b41b17efa14bcfa2cef370c5cb5445de98675eea4b19b76f"
+    },
+    {
+      "source": "sidi_mahmoudi.png",
+      "optimized": "sidi_mahmoudi-v2.webp",
+      "original_bytes": 121912,
+      "bytes": 7694,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "12759889dd32c7eb684b1c56ca701d6c5a5c36fbbdede822ed396868830ec372",
+      "source_sha256": "f6f2ba5502c6d35ff1f8d9ae721a69ade9baebd6d11a758cae7d23054c599639"
+    },
+    {
+      "source": "mohammed_benjelloun.png",
+      "optimized": "mohammed_benjelloun-v2.webp",
+      "original_bytes": 41557,
+      "bytes": 12486,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "31a92d4224c6038cf9c58c6c3f83514b0de38defaa43e4e30998284135997d4e",
+      "source_sha256": "abb9c588bacec466263eb475461d1e3a7d353e22fd3b5d8595320011b92c7446"
+    },
+    {
+      "source": "quentin_deconinck.png",
+      "optimized": "quentin_deconinck-v2.webp",
+      "original_bytes": 314312,
+      "bytes": 38184,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "397ec8edb6f0c32fe90be6bfd3636e3cbe56fd4f2eb32526f753bae535145f5f",
+      "source_sha256": "2e7946fec2adddf0701628742a047fe73fc8b73d024652fbda15c4b832a5bd0f"
+    },
+    {
+      "source": "mathis_delehouzee.png",
+      "optimized": "mathis_delehouzee-v2.webp",
+      "original_bytes": 177296,
+      "bytes": 42440,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "7402cdfa3e807ab11d5c2f29a7091cb0042ab87eb9948f1a9fc8255bb41f8c8a",
+      "source_sha256": "6cc23933d2bf1a28e48763108be380fad0aee6b206b070e7bcf8a28c1ab349aa"
+    },
+    {
+      "source": "edmond-prosper_souapiebe.png",
+      "optimized": "edmond-prosper_souapiebe-v2.webp",
+      "original_bytes": 89603,
+      "bytes": 31004,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "50a44c7f6fe52eeaee77cdf467b2e6dca980fdca3059807d6c95bdd49a190008",
+      "source_sha256": "bbf20fae49ac51950d3d7dbb7fd667d7c5ad33ab3fa892193702328e79bd3bb8"
+    },
+    {
+      "source": "tanguy_vansnick.png",
+      "optimized": "tanguy_vansnick-v2.webp",
+      "original_bytes": 23854,
+      "bytes": 12578,
+      "width": 400,
+      "encoding": "photo",
+      "height": 400,
+      "sha256": "9dd03bc9180a4ce6ed09014a0d359a8fd09ee43192bc73eda4b0e7ef01ba9ddb",
+      "source_sha256": "7cbc34e358b6c51780952c355808537746d90067b78cedc7ccfd0524b3ac44bd"
+    },
+    {
+      "source": "mini-logo.png",
+      "optimized": "mini-logo-v2.png",
+      "original_bytes": 1566091,
+      "bytes": 5760,
+      "width": 96,
+      "encoding": "png favicon",
+      "height": 72,
+      "sha256": "cc29e23e94d683ea5c1425e0015c2d52cefbc8cd1c3a689e0d7428c9a3608ff5",
+      "source_sha256": "0c82338282821d4835b67bc80aedf6d9dd0ad9ba8b1a956d51d77efcdcfbc75d"
+    }
+  ],
+  "homepage_raster_budget": {
+    "before_bytes": 3413131,
+    "after_bytes_with_largest_preview_and_favicon": 212762,
+    "reduction_percent": 93.77,
+    "scope": "Unique homepage raster images plus favicon. Excludes original figure accessed only on demand, share card, SVG, CSS, JS and fonts. Not a load-time benchmark."
+  }
+}

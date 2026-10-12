@@ -10,20 +10,23 @@
     "link_label": "Read the open-access paper",
     "published_at": "2024-12-26",
     "date_label": "26 December 2024 · Electronics 14(1)",
-    "image": "images/mpb-unet-figure7.png",
-    "image_width": 3739,
-    "image_height": 2912,
+    "image": "images/mpb-unet-figure7-960.webp",
+    "image_width": 960,
+    "image_height": 748,
     "image_alt": "Published comparison of six MRI test examples: input images, reference tumour masks and predictions by UNet variants, including MPB-UNet.",
     "image_source": "https://pub.mdpi-res.com/electronics/electronics-14-00040/article_deploy/html/images/electronics-14-00040-g007.png",
     "image_credit": "Fig. 7 · Chahbar, Merati & Mahmoudi",
     "image_license": "CC BY 4.0",
     "image_license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "image_changes": "None; the complete published figure is displayed without cropping.",
+    "image_changes": "The complete figure is resized and encoded losslessly as WebP for responsive previews. No cropping or content changes. The original full-resolution PNG remains available through View full figure.",
     "sources": [
       "https://orbi.umons.ac.be/handle/20.500.12907/51494",
       "https://orbi.umons.ac.be/bitstream/20.500.12907/51494/1/Chahbar-%20Electronics-14-00040%29.pdf",
       "https://www.ai4brain.be/pubblications"
-    ]
+    ],
+    "image_original": "images/mpb-unet-figure7.png",
+    "image_srcset": "images/mpb-unet-figure7-480.webp 480w, images/mpb-unet-figure7-960.webp 960w",
+    "image_sizes": "(max-width: 600px) calc(100vw - 72px), (max-width: 850px) calc((100vw - 88px) / 2), 560px"
   },
   "articles": [
     {

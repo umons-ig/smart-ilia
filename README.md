@@ -62,3 +62,11 @@ Les quatre pages déclarent une URL canonique sur `https://smartilia.com/` et de
 `images/mpb-unet-figure7.png` is the complete Figure 7 from Chahbar, Merati & Mahmoudi, MPB-UNet, Electronics 14(1), 40, DOI 10.3390/electronics14010040 (published 26 December 2024). The unmodified image is reused under CC BY 4.0, with visible credit, paper and licence links. The original figure URL, dimensions and licence are recorded in the data file. It shows published test examples; it is not evidence of additional clinical validation.
 
 The obsolete CRA-W event link for WALLeSmart was replaced with the current platform article describing Mon Parcellaire.
+
+## Image delivery and documented project outputs
+
+The site uses resized WebP variants for the UMONS logo, pictogram and seven existing portraits. A small PNG favicon is kept for compatibility. MPB-UNet uses lossless WebP previews at 480 and 960 px through `srcset` and `sizes`; the complete original PNG remains linked. No image content was generated, cropped or replaced, and the logo transparency is preserved. Original PNG sources and the LinkedIn share card remain available.
+
+`data/image-optimization.json` records dimensions, encoding settings, source/output hashes and file-size reductions. Conversion uses installed `cwebp` with `-m 6 -resize WIDTH 0`: `-lossless -exact` for logos and the scientific figure, `-q 88 -sharp_yuv -alpha_q 100` for photographs. `dwebp` produces the PNG favicon from the small lossless WebP. New filenames avoid serving previously cached heavy files. The homepage’s unique raster image budget, including the larger scientific preview and favicon, decreases by 93.77%; this is a byte comparison, not a measured page-load speed improvement.
+
+`data/project-research.json` now contains eight sourced outputs/resources across seven projects. Native `details/summary` panels retain the compact project grid. Each output records category, date, description, public links, sources and attribution checks. Lab work, related research and consortium contributions remain distinguished; laboratory/dataset scores are not claimed as operational or clinical validation. Regenerate with `python3 scripts/render-research-pages.py`. Homepage resources remain managed by `python3 scripts/render-research-resources.py`.
