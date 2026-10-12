@@ -79,7 +79,7 @@ def project_card(p):
         for result in p['outputs']:
             evidence=''.join(f'<a href="{esc(link["url"])}">{esc(link["label"])} <span aria-hidden="true">↗</span></a>' for link in result['links'])
             records.append(f'<article class="project-result"><p class="result-meta">{esc(result["category"])} · {esc(result["date_label"])}</p><h4>{esc(result["title"])}</h4><p>{esc(result["description"])}</p><div class="result-evidence">{evidence}</div></article>')
-        outputs=f'<details class="project-results"><summary>{esc(p["outputs_summary"])} <span class="result-count">{len(records)}<span class="sr-only"> documented resources</span></span></summary><div class="project-results-body">'+''.join(records)+'</div></details>'
+        outputs=f'<details class="project-results"><summary>{esc(p["outputs_summary"])} <span class="result-count">{len(records)}<span class="sr-only"> documented {"resource" if len(records)==1 else "resources"}</span></span></summary><div class="project-results-body">'+''.join(records)+'</div></details>'
     classes='project-card'+(' project-card--featured' if p.get('featured') else '')
     overview='project-overview'+(' project-overview--text' if not art else '')
     summary=f'<p class="project-desc">{esc(p["summary"])}</p>'
