@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-10-12",
+  "tool": "Built-in image_gen",
+  "purpose": "Decorative project emblems; illustrative metaphors, not project logos, scientific figures or documented prototype photographs.",
+  "palette": [
+    "#8B1538",
+    "#335E77",
+    "#E8E7E4"
+  ],
+  "conversion": {
+    "encoder": "cwebp",
+    "size": [
+      256,
+      256
+    ],
+    "quality": 88,
+    "alpha_quality": 100,
+    "method": 6,
+    "background": "transparent"
+  },
+  "total_webp_bytes": 127648,
+  "assets": [
+    {
+      "id": "smart-farming",
+      "name": "WalleSmart",
+      "image": "images/project-smart-farming-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 12576,
+      "sha256": "3af3963ec957720acac673b40cd5194b3073ad24990215c863ee7ba2af6a2917",
+      "source_png": "smart-farming-v1.png",
+      "source_sha256": "d0d6f4e2c42d2cdef18920bd05e52767bbc633afbf5b3a82c6e88b85399a2b87",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact, beautifully crafted sculptural illustration of connected smart farming: a small square agricultural field divided into three raised parallel crop strips, a single slim soil-sensor post, and one small cloud above connected with two fine dotted data links. The field is the main silhouette.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "medical-ai",
+      "name": "AI4BRAIN",
+      "image": "images/project-medical-ai-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 14070,
+      "sha256": "5e5a8c680275afa070296abd31797b18796da555c86abd0df132d27cb2e1ecd4",
+      "source_png": "medical-ai-v1.png",
+      "source_sha256": "778dbc630a3598e7c4db559407c49126f3114b54cbaf6d7f12238ecc85734792",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact neuroimaging emblem: one upright sculptural human brain with simple readable anatomical folds in burgundy, accompanied by two overlapping square steel-blue imaging slices with a pale stylised brain silhouette. The brain is the main silhouette. The imaging slices are abstract illustrative shapes, never a realistic MRI or medical result.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "ariac",
+      "name": "ARIAC",
+      "image": "images/project-ariac-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 11886,
+      "sha256": "c57eca85aad11daa5da6367b0bd2c5e0d2a90f406375091a7fc3f26c6df70656",
+      "source_png": "ariac-v1.png",
+      "source_sha256": "103a120bce3520966acedea78a9f9579a0defcdb474db5583bfae33a6c6dd369",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact distributed AI deployment emblem: one central burgundy microprocessor with a clean grid of fine pins, connected by two short steel-blue links to two smaller pale-grey edge-computing chips, arranged as one tight triangular group. Clearly readable processor silhouettes; restrained precise technical detail, no shield, brain or cloud.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "track-sentry-vision",
+      "name": "TSV — Track Sentry Vision",
+      "image": "images/project-track-sentry-vision-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 18060,
+      "sha256": "9e4404fd9a41daee1e6e7012ce539268296083f7944a7d90afc83ed21309ae22",
+      "source_png": "track-sentry-vision-v1.png",
+      "source_sha256": "bc985e31de08cd552cfefc1387106d00cdc0f66ac61f09bba671eb913e9503d2",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact railway computer-vision emblem: a short coherent section of two steel-blue parallel railway rails with four pale sleepers, seen at an isometric angle, and one burgundy machine-vision camera lens inspecting the rails. Rails run diagonally across the square composition. No train, scene, landscape or invented defect.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "secure-systems",
+      "name": "SiTies — Secure IoT for Smart Cities",
+      "image": "images/project-secure-systems-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 12532,
+      "sha256": "dfb8f49e9b11d4a243a2dcff05d65331460daf34c0b3ab9ec1cc65a0896a0b9d",
+      "source_png": "secure-systems-v1.png",
+      "source_sha256": "98697da8e4f7e7536b10f12d639fc4d677c83c0fafcb8b9c50f5a61ba7dad626",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact connected-city security emblem: four minimal architectural buildings of varied heights arranged on a compact square urban street grid, three buildings pale grey and one burgundy. Small steel-blue sensor nodes sit at the intersections. One small upright burgundy shield bearing a simple inset lock shape protects the city, close to the buildings and no larger than the tallest building. The orthogonal grid must be clear. No futuristic skyline, antennas, hologram or globe.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "road-step",
+      "name": "ROAD-STEP",
+      "image": "images/project-road-step-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 13916,
+      "sha256": "15fd5629ae5b00d6c8b13acd742d2984f1a8f330574fa95f56af4a9b56c9d36c",
+      "source_png": "road-step-v1.png",
+      "source_sha256": "284f546b3d247a59ac4a8d1569abcbe07cfcb8714cf315f8a5f240f1a9490409",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact livestock-monitoring emblem: one refined miniature standing dairy cow with four anatomically coherent legs, pale warm grey body and a few burgundy patches, a small steel-blue electronic collar. It stands on a thin burgundy pasture tile with three simple sculpted grass tufts. A small steel-blue signal arc rises from the collar. Clear cow silhouette, recognisable at small size. No landscape, farm buildings, smiling face, human features, or childish cartoon styling.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "feder-idees",
+      "name": "FEDER-IDEES",
+      "image": "images/project-feder-idees-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 9622,
+      "sha256": "b4ba518e12bd47f20b8be3dac2c351b600bb1986f4a01266f6c79cbb6ee4e61f",
+      "source_png": "feder-idees-v1.png",
+      "source_sha256": "23ac199945fc732dc197987114e1acf4023981073fa2fc2a4a671c59c30978b5",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact cloud and big-data infrastructure emblem: three stacked burgundy database discs form the main silhouette, with one small pale warm-grey cloud behind and above, plus two steel-blue sensor nodes linked to the database by short connectors. One tight sculptural group, precise engineered shapes, no computer screens, letters, numbers or random surrounding nodes.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "imotion",
+      "name": "IMOTION (Chist-Era)",
+      "image": "images/project-imotion-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 10138,
+      "sha256": "44f225c57dcc0c82e7a8b79cd241c7458f3aa265378dd8d2322b4280dab5f6ff",
+      "source_png": "imotion-v1.png",
+      "source_sha256": "c55e132dff018c7bb1133d4bcfc90b67910015a4300fd6cc995b55c68f617eab",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact multimodal video-retrieval emblem: two overlapping steel-blue square video frames with simple pale geometric image shapes inside, a burgundy magnifying glass in front that visibly frames one portion of the video tile, and a small pale waveform on one frame to suggest audio. Video frames and search lens are one tight readable group. No text, play-button lettering, people or real photographs.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "arc-olimp",
+      "name": "ARC OLIMP",
+      "image": "images/project-arc-olimp-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 12310,
+      "sha256": "923ce48b92b9f6d6f37dbddab869b94c00ae22ea6df103c5dbd9c6f40574ebc2",
+      "source_png": "arc-olimp-v1.png",
+      "source_sha256": "493c255965a522ccb2eac3c7e849de43d606d0cf9ec7b2de6f9b1e45c279a5b2",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact parallel multimedia processor emblem: one large burgundy square graphics processor on a small pale-grey circuit substrate, with a visible neat array of steel-blue pins and traces. Two tiny steel-blue media frame tiles emerge in a short stepped sequence beside it, suggesting fast video processing. The single chip is dominant and different from a distributed network of chips. No text, letterforms, circuitry background or glowing effects.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    },
+    {
+      "id": "feder-tic",
+      "name": "FEDER-TIC",
+      "image": "images/project-feder-tic-v1.webp",
+      "width": 256,
+      "height": 256,
+      "bytes": 12538,
+      "sha256": "159be0f3a3dc36b63ff003e225ecfa5ef8ca02ece23ab97ac9c2b48428f53b7f",
+      "source_png": "feder-tic-v1.png",
+      "source_sha256": "ce090b3fa80951cd548a102cca07f16b310c774cdd3dffc0dd494e9340f66729",
+      "prompt": "Use case: stylized-concept.\nAsset type: one standalone decorative project emblem for SMART'ILIA, an AI research laboratory at the University of Mons, to replace a generic outline icon in a sober university research project card.\nPrimary request: a compact high-performance parallel computing emblem: four slim upright server modules arranged in a precise two-by-two grid, burgundy front panels and pale-grey side surfaces, joined at their bases by short steel-blue links. Each server has only three readable horizontal slots. One unified ordered cluster; no cloud, planet, shield, desktop computer, letters, screens or surrounding network scenery.\nStyle/medium: refined technical miniature, orthographic isometric 3D render, precisely machined forms and matte ceramic material, restrained editorial sophistication. Crisp readable silhouette at 80 pixels, not a cartoon toy. Consistent 30-degree isometric camera, soft upper-left studio lighting, gentle ambient occlusion, no glossy reflections.\nColor palette: UMONS deep burgundy #8B1538 dominant; muted steel blue #335E77 for smaller technical parts; pale warm grey #E8E7E4 for neutral surfaces. No green, purple, neon or black background.\nComposition: square canvas; isolated single emblem centred and occupying about 85% of canvas, entire objects visible, minimal empty margins, no surrounding badge, pedestal, frame or background scenery.\nBackground: genuinely transparent alpha, including empty space between elements. Only a very subtle close contact shadow, no floor plane.\nText: none. No lettering, numbers, logo, watermark, medical scans, photorealistic people or extra objects. This is an illustrative metaphor, not a documented prototype photograph."
+    }
+  ]
+}

@@ -12,6 +12,10 @@ if (root/'dist/team.html').is_file():
 esc=html.escape
 team=json.loads((root/'data/team-members.json').read_text())
 research=json.loads((root/'data/project-research.json').read_text())
+visuals=json.loads((root/'data/project-visuals.json').read_text())
+visual_by_id={p['id']:p for p in visuals['assets']}
+if set(visual_by_id)!=set(p['id'] for p in research['projects']):
+    raise ValueError('Project visuals do not match the project catalogue')
 statuses=json.loads((root/'data/project-statuses.json').read_text())
 status_by_name={p['name']:p for p in statuses['projects']}
 checked=date.fromisoformat(statuses['checked_at'])
@@ -60,18 +64,10 @@ parts.append('</div><p class="source-note">Research summaries are based on linke
 parts.append('<aside class="research-contact"><div><h2>Find the right research contact.</h2><p>Planning a collaboration or a student project? Contact the lab to discuss your research interests.</p></div><a class="action-primary" href="mailto:said.mahmoudi@umons.ac.be">Contact the lab <span aria-hidden="true">↗</span></a></aside>')
 replace_block(root/'team.html','TEAM_PROFILES','\n'.join(parts),'<div class="team-groups">')
 
-source=(root/'projects.html').read_text()
-icons={}
-for block in re.split(r'(?=<(?:div|article) class="project-card(?:\s|"))',source)[1:]:
-    title=re.search(r'<h3 class="project-title">(.*?)</h3>',block,re.S)
-    icon=re.search(r'<div class="project-icon">\s*(<svg\b.*?</svg>)\s*</div>',block,re.S)
-    if not title or not icon: raise ValueError('Missing project title or icon')
-    name=html.unescape(re.sub(r'<[^>]+>','',title[1])).replace('↗','').strip()
-    icons[name]=icon[1]
-if len(icons)!=len(research['projects']): raise ValueError('Project icon count does not match content')
-
 def project_card(p):
     status=status_by_name[p['name']]
+    visual=visual_by_id[p['id']]
+    icon=f'<div class="project-icon project-icon--illustrated" aria-hidden="true"><img src="{esc(visual["image"])}" alt="" width="{visual["width"]}" height="{visual["height"]}" loading="lazy" decoding="async"></div>'
     title=esc(p['name'])
     if p.get('featured'):
         title=f'<a href="https://www.wallesmart.be/">{title} <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></a>'
@@ -100,7 +96,7 @@ def project_card(p):
     else:
         details=f'<div class="{overview}">{art}{summary}</div>{focus}{tags_html}'
     return f'''<article class="{classes}" data-anim id="{p['id']}">
-  <div class="project-header"><div class="project-icon">{icons[p['name']]}</div><h3 class="project-title">{title}</h3></div>
+  <div class="project-header">{icon}<h3 class="project-title">{title}</h3></div>
   <div class="project-status"><strong>{esc(status['status'])}</strong>{status_link}</div>
   {details}
 {outputs}

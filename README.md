@@ -76,3 +76,9 @@ The site uses resized WebP variants for the UMONS logo, pictogram and seven exis
 At widths up to 600 px, the homepage shows the two most recent selected publications with titles, dates, venues and ORBI links; the full catalogue remains linked. Desktop retains all four selected papers and their summaries. Resource cards use concise mobile summaries from `data/research-resources.json`, retaining the full desktop copy, source links, dates and figure credit.
 
 At widths up to 560 px, team portraits and initials sit next to names and roles in a compact identity row. Quick links navigate to the three existing team groups. Project links are generated only from contacts already recorded in `data/project-research.json`; no additional membership or research specialism is inferred. The thirteen profiles and existing portrait files are retained.
+
+## Visuels des projets
+
+Les dix cartes utilisent une série d’illustrations décoratives générées avec l’outil image_gen intégré : agriculture connectée, neuroimagerie, déploiement distribué, inspection ferroviaire, ville sécurisée, élevage connecté, cloud et données, recherche vidéo et calcul parallèle. Le bordeaux UMONS et le bleu acier sont conservés. Les métaphores visuelles ne sont pas des logos officiels ni des photographies de prototypes ; les schémas, publications et réalisations documentées restent distincts.
+
+Les images servies sont dix WebP transparents de 256 × 256 px, affichés à 88 px sur ordinateur et 76 px sur mobile, avec chargement progressif et dimensions réservées. Leur poids total est de 127 648 octets. Les prompts, paramètres d’encodage, dimensions et empreintes sont conservés dans `data/project-visuals.json`. Le rendu des cartes utilise ce manifeste avec `scripts/render-research-pages.py`, sans lire les anciens pictogrammes dans le HTML.
